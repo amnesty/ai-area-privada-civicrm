@@ -1,0 +1,1271 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*************************************** ******************************************/
+/** CUSTOMS FELIPEGILESTUDIO - SEPTEMBER 2016 **/ 
+
+
+/* ========= FELIPEGILESTUDIO -- ESTILOS y CHANGES IMPORTADOS DE STYLE FORM CSS Ai  ========= */
+
+/* LAST IMPORT LINES */ /* FELIPEGILESTUDIO = 10/10/2016 */
+.content-form .webform-conditional-processed .input-generic {
+	border: 2px solid #000;
+	font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+	/*width: 100%;*/
+    font-size: 21px;
+	color: #000000;
+	height: 50px;
+	position: relative;
+	
+/*************************************** ******************************************/
+/** CUSTOMS FELIPEGILESTUDIO - SEPTEMBER 2016 **/ 
+
+	float: none; /** IMPORTANT == COMMENT PARA APLICAR GRID DE BOOTSTRAP == FELIPEGILESTUDIO **/
+	
+/*************************************** ******************************************/
+
+	margin-right: 10px;
+	list-style: none inside none;
+	padding-left: 10px;
+}
+
+/* Selects --------- */
+.content-form .webform-conditional-processed .capa-select {
+/** IMPORTANT == COMMENT PARA APLICAR GRID DE BOOTSTRAP == FELIPEGILESTUDIO **/
+	min-width: 1px;
+	overflow: hidden;
+	float: left;
+	border: 2px solid #000;
+	height: 50px;
+/** CUSTOMS - COMENTADO PORQUE ROMPÍA LA COL DE BOOTSTRAP == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/
+	margin-right: 0px;
+	width: 100%; /* dando ancho total al campo */
+}
+
+.content-form .webform-conditional-processed select.select {
+/** IMPORTANT == COMMENT PARA APLICAR GRID DE BOOTSTRAP == FELIPEGILESTUDIO **/
+	/* background-position: 115px center; */
+	background-position: 94px center;
+}
+
+/* Elementos de desplegable de fecha ----------- */
+.content-form .webform-conditional-processed .caja-content .capa-fechas div div {
+	width: 95px !important; /* FELIPEGILESTUDIO- INCORPORADO EL 19/02/15 PARA AJUSTAR CAJA AÑO */
+	overflow: hidden;
+	float: left;
+	border: 2px solid #000;
+	height: 50px;
+	margin-right: 5px;
+	/* Border radius */
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+/** CUSTOMS quitada sombra == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/ 
+	padding-right: 0px !important;
+    padding-left: 0px !important;
+	/* Shadow */
+    -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.content-form .webform-conditional-processed .shadow {
+/** CUSTOMS quitada sombra == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+/* END LAST IMPORT LINES  */
+
+
+
+/* AJUSTAR margen texto campos obligatorios" FORM */
+.margin-bottom-20px-element { margin-bottom: 20px !important;}
+
+/* BLOQUES DE DATOS FORM */
+/* GENERAL */
+.clearfix.caja-content.webform-layout-box.vert .active {
+	background-color: #F1E60C;
+}
+.clearfix.caja-content.webform-layout-box.vert:hover {
+	background-color: #F1E60C;
+}
+/* ESPECÍFICOS */
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--Usuario {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--datos-personales {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--direccion {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--idioma {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--mi-aportacion {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--cuenta-bancaria {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.form-item.webform-component.webform-component-markup.webform-component--todo--texto-donacion {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--donativo {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--certificado-fiscal {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--historico-aportaciones {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+.clearfix.caja-content.webform-layout-box.vert.webform-component--todo--preferencias-comunicacion {
+	padding: 20px 20px 20px;
+	margin: 0px 0px;
+}
+/* ^ AGRUPAR EN UNA LÍNEA SI SE PUEDE LOS ANTERIORES ^^ */
+
+/* MAYÚSCULAS H2 - TITLE BLOQUES DATOS */
+.webform-conditional-processed.webform-layout-box.vert.webform-component--todo h2 {
+	text-transform:uppercase;
+}
+label.element-invisible {
+	/* visibility:hidden; */
+	height: auto !important;
+}
+
+
+
+
+
+/* BOTÓN CAMBIAR DATOS DE USUARIO */
+.form-item.webform-component.webform-component-markup.webform-component--todo--Usuario--fila1-1--cambiar a.change_user {
+	color: #000;
+	text-transform: uppercase;
+	border: 2px solid #000;
+	text-decoration: none !important;
+	padding: 8.5px 16px;
+	margin-left: -18px;
+/** CUSTOMS - COLOCANDO BOTÓN CAMBIAR == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/ 	
+	float: left;
+	margin-top: 20px !important;
+}
+a.change_user:hover {
+	border: 2px solid #F1E60D !important;
+	text-decoration: none !important;
+	background-color: #000;
+	color: #F1E60D !important;
+}
+/* CAMPO REPETIR CONTRASEÑA */
+input#edit-submitted-todo-usuario-fila1-1-repite-contrasena {
+	margin-bottom: 24px;
+}
+/* REGLA GENERAL XA TODOS LOS LABEL DEL FORM */
+form.webform-client-form.webform-conditional-processed.col-sm-12 label {
+	font-size: 18px;
+	text-indent: 5px;
+	/* !OJO IMPORTANT! = INLCUÍDO PARA DAR EL ANCHO COMPLETO A LOS BOTONES DESPLEGABLES = FELIPEGILESTUDIO = 29/09/2012  */
+	width: 100% !important;
+	/* ====== */
+}
+
+/* DATOS PERSONALES */
+/** AJUSTANDO FLECHA BOTONES DESPLEGABLES = FECHA NACIMIENTO = DATOS PERSONALES = FELIPEGILESTUDIO = 29/09/2012 **/
+.content-form .webform-conditional-processed .caja-content .capa-fechas div select {
+    /* background-position: 45px center !important; */
+	width: 120% !important;
+    background-position: 65% center !important;
+}
+/* */
+
+/* !OJO IMPORTANT! = INLCUÍDO PARA CORREGIR ANCHO COMPLETO A LOS INPUTS DE "QUIERO HACER UN DONATIVO = FELIPEGILESTUDIO = 29/09/2012  */
+form.webform-client-form.webform-conditional-processed.col-sm-12 label.width-auto-input-element {
+    width: auto !important;
+}
+
+/* BOTÓN DDESPLEGABLE DOCUMENTO IDENTIFIC. - FORM */
+.border-radius-form.capa-select.form-item.webform-component.webform-component-select.webform-component--todo--datos-personales--fila2--margin-medium--civicrm-1-contact-1-cg1-custom-1 {
+	/* margin: 10px 0; */
+}
+
+.clear_element { clear:both !important;}
+
+/** specials margins **/
+/* CAMBIANDO TAMAÑO PARA QUE QUEPA = BOTONES DÍA MES Y AÑO DE FECHA DE NACIMIENTO - DATOS PERSONALES FORM */
+.max-width-92px-elements-small { max-width:92px !important;}
+
+/* AJUSTAR = BOTONES DÍA MES Y AÑO = DE FECHA DE NACIMIENTO - DATOS PERSONALES FORM */
+.margin-top-6px-elment { margin-top: 6px !important;}
+
+/* AJUSTAR altura de = BOTONES ESTADO PROVINCIA / PAÍS - DIRECCIÓN FORM */
+.margin-top-50px-elment { margin-top: 50px !important;}
+
+/* dando margen al texto intro de "todos los coampos con * son obligatorios" * = */
+.margin-top-20px-element { margin-top: 20px !important;}
+
+/* */
+.margin-top-40px-element { margin-top: 40px !important;}
+
+/* */
+.margin-top-15px-element { margin-top: 15px !important;}
+
+/* AJUSTANDO BOTÓN PERIODICIDAD - MI APORTACIÓN */
+.margin-top-64px-element {
+	margin-top: 64px !important;
+}
+
+/* */
+.margin-right-20px {
+	margin-right: 20px !important;
+}
+
+/* CAMBIANDO TAMAÑO PARA QUE QUEPA = BOTONES ERES MIEMBRO DESDE = APORTACIÓN - FORM */
+.max-width-94px-elements-small { max-width:94px !important;}
+
+/** specials paddings **/
+
+/* TEXT INTRO */
+.padding-sepcial-text-intro {
+	padding: 10px 20px 0px 35px !important;
+}
+
+/* CONTAINER-FLUID = QUITA LOS PADDINGS LATERALES DE 15 PX QUE TIENE */
+	.container-fluid-without-lateral-paddings { 
+	padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+/* BOTÓN DESCARGAR CERTIFICADO */
+a.button-certificado {
+    color: #000;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    text-decoration: none !important;
+    padding: 8.5px 16px;
+    margin-left: -18px;
+    float: left;
+}
+
+a.button-certificado:hover { 
+	border: 2px solid #F1E60D !important;
+    text-decoration: none !important;
+    background-color: #000;
+    color: #F1E60D !important;
+}
+
+/* */
+.caja-checkbox.form-item.webform-component.webform-component-radios.webform-component--todo--preferencias-comunicacion--fila3-2--civicrm-1-contact-1-cg10-custom-28.floating-none-element {
+    margin-bottom: -10px !important;
+}
+
+
+/* CLASE PARA ESCONDER LABEL Q SOLO SON DE LECTURA  - FORM */
+.display--none-element { display:none !important;}
+
+/* texto "Llamamientos...." */
+.com-txt-fila3-2  {
+	line-height: 25px !important;
+    text-indent: 0px !important;
+	text-align: left !important;
+	font-size: 18px !important;
+	padding-left: 0px !important;
+}
+
+/* ICONOS DE LOS H2 TITLES = IMPORTANT = FELIPEGILESTUDIO - 20SEPT */
+.padding-for-icon {
+    padding: 0px 20px 20px !important;
+}
+span.image-icon-titles img {
+	
+}
+
+/* COLUMNA DERECHA = CAJA BUENAS NOTICIAS = ESTILO BOTÓN  */
+.buenas-noticias { /*background-color: pink !important; = utilizado sólo para pruebas = FELIPEGILESTUDIO */ }
+
+a.link-caja-buenas-noticias {
+	color: #000;
+    font-weight: bold;
+}
+
+/* TEXTO INTRO BLOQUE DONATIVO */
+p.texto-donativo {
+	padding: 20px 0px 0px !important;
+}
+
+/* IMAGEN DONATIVO */
+.imagen-donativo { 
+	margin-left: 0px !important;
+	margin-top:15px !important;
+	padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+
+/* TEXTO IDIOMA */
+.texto-idioma { padding: 20px 0px 0px !important;}
+
+/* HISTORIAL DE APORTACIONES - INPUT - FLECHA ELEGIR = FELIPEGILESTUDIO CUSTOMS = 20/09/2016 */
+select#edit-submitted-todo-historico-aportaciones-fila1-1-margin-medium2-ano {
+    background-position: 80px center;
+}
+
+
+/* BOTÓN GUARDAR FINAL */
+#save-button {
+	/* color: pink !important; */
+	margin-top: 32px;
+    margin-left: 0px;
+	float:right;
+	/* float: none !important; */
+}
+
+/* SELECT = DÍA - MES - AÑO = FECHA DE NACIMIENTO = DATOS PERSONALES = FELIPEGILESTUDIO CUSTOMS = 01/10/2016 */
+.width-100-per-cent { width: 100% !important;}
+/* */
+
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-idioma-fila1-1-margin-medium2-civicrm-1-contact-1-contact-preferred-language {
+    /* background-position: 100px center; */
+	width: 105% !important;
+    background-position: 90% center !important;
+}
+
+
+/* COLOCANDO FLECHAS DE NIF" = DATOS PERSONALES = FELIPEGILESTUDIO CUSTOMS = 02/10/2016 */
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-datos-personales-fila2-margin-medium-civicrm-1-contact-1-cg1-custom-1 {
+    /* background-position: 44px center; */
+	/* HELENA - CODE - FELIPEGILESTUDIO CUSTOMS = 04/10/2016 */ 
+    width: 105%; 
+    background-position: 90% center;
+}
+/* */
+
+/* COLOCANDO FLECHAS DE CALLE" = DIRECCIÓN + PROVINCIA + PAÍS = FELIPEGILESTUDIO CUSTOMS = 02/10/2016 */
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila1-1-margin-medium3-civicrm-1-contact-1-address-custom-45 {
+    /* background-position: 54px center; */
+    width: 105% !important;
+    background-position: 90% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila2-1-margin-medium4-civicrm-1-contact-1-address-state-province-id {
+    /* background-position: 92px center; */
+	width: 112% !important;
+    background-position: 77% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila2-1-margin-medium5-civicrm-1-contact-1-address-country-id {
+    /* background-position: 72px center; */
+	width: 112% !important;
+    background-position: 77% center !important;
+}
+/* */
+
+/* COLOCANDO FLECHAS DE PERIODICIDAD = APORTACIÓN = FELIPEGILESTUDIO CUSTOMS = 02/10/2016 */
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-mi-aportacion-fila1-2-margin-medium6-civicrm-1-contact-1-cg15-custom-43 {
+    /* background-position: 92px center; */
+	width: 112% !important;
+    background-position: 77% center !important;
+}
+/* */
+/*  */
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-cuenta-bancaria-fila2-2-margin-medium7-civicrm-1-contact-1-cg2-custom-3 {
+    /* background-position: 115px center; */
+    /* background-position: 94px center; */
+    width: 112% !important;
+    background-position: 77% center !important;
+}
+/* */
+
+/* COLOCANDO FLECHAS DE 2015" = CERTIFICADO FISCAL + HISTORIAL DE APORTACIONES = FELIPEGILESTUDIO CUSTOMS = 02/10/2016 */
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-certificado-fiscal-fila1-1-margin-medium2-ano {
+    /* background-position: 54px center !important; */
+	width: 105% !important;
+    background-position: 90% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-historico-aportaciones-fila1-1-margin-medium2-ano {
+	/* background-position: 54px center !important; */
+	width: 112% !important;
+    background-position: 77% center !important;
+}
+/* */
+
+/* FLOATs ELEMENTS */
+.floating-left-element {float:left !important;}
+.floating-right-element {float:right !important;}
+.floating-none-element {float: none !important;}
+/* */
+
+/* CREADO PARA CAMBIAR TAMAÑO FUENTE = DÍA - AÑO - MES */
+.font-size-21-element { font-size:21px !important;}
+/* */
+
+
+/* DATOS DE USUARIO */
+/* FIELDSET ÚNICO */
+fieldset.webform-component-fieldset.fila-1.clearfix.webform-component--todo--Usuario--fila1-1.form-wrapper.floating-left-element {
+    min-width: 100% !important;
+}
+/* */
+
+
+/* DATOS PERSONALES */
+/* FIELDSET 1 = DATOS PERSONALES */
+fieldset.webform-component-fieldset.fila-1.clearfix.webform-component--todo--datos-personales--fila1.form-wrapper {
+    min-width: 100% !important;
+}
+
+/* DIRECCIÓN */
+/* FIELDSET 1 = DIRECCIÓN */
+fieldset.webform-component-fieldset.fila-1.clearfix.webform-component--todo--direccion--fila1-1.form-wrapper {
+    min-width: 100% !important;
+}
+
+/* CUENTA BANCARIA */
+/* FIELDSET 1 = CUENTA BANCARIA */
+fieldset.webform-component-fieldset.fila-2.clearfix.webform-component--todo--cuenta-bancaria--fila2-2.form-wrapper {
+	min-width: 100% !important;
+}
+
+/* CERTIFICADO FISCAL */
+/* FIELDSET 1 = CERTIFICADO FISCAL */
+fieldset.webform-component-fieldset.fila-1.clearfix.webform-component--todo--certificado-fiscal--fila1-1.form-wrapper {
+    min-width: 100% !important;
+}
+
+/* HISTORIAL APORTACIONES */
+/* FORMATO TABLA = CUOTAS MESES */
+.form-item.form-type-radio.form-item-submitted-todo-historico-aportaciones-fila1-1-lista-aportaciones.col-xs-12.col-sm-12.col-md-12.col-lg-12 {
+    border: 2px solid #000;
+    text-align: center;
+	margin-bottom: 4px !important;
+}
+
+.border-bottom-and-right-out {
+    border-bottom: none !important;
+	border-right: none !important;
+}
+
+
+/* ========= FELIPEGILESTUDIO -- ESTILOS y CHANGES IMPORTADOS DE SOCIXS FORM CSS Ai  ========= */
+
+
+
+
+
+
+
+
+/*************************************** ******************************************/
+
+
+
+/****************************** Responsive *******************************/
+
+/* max-width: 1400px */
+@media only screen and (max-width: 1449px) {
+/* CAMBIANDO TAMAÑO PARA QUE QUEPA = BOTONES DÍA MES Y AÑO DE FECHA DE NACIMIENTO - DATOS PERSONALES FORM = FELIPEGILESTUDIO CUSTOMS = 08/10/2016 */
+	/* .max-width-93px-elements-small-w { max-width:93px !important;} */
+	
+	.content-form .webform-conditional-processed .caja-content .capa-fechas div div {
+		width: 31% !important;
+	}
+	
+	
+}
+/* */
+
+/* max-width: 1400px */
+@media only screen and (max-width: 1360px) {
+
+/* AUMENTANDO EL ANCHO DEL CONTENEDOR DEL FORMULARIO = FELIPEGILESTUDIO CUSMTOMS = 20/09/2016 */
+	.content-form{
+        max-width:100% !important;
+	}
+    /* .content-form{
+        max-width:960px;
+    } */
+/** **/
+
+/** CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/ 
+/** CORRIGIENDO PROBLEMA GRAVE QUE TAPABA EL FORM ENTERO EN EL IPAD, 1 Y 2 - VER 3 Y 4 - PORTAIT - COLUMNA DCHA Y BLOQUE EXTENDIDO **/	 /* IMPORTANTE */
+	
+	.box-es-right {
+		width: 100%;
+		float: left; /* TENÍA ==== .box-es-right {
+										width: 100%;
+										float: none;
+    								} */
+	}
+	
+/** end CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/ 
+
+
+/* IMPORTANT * CORRIGIENDO MARGEN COLUMNA DERECHA 1er ITEM = FELIPEGILESTUDIO CUSMTOMS = 20/09/2016 */
+	.box-es-right .three-column:first-child {
+		margin-left: 20px !important;
+	}
+    /* .box-es-right .three-column:first-child {
+        margin-left: 0;
+    } */
+	
+/* IMPORTANT * INCLUÍDO PARA MARGEN % COLUMNA DERECHA 1er ITEM = FELIPEGILESTUDIO CUSMTOMS = 20/09/2016 */
+	.row.margin-0-auto {
+    margin: 0 auto !important;
+	}
+/**** ****/
+
+    .box-form-es .webform-conditional-processed .button-primary{
+        float: left;
+/* CORRIGIENDO POSITION BOTÓN GUARDAR FINAL FORM = FELIPEGILESTUDIO CUSMTOMS = 20/09/2016 */
+		margin-top: 0px !important;
+        /* margin-top: -130px; */
+        margin-left: 67%;
+        margin-bottom: 40px;
+    }
+
+/** IMPORTANT - CORRIGIENDO ANCHO EN TABLET - LANSCAPE = FELIPEGILESTUDIO CUSTOMS = 29/0972016 **/
+	.content-form .webform-conditional-processed .caja-content .capa-fechas div div {
+	max-width: 87px !important;
+	}
+	
+/** ESPECIAL ELEMENT = PARA DAR MARGEN INFERIOR A ALGUNAS CAJAS EN TABLET - PORTAIT = FELIPEGILESTUDIO CUSTOMS = 29/0972016 **/
+	.box-margin-bottom-20 {
+		margin-bottom: 20px !important;
+	}
+/* */
+/** AJUSTANDO TEXTO TERCER ITEM = PREFERENCIAS COMUNICACIÓN = TABLET - LANDSCAPE **/
+	.com-txt-fila3-2 {
+    font-size: 17px !important;
+	}
+	
+	.bloques-x4 {
+	    min-height: 380px !important;
+	}
+
+}
+
+
+/* max-width: 1342px */
+@media only screen and (max-width: 1342px) {
+	.bloques-x4 {
+		max-width: 22.999% !important;
+	}
+}
+
+
+/* max-width: 1333px */
+@media only screen and (max-width: 1333px) {
+	.bloques-x4 {
+		max-width: 22.999% !important;
+		min-height: 410px !important;
+	}
+}
+
+/* max-width: 1200px */
+@media only screen and (max-width: 1200px) {
+
+    .webform-conditional-processed .content-cuenta .ncuenta{
+        /*margin-top:20px;*/
+    }
+	.bloques-x4 {
+		max-width: 22.999% !important;
+		min-height: 420px !important;
+	}
+
+}
+
+
+/* max-width: 1048px */
+@media only screen and (max-width: 1048px) {
+	
+	.bloques-x4 {
+		max-width: 22.999% !important;
+		min-height: 445px !important;
+	}
+	
+	.box-es-right .three-column:first-child {
+    margin-left: 10px !important;
+	}
+
+}
+/* */
+
+/* max-width: 1036px */
+@media only screen and (max-width: 1036px) {
+	
+	.bloques-x4 {
+		max-width: 22.999% !important;
+		min-height: 464px !important;
+	}
+
+}
+/* */
+
+/* max-width: 1028px */
+@media only screen and (max-width: 1028px) {
+	
+	.bloques-x4 {
+    max-width: 22.433% !important;
+	}
+	
+	.box-es-right .three-column:first-child {
+    margin-left: 20px !important;
+	}
+
+}
+/* */
+
+
+/* max-width: 986px */
+@media only screen and (max-width: 986px) {
+
+/* IMPORTANT * INCLUÍDO PARA MARGEN % COLUMNA DERECHA 1er ITEM = FELIPEGILESTUDIO CUSMTOMS = 20/09/2016 */
+
+	.box-es-right .three-column:first-child {
+		margin-left: 0px !important;
+	}
+    /* .box-es-right .three-column:first-child {
+        margin-left: auto;
+    } */
+	
+/**** ****/
+/* */
+	.width-100-per-cent-tablet {
+    width: 100%;
+	}
+/**/
+/*  */
+	
+	/* .bloques-x4 { max-width: inherit !important;} */
+	.bloques-x4 {
+    max-width: 23.3999% !important;
+    float: left !important;
+	}
+	
+	.box-es-right .three-column {
+    /* max-width: 100%; */
+    min-height: 100%;
+    margin: 0.5em !important;
+    /* float: none; */
+	}
+	
+	.box-es-right .three-column:first-child {
+    margin-left: 15px !important;
+	}
+	
+}
+
+/* max-width: 947px */
+@media only screen and (max-width: 947px) {
+	
+	.bloques-x4 {
+    max-width: 23.3999% !important;
+	min-height:504px !important;
+	}
+
+}
+
+
+/* max-width: 869px */
+@media only screen and (max-width: 869px) {
+
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 333px !important;
+	}
+	
+	.box-es-right .three-column:first-child {
+    margin: 0.5em !important;
+	}
+
+}
+/* */
+
+/* max-width: 842px */
+@media only screen and (max-width: 842px) {
+
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 333px !important;
+	}
+	
+	.box-es-right .three-column:first-child {
+    margin: 0.5em !important;
+	}
+
+}
+/* */
+
+/* max-width: 806px */
+@media only screen and (max-width: 806px) {
+
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 333px !important;
+	}
+	
+	.box-es-right .three-column:first-child {
+    margin: 0.5em !important;
+	}
+
+}
+/* */
+
+/* max-width: 786px */
+@media only screen and (max-width: 786px) {
+
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 333px !important;
+	}
+	
+	.box-es-right .three-column {
+    /* max-width: 100%; */
+    min-height: 100%;
+    margin: 0.5em !important;
+    /* float: none; */
+}
+
+}
+/* */
+
+
+/* max-width: 769px */
+@media only screen and (max-width: 769px) {
+
+/*  */
+/***  IMPORTANT * INCLUÍDO PARA PADDING COLUMNA DERECHA = TABLET - PORTAIT = FELIPEGILESTUDIO CUSMTOMS = 20/09/2016	***/
+	.row.margin-0-auto {
+    margin: 0 auto !important;
+    padding-left: 10px;
+    padding-right: 10px;
+	}
+/****** ******/
+
+/***  IMPORTANT * = TABLET - PORTAIT = FELIPEGILESTUDIO CUSMTOMS = 20/09/2016	***/
+/* SPECIAL MARGINS */
+	.margin-top-20px-element-tablet {
+	margin-top: 20px !important;
+	}
+	
+	.margin-top-44px-element-tablet {
+    margin-top: 44px !important;
+	}
+
+/* */
+/* */
+
+	.width-100-per-cent-tablet {
+    width: 100%;
+	}
+/**/
+
+/** AJUSTES BOTONES DESPLEGABLES - TABLET - PORTAIT - = FELIPEGILESTUDIO CUSTOMS = 08/10/2016 **/
+/* NIF = DATOS PERSONALES */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-datos-personales-fila2-margin-medium-civicrm-1-contact-1-cg1-custom-1 {
+/* background-position: 44px center; */
+    width: 108%;
+   background-position: 86% center;
+	}
+	
+/* CALLE = DIRECCIÓN */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila1-1-margin-medium3-civicrm-1-contact-1-address-custom-45 {
+    /* background-position: 54px center; */
+    width: 108% !important;
+    background-position: 86% center !important;
+	}
+
+/* PROVINCIA = DIRECCIÓN */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila2-1-margin-medium4-civicrm-1-contact-1-address-state-province-id {
+    /* background-position: 92px center; */
+    width: 106% !important;
+    background-position: 90% center !important;
+	}
+/* PAÍS = DIRECCIÓN */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila2-1-margin-medium5-civicrm-1-contact-1-address-country-id {
+    /* background-position: 72px center; */
+    width: 105% !important;
+    background-position: 90% center !important;
+	}
+/* MI APORTACIÓN = PERIODICIDAD */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-mi-aportacion-fila1-2-margin-medium6-civicrm-1-contact-1-cg15-custom-43 {
+    /* background-position: 92px center; */
+    width: 105% !important;
+    background-position: 90% center !important;
+	}
+/* "ES" = CUENTA BANCARIA */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-cuenta-bancaria-fila2-2-margin-medium7-civicrm-1-contact-1-cg2-custom-3 {
+    /* background-position: 115px center; */
+    /* background-position: 94px center; */
+    width: 118% !important;
+    background-position: 65% center !important;
+	}
+
+/** **/
+
+/** **/
+
+	/* .bloques-x4 {
+		max-width: inherit !important;
+	} */
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 333px !important;
+	}
+	
+	.box-es-right .three-column:first-child {
+    	margin-left: 4px !important;
+	}
+	
+	.row.margin-0-auto {
+    margin: 0 auto !important;
+    padding-left: 10px;
+    padding-right: 0px;
+	}
+
+}
+/* */
+
+/* TABLET LANSCAPE */
+/* max-width: 1024px */
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
+	  
+	.bloques-x4 {
+		max-width: 22.45% !important;
+		min-height:464px !important;
+	}
+
+}
+/* */
+
+/* max-width: 767px */
+@media only screen and (max-width: 767px) {
+	
+	/* width: 106% !important;
+    background-position: 90% center !important; */
+/** AJUSTES BOTONES DESPLEGABLES - TABLET - PORTAIT - = FELIPEGILESTUDIO CUSTOMS = 08/10/2016 **/
+/* NIF = DATOS PERSONALES */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-datos-personales-fila2-margin-medium-civicrm-1-contact-1-cg1-custom-1 {
+    /* background-position: 44px center; */
+    width: 106%;
+    background-position: 90% center;
+	}
+/* CALLE = DIRECCIÓN */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila1-1-margin-medium3-civicrm-1-contact-1-address-custom-45 {
+    /* background-position: 54px center; */
+    width: 106% !important;
+    background-position: 90% center !important;
+	}
+/* PAÍS = DIRECCIÓN */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila2-1-margin-medium5-civicrm-1-contact-1-address-country-id {
+		/* background-position: 72px center; */
+		width: 106% !important;
+		background-position: 90% center !important;
+	}	
+/* MI APORTACIÓN = PERIODICIDAD */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-mi-aportacion-fila1-2-margin-medium6-civicrm-1-contact-1-cg15-custom-43 {
+    /* background-position: 92px center; */
+    width: 106% !important;
+    background-position: 90% center !important;
+	}	
+/* idioma */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-idioma-fila1-1-margin-medium2-civicrm-1-contact-1-contact-preferred-language {
+    /* background-position: 100px center; */
+    width: 106% !important;
+    background-position: 90% center !important;
+	}
+/* "ES" = CUENTA BANCARIA */	
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-cuenta-bancaria-fila2-2-margin-medium7-civicrm-1-contact-1-cg2-custom-3 {
+    /* background-position: 115px center; */
+    /* background-position: 94px center; */
+    width: 106% !important;
+    background-position: 88% center !important;
+	}
+/* MI CERTIFICADO FISCAL */	
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-certificado-fiscal-fila1-1-margin-medium2-ano {
+    /* background-position: 54px center !important; */
+    width: 106% !important;
+    background-position: 90% center !important;
+	}
+/* MI HISTORIAL DE APORTACIONES */	
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-historico-aportaciones-fila1-1-margin-medium2-ano {
+    /* background-position: 54px center !important; */
+    width: 106% !important;
+    background-position: 90% center !important;
+	}
+	
+	/* */
+	.box-form-es .webform-conditional-processed .button-primary {
+    margin-top: -180px !important;
+	}
+
+}
+/* */
+
+
+/* max-width: 736px */
+@media only screen and (max-width: 736px) {
+	
+	.box-es-right .three-column {
+    	margin: 20px auto auto !important;
+	}
+	
+	.box-es-right .three-column {
+    max-width: 242px;
+    min-height: 418px;
+    margin: 0.5em !important;
+	}
+}
+/* */
+
+/* max-width: 727px */
+@media only screen and (max-width: 727px) {
+	
+	.box-es-right .three-column {
+    	margin: 20px auto auto !important;
+	}
+	
+	.box-es-right .three-column {
+    max-width: 242px;
+    min-height: 418px;
+    margin: 0.5em !important;
+	}
+	
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 352px !important;
+}
+}
+/* */
+
+/* max-width: 666px */
+@media only screen and (max-width: 666px) {
+	
+	.box-es-right .three-column {
+    	margin: 20px auto auto !important;
+	}
+	
+	.box-es-right .three-column {
+    max-width: 242px;
+    min-height: 418px;
+    margin: 0.5em !important;
+	}
+	
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 376px !important;
+}
+}
+/* */
+
+/* max-width: 625px */
+@media only screen and (max-width: 625px) {
+	
+	.box-es-right .three-column {
+    	margin: 20px auto auto !important;
+	}
+	
+	.box-es-right .three-column {
+    max-width: 242px;
+    min-height: 418px;
+    margin: 0.5em !important;
+	}
+	
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 394px !important;
+}
+}
+
+
+/* max-width: 567px */
+@media only screen and (max-width: 567px) {
+	
+	.box-es-right .three-column {
+    	margin: 20px auto auto !important;
+	}
+	
+	.box-es-right .three-column {
+    max-width: 242px;
+    min-height: 418px;
+    margin: 0.5em !important;
+	}
+	
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 414px !important;
+	}
+	
+	.box-form-es .webform-conditional-processed .button-primary {
+    margin-top: 0px !important;
+	}
+	
+	.webform-conditional-processed .content-end-form .botons-form img {
+    top: 20px !important;
+	}
+
+}
+
+/* max-width: 532px */
+@media only screen and (max-width: 532px) {
+	
+	.box-es-right .three-column {
+    	margin: 20px auto auto !important;
+	}
+	
+	.box-es-right .three-column {
+    max-width: 242px;
+    min-height: 418px;
+    margin: 0.5em !important;
+	}
+	
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 456px !important;
+}
+}
+
+
+
+/* max-width: 524px */
+@media only screen and (max-width: 524px) {
+	
+	.box-es-right .three-column {
+    	margin: 20px auto auto !important;
+	}
+	
+	.box-es-right .three-column {
+    max-width: 242px;
+    min-height: 418px;
+    margin: 0.5em !important;
+	}
+	
+	.bloques-x4 {
+    max-width: 48% !important;
+    float: left;
+    min-height: 472px !important;
+}
+}
+
+/* max-width: 524px */
+@media only screen and (max-width: 524px) {
+	
+	.bloques-x4 {
+		max-width: inherit !important;
+		min-height:auto !important;
+	}
+	
+	.row.margin-0-auto {
+    margin: 0 auto !important;
+    padding-left: 0px;
+    padding-right: 8px;
+	}
+	
+}
+
+
+
+/* max-width: 480px */
+@media only screen and (max-width: 480px) {
+	
+/** SPECIAL ELEMENT = PARA DAR MARGEN INFERIOR A ALGUNAS CAJAS EN SMARTPHONE - PORTAIT = FELIPEGILESTUDIO CUSTOMS = 29/09/2016 **/
+	.box-margin-bottom-20 {
+		margin-bottom: 20px !important;
+	}
+/* */
+/* SPECIAL ELEMENTS = LETRA MÁS GRANDE = SMARTPHONE - PORTAIT = FELIPEGILESTUDIO CUSTOMS = 29/09/2016  */
+	.font-size-xlarge-smartphone-element {
+		font-size: x-large !important;
+	}
+	.font-size-21-smartphone-element {
+		font-size: 21px !important;
+	}
+	.font-size-40-smartphone-element {
+		font-size: 40px !important;
+	}
+	
+/* */
+
+/* SPECIAL ELEMENT - TITLES H2 BLOQUE = SMARTPHONE - PORTAIT = FELIPEGILESTUDIO CUSTOMS = 29/09/2016 */
+	.line-height-40-smartphone-element {
+		line-height: 40px !important;
+	}
+/* */
+
+/** SMARTPHONE - PORTAIT = FELIPEGILESTUDIO CUSTOMS = 29/09/2016 **/
+/* MENOR MARGEN AL FORM */
+	form.webform-client-form.webform-conditional-processed.col-sm-12 {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+/* MENOR MARGEN A LA COLUMNA DERECHA */	
+	.row.margin-0-auto {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+/* ALINIEANDO AL CENTRO LOS H2 TITLES DE BLOQUES = FELIPEGILESTUDIO CUSTOMS = 29/09/2016  */
+	h2.font-size-40-smartphone-element.line-height-40-smartphone-element {
+		width: 100%;
+		text-align: center;
+	}
+/** **/
+    .content-form{
+        max-width:320px;
+    }
+
+    .content-form h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+/* IMPORTANT = QUE MUESTRE LA IMAGEN TB EN SMARTPHONE - PORTAIT = FELIPEGILESTUDIO CUSTOMS = 29/09/2016 */
+	.box-form-es img {
+    display: inherit !important;
+	}
+	
+
+/** CUSTOMS - CAMBIANDO ASPECTO ICONO == FELIPEGILESTUDIO - 20/SEPTEMBER 2016 **/ 	
+	
+	span.image-icon-titles img {
+    margin: 0 auto;
+    top: 0px;
+    position: relative;
+	
+	}
+
+    .bloques-x4 {
+		max-width: inherit !important;
+		min-height:auto !important;
+	}
+	
+	/* */
+	.content-form fieldset {
+    	margin-top: 0px !important;
+	}
+	.border-radius-form.shadow.capa-select.form-item.webform-component.webform-component-select.webform-component--todo--mi-aportacion--fila1-2--margin-medium6--civicrm-1-contact-1-cg15-custom-43.floating-left-element {
+    	margin-top: 20px !important;
+	}
+	.margin-top-40px-element {
+    	margin-top: 20px !important;
+	}
+	.margin-top-20px-element-tablet {
+    	margin-top: 0px !important;
+	}
+	
+	fieldset.webform-component-fieldset.fila-2.clearfix.webform-component--todo--cuenta-bancaria--fila2-2.form-wrapper.margin-top-40px-element.floating-left-element.margin-top-10px-element-smartphone {
+    margin-top: 10px !important;
+	}
+	
+	.imagen-donativo {
+    	margin-top: 5px !important;
+	}
+	/* */
+/* "ES" = CUENTA BANCARIA */
+	.content-form .webform-conditional-processed select.select#edit-submitted-todo-cuenta-bancaria-fila2-2-margin-medium7-civicrm-1-contact-1-cg2-custom-3 {
+    /* background-position: 115px center; */
+    /* background-position: 94px center; */
+    width: 109% !important;
+    background-position: 82% center !important;
+	}
+	
+	
+	.row.margin-0-auto {
+    margin: 0 auto !important;
+    padding-left: 0px;
+    padding-right: 8px;
+	}
+	
+}
+/* */
+
+
+/* max-width: 320px */
+@media only screen and (max-width: 320px) {
+
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-datos-personales-fila2-margin-medium-civicrm-1-contact-1-cg1-custom-1 {
+    /* background-position: 44px center; */
+    width: 107%;
+    background-position: 87% center;
+}
+.content-form .webform-conditional-processed .caja-content .capa-fechas div select {
+    /* background-position: 45px center !important; */
+    width: 123% !important;
+    background-position: 65% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila1-1-margin-medium3-civicrm-1-contact-1-address-custom-45 {
+    /* background-position: 54px center; */
+    width: 108% !important;
+    background-position: 88% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila2-1-margin-medium4-civicrm-1-contact-1-address-state-province-id {
+    /* background-position: 92px center; */
+    width: 108% !important;
+    background-position: 88% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-direccion-fila2-1-margin-medium5-civicrm-1-contact-1-address-country-id {
+    /* background-position: 72px center; */
+    width: 108% !important;
+    background-position: 88% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-idioma-fila1-1-margin-medium2-civicrm-1-contact-1-contact-preferred-language {
+    /* background-position: 100px center; */
+    width: 108% !important;
+    background-position: 88% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-mi-aportacion-fila1-2-margin-medium6-civicrm-1-contact-1-cg15-custom-43 {
+    /* background-position: 92px center; */
+    width: 108% !important;
+    background-position: 88% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-cuenta-bancaria-fila2-2-margin-medium7-civicrm-1-contact-1-cg2-custom-3 {
+    /* background-position: 115px center; */
+    /* background-position: 94px center; */
+    width: 116% !important;
+    background-position: 70% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-certificado-fiscal-fila1-1-margin-medium2-ano {
+    /* background-position: 54px center !important; */
+    width: 108% !important;
+    background-position: 86% center !important;
+}
+.content-form .webform-conditional-processed select.select#edit-submitted-todo-historico-aportaciones-fila1-1-margin-medium2-ano {
+    /* background-position: 54px center !important; */
+    width: 108% !important;
+    background-position: 86% center !important;
+}
+
+	
+}
+/* */
+
+
+
+
+
