@@ -9,116 +9,7 @@ function getUrlVars() {
 
 jQuery(function($) {
 
-    // ************** Origenes ****************
-
-    var url = window.location.pathname;
-    var cat_source = "ut01";
-    var get_source = getUrlVars()["origen"];
-    var get_campaign = getUrlVars()["pk_campaign"];
-    var get_utm_campaign = getUrlVars()["utm_campaign"];
-    var get_kwd = getUrlVars()["pk_kwd"];
-    var get_utm_medium = getUrlVars()["utm_medium"];
-    var get_utm_source = getUrlVars()["utm_source"];
-    var get_utm_content = getUrlVars()["utm_content"];
-    var get_utm_term = getUrlVars()["utm_term"];
-
-    var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
-    var source_input2 = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_50]']");
-    // origen
-    if( get_source != '' && get_source ){ // origen
-        source_input.val(get_source);
-
-        // contrib_source if exists
-        if( $("[name='submitted[civicrm_1_contribution_1_cg21_custom_104]']") ){
-          var contrib_source_input = $( "[name='submitted[civicrm_1_contribution_1_cg21_custom_104]']");
-          contrib_source_input.val(get_source);
-        }
-    }
-    else if(url.indexOf("/cat") > -1){ // AmnistiaCAT
-        source_input.val(cat_source);
-    }
-    else if( get_campaign != '' && get_campaign ){ //pk_campaign
-        source_input.val(get_campaign);
-    }
-    else if( get_utm_campaign != '' && get_utm_campaign ){ // utm_campaign
-        source_input.val(get_utm_campaign);
-        source_input2.val(get_utm_campaign);
-    }
-    // pk-kwd
-    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_55]']");
-    if( get_kwd != '' && get_kwd ){
-        source_input.val(get_kwd);
-    }
-    // utm-medium
-    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_51]']");
-    if( get_utm_medium != '' && get_utm_medium ){
-        source_input.val(get_utm_medium);
-    }
-    // utm-source
-    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_52]']");
-    if( get_utm_source != '' && get_utm_source ){
-        source_input.val(get_utm_source);
-    }
-    // utm-content
-    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_53]']");
-    if( get_utm_content != '' && get_utm_content ){
-        source_input.val(get_utm_content);
-    }
-    // utm-term
-    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_54]']");
-    if( get_utm_term != '' && get_utm_term ){
-        source_input.val(get_utm_term);
-    }
-
-    /*********** Página de confirmación ***********/
-
-    // Añadir parametro a URL para tracking a PREVIEW
-    var url = window.location.href;
-    var get_params = "";
-    // conservar los parámetros GET menos el de preview
-    if(url.includes("?")){
-      get_params = window.location.href.split("?")[1];
-      if(get_params.includes("preview")){
-        get_params = get_params.replace(/[&]?preview=1[&]?/g, "");
-      }
-    }
-    var form = $('.webform-client-form');
-    if( !form.hasClass('preview') ){
-        form.submit( function() {
-          form.attr("action",  window.location.pathname + '?preview=1' + (get_params != "" ? ('&' + get_params) : '') );
-        });
-    }
-    else {
-      form.submit( function() {
-        form.attr("action",  window.location.pathname + (get_params != "" ? ('?' + get_params) : '') );
-      });
-    }
-
-    // Añadir títulos a la página de preview
-    if( $(".webform-client-form").first().hasClass("preview") ){
-        // título confirma tus datos
-        if(url.indexOf("/cat") > -1){
-          $(".box-form-es").prepend("<h4 style='margin-top: 10px; margin-bottom: 20px; margin-left: 20px;'>¿Ens ajudes a confirmar que les teves dades són correctes?</h4>");
-          $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Dades personals</h2>");
-          $(".content-cuenta").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Mètode de pagament</h2>");
-        }else {
-          $(".box-form-es").prepend("<h4 style='margin-top: 10px; margin-bottom: 20px; margin-left: 20px;'>¿Nos ayudas a confirmar que tus datos son correctos?</h4>");
-          $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Datos personales</h2>");
-          $(".content-cuenta").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Forma de pago</h2>");
-        }
-
-        $(".preview .element-invisible").each( function() {
-                $(this).addClass('element-visible');
-                $(this).toggleClass('element-invisible');
-                $(this).append(': ');
-        });
-
-        $(".box-es-right").remove();
-        $(".box-form-es").css("width", "100%");
-
-    }
-
-    // Scrolling the active block of fields
+      // Scrolling the active block of fields
 
     if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
 
@@ -164,6 +55,30 @@ jQuery(function($) {
         });
 
         $(".content-cuenta").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(".content-donativo").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(".content-certificado").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(".content-historial").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(".content-preferencias").keyup( function(){
             $(".caja-content").removeClass('active');
             $(this).addClass('active');
 
@@ -253,9 +168,9 @@ jQuery(function($) {
     });
 
     // Show or hide/erase "other quantity" field depending on which checkbox is checked
-    $(".cuota").click(function() {
+    /*$(".cuota").click(function() {
         $(".otra_cuota").val('');
-    });
+    });*/
 
     // Cuenta entera en rojo
     if($('.account').hasClass('error') || $('.dc').hasClass('error') ){
