@@ -60,6 +60,61 @@ jQuery(function($) {
 
         });
 
+        $(".content-idioma").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+        $(".content-idioma").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(".content-donativo").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+        $(".content-donativo").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(".content-certificado").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+        $(".content-certificado").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(".content-historial").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+        $(".content-historial").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(".content-preferencias").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+        $(".content-preferencias").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
     }
     else {
         $(".caja-content").removeClass('active');
