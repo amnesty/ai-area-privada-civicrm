@@ -26,7 +26,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
     <div id="content" class="clearfix">
       <?php
         // Header
-        //include_once('header.php');
+        include_once('header.php');
       ?>
       <?php
         // Contenido
@@ -35,7 +35,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
     </div>
     <?php
         // Footer
-        //include_once('footer.php');
+        include_once('footer.php');
     ?>
   </div>
 </div>
