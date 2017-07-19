@@ -13,6 +13,18 @@ jQuery(function($) {
 
     if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
 
+        $(".content-datos-acceso").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        $(".content-datos-acceso").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
         $(".content-colaborar").hover( function(){
             $(".caja-content").removeClass('active');
             $(this).addClass('active');
@@ -243,4 +255,35 @@ jQuery(function($) {
             });
     });
 
+
+
+    attachVisibilityClassesToBoxes()
+    function attachVisibilityClassesToBoxes() {
+        var $boxes = $('.node-type-webform .webform-client-form .caja-content');
+        var bloqueDatosPersonalesIndex = 1;
+        $boxes.each(function(index) {
+            var boxClass = index == bloqueDatosPersonalesIndex ? 'caja-visible' : 'caja-hidden';
+            var $box = $(this);
+            $box.addClass(boxClass);
+        });
+    }
+
+    toggleBoxVisibility();
+    function toggleBoxVisibility() {
+        $('.node-type-webform .webform-client-form .caja-content > .form-item.webform-component').on('click', function (event){
+            $containerBox = $(this).parent();
+            if ($containerBox.hasClass('caja-visible')) {
+
+                return;
+            }
+
+            var $boxes = $('.node-type-webform .webform-client-form .caja-content');
+            $boxes.each(function(index) {
+                var $box = $(this);
+                $box.removeClass('caja-visible');
+                $box.addClass('caja-hidden');
+            });
+            $containerBox.removeClass('caja-hidden').addClass('caja-visible');
+        });
+    }
 })
