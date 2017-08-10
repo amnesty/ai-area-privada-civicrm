@@ -150,10 +150,22 @@
     .webform-conditional-processed .content-datos .margin-negativo{
          margin-left: -32px;
     }
+    @media only screen and (max-width: 848px) {
+        .webform-conditional-processed .content-datos .margin-negativo {
+            position: absolute;
+            right: 41px;
+        }
+    }
+
 
     .webform-conditional-processed .content-datos .fila-1 input,
     .webform-conditional-processed .content-datos .fila-3 input {
         max-width: 227px;
+    }
+
+    .webform-conditional-processed .content-datos .fila-3 input {
+        float: none;
+        max-width: 700px;
     }
 
     .webform-conditional-processed .content-datos a{
@@ -187,6 +199,10 @@
     .webform-conditional-processed .content-datos .number-dni,
     .webform-conditional-processed .content-datos .mobile{
     	max-width: 175px; /* 162 */
+    }
+
+    .webform-conditional-processed .content-datos .number-dni {
+    	max-width: 608px;
     }
 
     #edit-submitted-caja-datos-personales-fieldset-fila-2-civicrm-1-contact-1-email-email {
@@ -815,6 +831,16 @@
     margin: 20px 0px;
 }
 
+.webform-conditional-processed .content-datos .capa-fechas div div {
+    margin-top: 20px;
+}
+
+.webform-conditional-processed .content-datos .fila-3 label {
+    margin-top: 20px;
+}
+
+
+
 /****************************** Responsive *******************************/
 
 /* max-width: 1400px */
@@ -852,6 +878,8 @@
 /** CORRIGIENDO PROBLEMA GRAVE QUE TAPABA EL FORM ENTERO EN EL IPAD, 1 Y 2 - VER 3 Y 4 - PORTAIT - COLUMNA DCHA Y BLOQUE EXTENDIDO **/	 /* IMPORTANTE */
 	
 	.box-es-right {
+        display: flex;
+        flex-wrap: wrap;
 		width: 100%;
 		float: left; /* TENÍA ==== .box-es-right {
 										width: 100%;
@@ -924,7 +952,7 @@
     }
 
     .webform-conditional-processed .content-datos .fila-1 input, .content-datos .fila-3 input {
-        max-width: 222px;
+        max-width: 227px;
     }
 
     .webform-conditional-processed .content-datos .capa-document {
@@ -932,7 +960,7 @@
     }
 
     .webform-conditional-processed .content-datos .number-dni{
-        max-width: 200px;
+        max-width: 607px;
     }
 
     .webform-conditional-processed .content-datos .mobile {
@@ -1038,6 +1066,12 @@
     }
 }
 
+@media only screen and (min-width: 770px) and (max-width: 809px) {
+    .webform-conditional-processed .content-datos .number-dni{
+        max-width: 79%;
+    }
+}
+
 /* max-width: 769px */
 @media only screen and (max-width: 769px) {
 
@@ -1089,9 +1123,13 @@
     }
 
     .webform-conditional-processed .content-datos .number-dni{
-        max-width: 60%;
+        max-width: 73%;
     }
-
+    @media only screen and (min-width: 480px) and (max-width: 607px) {
+        .webform-conditional-processed .content-datos .number-dni{
+            max-width: 65%;
+        }
+    }
     .webform-conditional-processed .content-datos .capa-genero {
         width: 100%;
         margin-right: 0;
