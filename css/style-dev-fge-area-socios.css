@@ -477,7 +477,8 @@ fieldset.webform-component-fieldset.fila-1.clearfix.webform-component--todo--cer
 	/* .max-width-93px-elements-small-w { max-width:93px !important;} */
 	
 	.content-form .webform-conditional-processed .caja-content .capa-fechas div div {
-		width: 31% !important;
+		/*width: 31% !important;*/
+		width: 95px;
 	}
 	
 	
@@ -1169,6 +1170,10 @@ fieldset.webform-component-fieldset.fila-1.clearfix.webform-component--todo--cer
 	.content-form fieldset {
     	margin-top: 0px !important;
 	}
+	fieldset.webform-component--caja-datos-personales--fieldset-fila-2 {
+		margin-top: 20px !important;
+	}
+	
 	.border-radius-form.shadow.capa-select.form-item.webform-component.webform-component-select.webform-component--todo--mi-aportacion--fila1-2--margin-medium6--civicrm-1-contact-1-cg15-custom-43.floating-left-element {
     	margin-top: 20px !important;
 	}
