@@ -204,7 +204,18 @@ jQuery(function($) {
     }
 
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
-    $('a.popup_little').colorbox({iframe:true, width:"50%", height:"20%", "scrolling":false});
+    $('a.popup_little').colorbox({iframe:true, width:"50%", onComplete: function () {
+        var y = $('.cboxIframe').height($('.cboxIframe').contents().height());
+        $(this).colorbox.resize({ width:"50%", height: y });
+    }
+    });
+
+    $(document).bind('cbox_complete', function() {
+        setTimeout(function () {
+            var y = $('.cboxIframe').height($('.cboxIframe').contents().height());
+            $('a.popup_little').resize({ width:"50%", height: y });
+        }, 500);
+    });
 
     // popups colorbox
     function refresh_popups(){
@@ -255,7 +266,7 @@ jQuery(function($) {
             });
     });
 
-
+    $('.webform-component--caja-preferncias-comunicacion--fila-1-preferencias--civicrm-1-contact-1-cg10-custom-26 label').removeClass('element-invisible');
 
     attachVisibilityClassesToBoxes()
     function attachVisibilityClassesToBoxes() {
@@ -284,6 +295,13 @@ jQuery(function($) {
                 $box.addClass('caja-hidden');
             });
             $containerBox.removeClass('caja-hidden').addClass('caja-visible');
+            event.preventDefault();
+            $('html,body').animate(
+                {
+                    scrollTop: $(this).offset().top
+                },
+                0
+            );
         });
     }
 })

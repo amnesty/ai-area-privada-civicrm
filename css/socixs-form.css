@@ -878,6 +878,8 @@
 /** CORRIGIENDO PROBLEMA GRAVE QUE TAPABA EL FORM ENTERO EN EL IPAD, 1 Y 2 - VER 3 Y 4 - PORTAIT - COLUMNA DCHA Y BLOQUE EXTENDIDO **/	 /* IMPORTANTE */
 	
 	.box-es-right {
+        display: flex;
+        flex-wrap: wrap;
 		width: 100%;
 		float: left; /* TENÍA ==== .box-es-right {
 										width: 100%;
