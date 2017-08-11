@@ -204,11 +204,7 @@ jQuery(function($) {
     }
 
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
-    $('a.popup_little').colorbox({iframe:true, width:"50%", onComplete: function () {
-        var y = $('.cboxIframe').height($('.cboxIframe').contents().height());
-        $(this).colorbox.resize({ width:"50%", height: y });
-    }
-    });
+    $('a.popup_little').colorbox({iframe:true, width:"50%", height:"20%", "scrolling":false});
 
     $(document).bind('cbox_complete', function() {
         setTimeout(function () {
