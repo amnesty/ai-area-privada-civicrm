@@ -294,7 +294,7 @@ jQuery(function($) {
             event.preventDefault();
             $('html,body').animate(
                 {
-                    scrollTop: $(this).offset().top
+                    scrollTop: $(this).offset().top - 55
                 },
                 0
             );
