@@ -54,6 +54,7 @@ span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address,
 .content-form .caja-content {
 	padding: 5px 20px 20px;
 	margin: 10px 0px;
+  border: #000 1px solid;
 }
 .clearfix:after {
 	visibility: hidden;

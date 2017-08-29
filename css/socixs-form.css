@@ -29,7 +29,7 @@
     }
 
     .box-form-es .webform-conditional-processed .input-generic {
-        width: 100%; 
+        width: 100%;
     }
 
     @media only screen and (max-width: 1023px) {
@@ -49,13 +49,13 @@
         display: none;
     }
 
-    .webform-conditional-processed .content-colaborar,
+    /*.webform-conditional-processed .content-colaborar,
     .webform-conditional-processed .content-datos,
     .webform-conditional-processed .content-direccion,
     .webform-conditional-processed .content-cuenta {
         padding: 0px 20px 20px;
         margin: 0px;
-    }
+    }*/
 
     .webform-conditional-processed .content-form .padding-medium{
         padding: 20px;
@@ -75,7 +75,19 @@
         margin-top: 10px;
     }
 
-        /* Esconder mensajes de info / estado */
+    .webform-conditional-processed .content-datos .capa-fechas {
+      clear: left;
+    }
+
+    .webform-conditional-processed .content-datos .capa-fechas div div {
+        margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-datos .fila-3 label {
+        margin-top: 20px;
+    }
+
+    /* Esconder mensajes de info / estado */
     .status {
         visibility: hidden;
     }
@@ -164,7 +176,7 @@
     }
 
     .webform-conditional-processed .content-datos .fila-3 input {
-        float: none;
+        /*float: none;*/
         max-width: 700px;
     }
 
@@ -196,9 +208,24 @@
         background-position: 90px center;
     }
 
-    .webform-conditional-processed .content-datos .number-dni,
+    /*.webform-conditional-processed .content-datos .number-dni,
     .webform-conditional-processed .content-datos .mobile{
     	max-width: 175px; /* 162 */
+    /*}*/
+
+    .webform-conditional-processed .content-datos .mobile,
+    .webform-conditional-processed .content-datos .phone {
+      max-width: 345px;
+      width: 345px;
+      float: left;
+    }
+
+    .webform-conditional-processed .content-datos .mobile{
+      clear: both;
+    }
+
+    webform-conditional-processed .content-datos .phone {
+      float: left;
     }
 
     .webform-conditional-processed .content-datos .number-dni {
@@ -572,18 +599,18 @@
         height: 100px;
         font-size: 46px;
         text-align: center;
-        
+
         clear: both;
         background: #f1e60d;
         border: 0;
 		/** IMPORTANT == COMMENT PARA APLICAR GRID DE BOOTSTRAP == FELIPEGILESTUDIO **/
 		/*
         margin-top: -130px;
-        margin-left: 71%; 
+        margin-left: 71%;
 		float: left;
 		*/
-		
-		
+
+
         /*line-height: 100px;*/
     }
 
@@ -831,14 +858,6 @@
     margin: 20px 0px;
 }
 
-.webform-conditional-processed .content-datos .capa-fechas div div {
-    margin-top: 20px;
-}
-
-.webform-conditional-processed .content-datos .fila-3 label {
-    margin-top: 20px;
-}
-
 
 
 /****************************** Responsive *******************************/
@@ -874,9 +893,9 @@
     }
 
 
-/** CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/ 
+/** CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/
 /** CORRIGIENDO PROBLEMA GRAVE QUE TAPABA EL FORM ENTERO EN EL IPAD, 1 Y 2 - VER 3 Y 4 - PORTAIT - COLUMNA DCHA Y BLOQUE EXTENDIDO **/	 /* IMPORTANTE */
-	
+
 	.box-es-right {
         display: flex;
         flex-wrap: wrap;
@@ -886,8 +905,8 @@
 										float: none;
     								} */
 	}
-	
-/** end CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/ 
+
+/** end CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/
 
 
     .box-es-right .three-column {
@@ -1327,13 +1346,13 @@
     }
 
 
-/** CUSTOMS - CAMBIANDO ASPECTO ICONO == FELIPEGILESTUDIO - 20/SEPTEMBER 2016 **/ 	
-	
+/** CUSTOMS - CAMBIANDO ASPECTO ICONO == FELIPEGILESTUDIO - 20/SEPTEMBER 2016 **/
+
 	span.image-icon-titles img {
     margin: 0 auto;
     top: 0px;
     position: relative;
-	
+
 	}
 
     .webform-conditional-processed .content-datos .capa-document {
