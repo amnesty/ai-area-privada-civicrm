@@ -74,6 +74,10 @@
     .webform-conditional-processed .content-datos-acceso .col-md-4 input {
         margin-top: 10px;
     }
+    .webform-component--caja-datos-acceso--fila-1-acceso--usuario input {
+        background: #ececec;
+    }
+
 
         /* Esconder mensajes de info / estado */
     .status {
