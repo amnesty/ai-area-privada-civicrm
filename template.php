@@ -15,9 +15,6 @@ function custom_settings_form_submit($form, &$form_state) {
   global $user;
   $currentUser = user_load($user->uid);
   $currentUser->pass = $form['submitted']['caja_datos_acceso']['fila_1_acceso']['nueva_contrasena']['#value'];
-  if ($currentUser->name != $form['submitted']['caja_datos_acceso']['fila_1_acceso']['usuario']['#value']) {
-    $currentUser->name = $form['submitted']['caja_datos_acceso']['fila_1_acceso']['usuario']['#value'];
-  }
   user_save((object) array('uid' => $currentUser->uid), (array) $currentUser);
 }
 
