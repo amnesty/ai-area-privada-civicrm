@@ -557,12 +557,6 @@
         color: #000;
     }
 
-     .webform-conditional-processed input.button-primary {
-        -webkit-appearance: none;
-         border: 2px solid #000;
-         border-radius: 17px;
-    }
-
     /* boton enviar y siguiente */
     .box-form-es .button-primary,
     .box-form-es .webform-next {
@@ -587,7 +581,15 @@
         /*line-height: 100px;*/
     }
 
-    /* boton previo */
+    .webform-conditional-processed input.button-primary,
+    .box-form-es .button-primary {
+        -webkit-appearance: none;
+        border: 2px solid #000;
+        border-radius: 17px;
+    }
+
+
+/* boton previo */
     .box-form-es .webform-previous {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         max-width: 315px;

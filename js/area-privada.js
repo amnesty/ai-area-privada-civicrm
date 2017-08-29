@@ -264,7 +264,7 @@ jQuery(function($) {
 
     $('.webform-component--caja-preferncias-comunicacion--fila-1-preferencias--civicrm-1-contact-1-cg10-custom-26 label').removeClass('element-invisible');
 
-    attachVisibilityClassesToBoxes()
+    attachVisibilityClassesToBoxes();
     function attachVisibilityClassesToBoxes() {
         var $boxes = $('.node-type-webform .webform-client-form .caja-content');
         var bloqueDatosPersonalesIndex = 1;
