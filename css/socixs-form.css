@@ -49,13 +49,13 @@
         display: none;
     }
 
-    /*.webform-conditional-processed .content-colaborar,
+    .webform-conditional-processed .content-colaborar,
     .webform-conditional-processed .content-datos,
     .webform-conditional-processed .content-direccion,
     .webform-conditional-processed .content-cuenta {
         padding: 0px 20px 20px;
         margin: 0px;
-    }*/
+    }
 
     .webform-conditional-processed .content-form .padding-medium{
         padding: 20px;
@@ -180,7 +180,7 @@
     }
 
     .webform-conditional-processed .content-datos .fila-3 input {
-        /*float: none;*/
+        float: none;
         max-width: 700px;
     }
 
@@ -212,12 +212,12 @@
         background-position: 90px center;
     }
 
-    /*.webform-conditional-processed .content-datos .number-dni,
-    .webform-conditional-processed .content-datos .mobile{
+    .webform-conditional-processed .content-datos .number-dni/*,
+    .webform-conditional-processed .content-datos .mobile*/{
     	max-width: 175px; /* 162 */
-    /*}*/
+    }
 
-    .webform-conditional-processed .content-datos .mobile,
+    /*.webform-conditional-processed .content-datos .mobile,
     .webform-conditional-processed .content-datos .phone {
       max-width: 345px;
       width: 345px;
@@ -230,7 +230,7 @@
 
     webform-conditional-processed .content-datos .phone {
       float: left;
-    }
+    }*/
 
     .webform-conditional-processed .content-datos .number-dni {
     	max-width: 608px;
