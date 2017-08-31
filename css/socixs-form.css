@@ -74,6 +74,10 @@
     .webform-conditional-processed .content-datos-acceso .col-md-4 input {
         margin-top: 10px;
     }
+    .webform-component--caja-datos-acceso--fila-1-acceso--usuario input {
+        background: #ececec;
+    }
+
 
     .webform-conditional-processed .content-datos .capa-fechas {
       clear: left;
@@ -584,12 +588,6 @@
         color: #000;
     }
 
-     .webform-conditional-processed input.button-primary {
-        -webkit-appearance: none;
-         border: 2px solid #000;
-         border-radius: 17px;
-    }
-
     /* boton enviar y siguiente */
     .box-form-es .button-primary,
     .box-form-es .webform-next {
@@ -614,7 +612,15 @@
         /*line-height: 100px;*/
     }
 
-    /* boton previo */
+    .webform-conditional-processed input.button-primary,
+    .box-form-es .button-primary {
+        -webkit-appearance: none;
+        border: 2px solid #000;
+        border-radius: 17px;
+    }
+
+
+/* boton previo */
     .box-form-es .webform-previous {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         max-width: 315px;
@@ -926,7 +932,7 @@
 
     .box-form-es .webform-conditional-processed .button-primary{
         float: none;
-        margin: 0 auto;
+        margin: 0 auto 0 408px;
     }
 
     .preview .webform-submit {
@@ -1063,7 +1069,7 @@
 
     .box-form-es .webform-conditional-processed .button-primary{
         float: none;
-        margin: 0 auto;
+        margin: 0 auto 0 250px;
     }
 
     .preview .webform-submit {
@@ -1360,7 +1366,7 @@
     }
 
     .webform-conditional-processed .content-datos .number-dni {
-        max-width: 52%;
+        max-width: 49%;
     }
 
     .webform-conditional-processed .content-datos .capa-profesion {
@@ -1475,6 +1481,7 @@
         margin-top: -150px;
         margin-left: 0;
         margin-bottom: 0;
+        width: 78vw;
     }
 
     .webform-conditional-processed .content-end-form {

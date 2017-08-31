@@ -1,7 +1,7 @@
 <?php
 
 function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'webform_client_form_148') {
+  if ($form_id == 'webform_client_form_148' || $form_id == 'webform_client_form_169') {
     global $user;
     $currentUser = user_load($user->uid);
     $form['submitted']['caja_datos_acceso']['fila_1_acceso']['usuario']['#value'] = $currentUser->name;
@@ -15,9 +15,6 @@ function custom_settings_form_submit($form, &$form_state) {
   global $user;
   $currentUser = user_load($user->uid);
   $currentUser->pass = $form['submitted']['caja_datos_acceso']['fila_1_acceso']['nueva_contrasena']['#value'];
-  if ($currentUser->name != $form['submitted']['caja_datos_acceso']['fila_1_acceso']['usuario']['#value']) {
-    $currentUser->name = $form['submitted']['caja_datos_acceso']['fila_1_acceso']['usuario']['#value'];
-  }
   user_save((object) array('uid' => $currentUser->uid), (array) $currentUser);
 }
 
