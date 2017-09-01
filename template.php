@@ -1,14 +1,14 @@
 <?php
 
 function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'webform_client_form_148' || $form_id == 'webform_client_form_169') {
+  //if ($form_id == 'webform_client_form_148' || $form_id == 'webform_client_form_169') {
     global $user;
     $currentUser = user_load($user->uid);
     $form['submitted']['caja_datos_acceso']['fila_1_acceso']['usuario']['#value'] = $currentUser->name;
     $form['#submit'][] = 'custom_settings_form_submit';
 
     $form['#validate'][] = 'validate_custom';
-  }
+  //}
 }
 
 function custom_settings_form_submit($form, &$form_state) {
