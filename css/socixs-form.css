@@ -188,7 +188,7 @@
     }
 
     .webform-conditional-processed .content-datos .fila-3 input {
-        float: none;
+        /*float: none;*/
         max-width: 700px;
     }
 
@@ -220,31 +220,30 @@
         background-position: 90px center;
     }
 
-    .webform-conditional-processed .content-datos .number-dni/*,
-    .webform-conditional-processed .content-datos .mobile*/{
+    .webform-conditional-processed .content-datos .number-dni {
     	max-width: 175px; /* 162 */
     }
 
-    /*.webform-conditional-processed .content-datos .mobile,
+    .webform-conditional-processed .content-datos .mobile,
     .webform-conditional-processed .content-datos .phone {
       max-width: 345px;
-      width: 345px;
       float: left;
     }
 
     .webform-conditional-processed .content-datos .mobile{
       clear: both;
+      margin-bottom: 20px;
     }
 
     webform-conditional-processed .content-datos .phone {
       float: left;
-    }*/
+    }
 
     .webform-conditional-processed .content-datos .number-dni {
     	max-width: 608px;
     }
 
-    #edit-submitted-caja-datos-personales-fieldset-fila-2-civicrm-1-contact-1-email-email {
+    .webform-conditional-processed .content-datos .email {
         float: none;
         max-width: 702px;
         margin-bottom: 20px;
@@ -276,27 +275,6 @@
         background-position: 120px center;
     }
 
-    /* Content IDIOMA ------------------------ */
-
-    .webform-conditional-processed .content-idioma .capa-language{
-        width: 150px;
-        overflow: hidden;
-        float: left;
-        border: 2px solid #000;
-        height: 50px;
-        margin-right: 10px;
-    }
-
-    .webform-conditional-processed .content-idioma .language {
-    	  width: 112%;
-        border:0;
-    }
-
-    .webform-conditional-processed .content-idioma select.language {
-        background-position: 120px center;
-    }
-
-
     .webform-conditional-processed .content-datos .fila-3 label {
         float: left;
     }
@@ -317,12 +295,6 @@
 
     .webform-conditional-processed .content-datos select.profesion {
         background-position: 230px center;
-    }
-
-    @media only screen and (min-width: 768px) {
-        .webform-component--caja-idioma--margin-medium-language {
-            margin-top: 20px;
-        }
     }
 
     /* content-direccion ----------------------------------------------------- */
@@ -391,7 +363,26 @@
         margin-top: 20px;
     }
 
-    /* content-idioma */
+    /* content-idioma ----------- */
+
+    .webform-conditional-processed .content-idioma .capa-language{
+        width: 150px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-idioma .language {
+        width: 112%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-idioma select.language {
+        background-position: 120px center;
+    }
+
     .webform-conditional-processed .content-idioma .webform-component--caja-idioma--margin-medium-language:after {
         content: "";
         display: table;
@@ -413,18 +404,25 @@
         border: none;
     }
 
+    .webform-conditional-processed .content-idioma .webform-component--caja-idioma--margin-medium-language--info2 {
+        line-height: 50px;
+        float: left;
+    }
+
     @media only screen and (min-width: 993px) {
         .webform-conditional-processed .content-idioma .capa-language select.language{
             background-position: 290px center;
         }
     }
 
-    .webform-conditional-processed .content-idioma .webform-component--caja-idioma--margin-medium-language--info2 {
-        line-height: 50px;
-        float: left;
+    @media only screen and (min-width: 768px) {
+        .webform-component--caja-idioma--margin-medium-language {
+            margin-top: 20px;
+        }
     }
 
     /* content-certificado -------------------------------------------------*/
+
     .webform-conditional-processed .content-certificado .capa-select {
         width: 80%;
         height: 50px;
@@ -456,6 +454,7 @@
     }
 
     /* content-preferencias ----------------------------------------------------- */
+
      .webform-conditional-processed .content-preferencias .caja-checkbox {
          width: 42%;
          margin-bottom: 20px;
@@ -532,6 +531,7 @@
     }
 
     /* content-donativo ----------------------------------------------------- */
+
     .webform-conditional-processed .content-donativo p {
         padding: 0;
     }
@@ -624,15 +624,6 @@
         clear: both;
         background: #f1e60d;
         border: 0;
-		/** IMPORTANT == COMMENT PARA APLICAR GRID DE BOOTSTRAP == FELIPEGILESTUDIO **/
-		/*
-        margin-top: -130px;
-        margin-left: 71%;
-		float: left;
-		*/
-
-
-        /*line-height: 100px;*/
     }
 
     .webform-conditional-processed input.button-primary,
@@ -1153,7 +1144,8 @@
         background-position: 80% center;
     }
 
-    .webform-conditional-processed .content-datos .fila-1 input, .content-datos .fila-3 input {
+    .webform-conditional-processed .content-datos .fila-1 input
+    /*.webform-conditional-processed .content-datos .fila-3 input*/ {
         max-width: 100%;
         margin-top: 20px;
     }
@@ -1333,7 +1325,7 @@
         margin-bottom: 20px;
     }
 
-    @media only screen and (max-width: 768px) {
+    /*@media only screen and (max-width: 768px) {
         .webform-component--caja-datos-personales--titulo-datos h2 {
             margin-bottom: 0;
         }
@@ -1342,9 +1334,9 @@
         .webform-component--caja-idioma--titulo-idioma h2 {
             margin-bottom: 0;
         }
-    }
+    }*/
 
-    .box-form-es img {
+    .box-form-es h2 img { /* dejamos de mostrar los iconos en resoluciones móviles */
         display: none;
     }
 
