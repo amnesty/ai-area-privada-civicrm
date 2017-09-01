@@ -276,6 +276,8 @@
         background-position: 120px center;
     }
 
+    /* Content IDIOMA ------------------------ */
+
     .webform-conditional-processed .content-idioma .capa-language{
         width: 150px;
         overflow: hidden;
@@ -530,12 +532,25 @@
     }
 
     /* content-donativo ----------------------------------------------------- */
-    .webform-conditional-processed .content-donativo .webform-component--caja-quiero-hacer-un-donativo--imagen-donativo p {
+    .webform-conditional-processed .content-donativo p {
         padding: 0;
     }
 
-    .webform-conditional-processed .content-donativo .webform-component--caja-quiero-hacer-un-donativo--imagen-donativo img {
-        margin: 30px 0 30px 10px;
+    .webform-conditional-processed .content-donativo .img-donativo {
+        margin: 0;
+        max-height: 500px;
+    }
+
+    .webform-conditional-processed .content-donativo .fila-2 input {
+      max-width: 200px;
+      float: left;
+    }
+
+    .webform-conditional-processed .content-donativo .fila-2 label{
+      float: left;
+    }
+    .webform-conditional-processed .content-donativo .fila-2 span {
+      font-size: 25px;
     }
 
     /* content-end-form ----------------------------------------------------- */
