@@ -194,7 +194,6 @@ jQuery(function($) {
       }
     });
 
-
     // Cuenta entera en rojo
     if($('.account').hasClass('error') || $('.dc').hasClass('error') ){
             $('.entity').css("border", "#f00 2px solid");
@@ -276,6 +275,8 @@ jQuery(function($) {
     }
 
     toggleBoxVisibility();
+    masMenos();
+
     function toggleBoxVisibility() {
         $('.node-type-webform .webform-client-form .caja-content > .form-item.webform-component').on('click', function (event){
             $containerBox = $(this).parent();
@@ -298,6 +299,22 @@ jQuery(function($) {
                 },
                 0
             );
+
+            masMenos();
         });
+    }
+
+    function masMenos() {
+      // Botones de + y de -
+      $(".mas").remove();
+      $(".menos").remove();
+      $(".caja-content").each(function(){
+        if($(this).hasClass("caja-hidden")){
+            $(this).find("h2").after('<img alt="+" src="../sites/all/themes/ai-area-privada-civicrm/images/arrow.png" class="mas" />');
+        }
+        else {
+            $(this).find("h2").after('<img alt="+" src="../sites/all/themes/ai-area-privada-civicrm/images/arrowup.png" class="menos" />');
+        }
+      });
     }
 })

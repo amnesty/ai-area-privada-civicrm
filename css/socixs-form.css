@@ -49,13 +49,13 @@
         display: none;
     }
 
-    .webform-conditional-processed .content-colaborar,
+    /*.webform-conditional-processed .content-colaborar,
     .webform-conditional-processed .content-datos,
     .webform-conditional-processed .content-direccion,
     .webform-conditional-processed .content-cuenta {
         padding: 0px 20px 20px;
         margin: 0px;
-    }
+    }*/
 
     .webform-conditional-processed .content-form .padding-medium{
         padding: 20px;
@@ -94,6 +94,14 @@
     /* Esconder mensajes de info / estado */
     .status {
         visibility: hidden;
+    }
+
+    /* iconos + y - deslegables */
+    .mas, .menos {
+      float:right;
+      position: relative;
+      /*height: 10px;*/
+      margin-top: 5px;
     }
 
 
