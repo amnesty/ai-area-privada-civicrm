@@ -21,11 +21,12 @@
     }
 
     .box-form-es p{
-        font-size: 20px;
-        color: #000000;
-        padding: 0px 20px;
-        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-        text-align: justify;
+      font-size: 15px;
+      color: #000000;
+      padding: 0px 20px;
+      font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+      text-align: justify;
+      font-style: italic;
     }
 
     .box-form-es .webform-conditional-processed .input-generic {
@@ -49,14 +50,6 @@
         display: none;
     }
 
-    /*.webform-conditional-processed .content-colaborar,
-    .webform-conditional-processed .content-datos,
-    .webform-conditional-processed .content-direccion,
-    .webform-conditional-processed .content-cuenta {
-        padding: 0px 20px 20px;
-        margin: 0px;
-    }*/
-
     .webform-conditional-processed .content-form .padding-medium{
         padding: 20px;
     }
@@ -77,7 +70,6 @@
     .webform-component--caja-datos-acceso--fila-1-acceso--usuario input {
         background: #ececec;
     }
-
 
     .webform-conditional-processed .content-datos .capa-fechas {
       clear: left;
@@ -102,6 +94,17 @@
       position: relative;
       /*height: 10px;*/
       margin-top: 5px;
+    }
+
+    /* ---------- Página de LOGIN ---------------- */
+
+    .region-content{
+      width: 100%;
+    }
+
+    #block-user-login {
+      margin: 0 auto;
+      width: 50%;
     }
 
 
