@@ -1453,13 +1453,13 @@
     }
 
     .webform-conditional-processed .content-cuenta .iban-numero {
-        max-width: 100%;
+        max-width: 71%;
         display: block;
         float: none;
     }
 
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
-        width: 50%;
+        width: 24%;
         float: left;
     }
 
