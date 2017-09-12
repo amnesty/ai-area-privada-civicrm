@@ -73,6 +73,7 @@
     }
     .webform-conditional-processed .content-datos-acceso .col-md-4 input {
         margin-top: 10px;
+        z-index: 1;
     }
     .webform-component--caja-datos-acceso--fila-1-acceso--usuario input {
         background: #ececec;
