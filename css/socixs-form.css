@@ -1324,7 +1324,30 @@
         margin-right: 4px;
     }
 
+    .webform-conditional-processed .caja-checkbox {
+        float: none !important;
+    }
+
+    .webform-conditional-processed .caja-checkbox div {
+        float: none !important;
+    }
+
+    .webform-component--caja-quiero-hacer-un-donativo--fila-1-donativo--civicrm-1-contribution-1-contribution-total-amount {
+        position: relative;
+    }
+    
+    /*.content-form .webform-conditional-processed .caja-content label .box-form-es span {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 1;
+    }*/
+
     .box-form-es span {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 1;
         font-size: 24px;
     }
 
