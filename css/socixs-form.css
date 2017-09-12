@@ -1158,7 +1158,7 @@
     }
 
     .webform-conditional-processed .content-idioma .capa-language {
-        width: 80% !important;
+        width: 61% !important;
         margin-top: 20px;
     }
 
@@ -1329,7 +1329,7 @@
     }
 
     .webform-conditional-processed .caja-checkbox div {
-        float: none !important;
+        /*float: none !important;*/
     }
 
     .webform-component--caja-quiero-hacer-un-donativo--fila-1-donativo--civicrm-1-contribution-1-contribution-total-amount {
