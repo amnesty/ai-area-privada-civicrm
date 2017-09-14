@@ -7070,7 +7070,8 @@ x:-o-prefocus {
     text-decoration: none
 }
 .footer-legal__link:hover {
-    text-decoration: underline
+    text-decoration: underline;
+    color: #fff;
 }
 .footer-list__btn,
 .footer-list__link--item,
