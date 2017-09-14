@@ -626,7 +626,8 @@
     /* boton enviar y siguiente */
     .box-form-es .button-primary,
     .box-form-es .webform-next,
-    .form-actions input[type="submit"] {
+    .form-actions input[type="submit"],
+    .form-actions button {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         max-width: 270px; /*315px;*/
         width: 100%;
