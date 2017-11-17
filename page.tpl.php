@@ -1,7 +1,7 @@
 <?php
 
 // Globals
-include_once('config.php'); // variables dependientes del entorno
+//include_once('config.php'); // variables dependientes del entorno
 include_once('globals.php'); // textos, estructura, etc comun
 include_once('meta-tags.php'); // meta tags para redes sociales
 
