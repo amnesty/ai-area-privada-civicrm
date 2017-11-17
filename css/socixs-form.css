@@ -73,6 +73,7 @@
     }
     .webform-conditional-processed .content-datos-acceso .col-md-4 input {
         margin-top: 10px;
+        z-index: 1;
     }
     .webform-component--caja-datos-acceso--fila-1-acceso--usuario input {
         background: #ececec;
@@ -1185,7 +1186,7 @@
     }
 
     .webform-conditional-processed .content-idioma .capa-language {
-        width: 80% !important;
+        width: 61% !important;
         margin-top: 20px;
     }
 
@@ -1351,7 +1352,30 @@
         margin-right: 4px;
     }
 
+    .webform-conditional-processed .caja-checkbox {
+        float: none !important;
+    }
+
+    .webform-conditional-processed .caja-checkbox div {
+        /*float: none !important;*/
+    }
+
+    .webform-component--caja-quiero-hacer-un-donativo--fila-1-donativo--civicrm-1-contribution-1-contribution-total-amount {
+        position: relative;
+    }
+    
+    /*.content-form .webform-conditional-processed .caja-content label .box-form-es span {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 1;
+    }*/
+
     .box-form-es span {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 1;
         font-size: 24px;
     }
 
@@ -1457,13 +1481,13 @@
     }
 
     .webform-conditional-processed .content-cuenta .iban-numero {
-        max-width: 100%;
+        max-width: 71%;
         display: block;
         float: none;
     }
 
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
-        width: 50%;
+        width: 24%;
         float: left;
     }
 
