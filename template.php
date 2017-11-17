@@ -25,7 +25,7 @@ function validate_custom($form, &$form_state) {
   }
 }
 
-function areaprivada_theme() {
+/*function areaprivada_theme() {
     $items = array();
     // create custom user-login.tpl.php
 
@@ -66,4 +66,4 @@ function areaprivada_preprocess_user_register_form(&$vars) {
 
 function areaprivada_preprocess_user_pass(&$vars) {
   $vars['intro_text'] = t('This is my super awesome request new password form');
-}
+}*/
