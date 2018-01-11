@@ -326,8 +326,8 @@
     }
 
     .webform-conditional-processed .content-direccion .numero-bloque{
-        max-width: 370px;
-        margin-top: 20px;
+        max-width: 290px;
+        margin-top: 0px;
     }
 
     .webform-conditional-processed .content-direccion .postal{
@@ -1608,16 +1608,21 @@
         text-align: center;
     }
 }
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-    .webform-conditional-processed .content-datos .mobile{
-        margin-top: 0;
-    }
-}
 
-@media only screen and (min-width: 1024px) {
-    .webform-conditional-processed .content-direccion .numero-bloque{
-        max-width: 290px;
-        margin-top: 0;
+
+@media only screen and (min-width: 1024px) and (max-width: 1052px){
+
+    .webform-conditional-processed .content-direccion .numero-bloque {
+	      max-width: 669px;
+	      margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-direccion .capa-provincia, .webform-conditional-processed .content-direccion .capa-pais {
+    	margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-direccion .poblacion {
+    	max-width: 368px;
     }
 }
 
@@ -1633,5 +1638,28 @@
 
     .webform-conditional-processed .content-direccion .capa-provincia {
         margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-direccion .nombre-via {
+	      max-width: 250px;
+    }
+}
+
+/*@media only screen and (min-width: 768px) and (max-width: 987px) {
+
+}*/
+
+/* Movil */
+@media only screen and (min-width: 480px) and (max-width: 987px) {
+    .webform-conditional-processed .content-datos .mobile{
+        margin-top: 0;
+    }
+
+    .webform-conditional-processed .content-direccion .numero-bloque {
+    	margin-top: 20px;
+    }
+
+    .content-form fieldset {
+    	margin-top: 0px;
     }
 }
