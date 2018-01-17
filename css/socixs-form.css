@@ -1,5 +1,9 @@
 /* CSS específico del formulario de socixs ------------------- */
 
+    #content-area{
+      margin-bottom: 120px;
+    }
+
     .content-form .text-intro {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         font-size: 18px;
@@ -1651,7 +1655,7 @@
 
 /* Movil */
 @media only screen and (min-width: 480px) and (max-width: 987px) {
-    .webform-conditional-processed .content-datos .mobile{
+    .webform-conditional-processed .content-datos .mobile {
         margin-top: 0;
     }
 

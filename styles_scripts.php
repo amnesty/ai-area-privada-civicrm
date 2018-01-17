@@ -15,4 +15,5 @@
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/style-form.css">
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/socixs-form.css">
+  <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/area-privada.css">
   <script type="text/javascript" src="<?php print $theme_path; ?>/js/area-privada.js"></script>

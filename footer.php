@@ -7,11 +7,13 @@
                   <?php if($cat){ ?>
                     <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacte</a> &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacitat</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del lloc</a>
+                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del lloc</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="#" class="footer-legal__link">Baixa</a>
                   <?php }else{ ?>
                     <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a>
+                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="#" class="footer-legal__link">Baja</a>
                   <?php } ?>
                 </p>
                 <p class="footer-copyright">©<?php echo date("Y"); ?> Amnistía Internacional España</p>
