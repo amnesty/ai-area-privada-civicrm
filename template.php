@@ -24,3 +24,46 @@ function validate_custom($form, &$form_state) {
     form_set_error('submitted][caja_datos_acceso][fila_1_acceso][repite_contrasena', t('Las contraseñas deben coincidir.'));
   }
 }
+
+/*function areaprivada_theme() {
+    $items = array();
+    // create custom user-login.tpl.php
+
+    $items['user_login'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'areaprivada') . '/templates',
+    'template' => 'user-login',
+    'preprocess functions' => array(
+      'areaprivada_preprocess_user_login'
+      ),
+  );
+  $items['user_register_form'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'areaprivada') . '/templates',
+    'template' => 'user-register-form',
+    'preprocess functions' => array(
+      'areaprivada_preprocess_user_register_form'
+    ),
+  );
+  $items['user_pass'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'areaprivada') . '/templates',
+    'template' => 'user-pass',
+    'preprocess functions' => array(
+      'areaprivada_preprocess_user_pass'
+    ),
+  );
+  return $items;
+}
+
+function areaprivada_preprocess_user_login(&$vars) {
+  $vars['intro_text'] = t('This is my awesome login form');
+}
+
+function areaprivada_preprocess_user_register_form(&$vars) {
+  $vars['intro_text'] = t('This is my super awesome reg form');
+}
+
+function areaprivada_preprocess_user_pass(&$vars) {
+  $vars['intro_text'] = t('This is my super awesome request new password form');
+}*/

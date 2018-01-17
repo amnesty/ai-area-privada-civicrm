@@ -146,7 +146,7 @@ jQuery(function($) {
     });
 
     // Province label
-    $('.provincia option[value=""]').text("-Provincia-");
+    //$('.provincia option[value=""]').text("-Provincia-");
 
     // Etiquetas de fecha de nacimiento
     url = window.location.href;
@@ -304,17 +304,32 @@ jQuery(function($) {
         });
     }
 
+    // Borrar campos de nueva contraseña
+    $(".password").val("");
+
     function masMenos() {
       // Botones de + y de -
       $(".mas").remove();
       $(".menos").remove();
       $(".caja-content").each(function(){
         if($(this).hasClass("caja-hidden")){
-            $(this).find("h2").after('<img alt="+" src="../sites/all/themes/ai-area-privada-civicrm/images/arrow.png" class="mas" />');
+            $(this).find("h2").after('<img alt="+" src="/civicrm/sites/all/themes/ai-area-privada-civicrm/images/arrow.png" class="mas" />');
         }
         else {
-            $(this).find("h2").after('<img alt="+" src="../sites/all/themes/ai-area-privada-civicrm/images/arrowup.png" class="menos" />');
+            $(this).find("h2").after('<img alt="+" src="/civicrm/sites/all/themes/ai-area-privada-civicrm/images/arrowup.png" class="menos" />');
         }
       });
     }
+
+    // Mover texto del pie a la barra del boton
+    if( $(".webform-conditional-processed").length > 0 ){
+      var submit = $(".form-actions");
+      $(".footer__bottom").prepend(submit);
+
+      $(".form-submit").click(function(){
+          $(".webform-client-form").submit();
+      });
+
+    }
+
 })

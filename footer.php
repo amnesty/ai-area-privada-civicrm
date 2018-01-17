@@ -2,6 +2,22 @@
 <footer class="footer print-hidden">
     <div class="footer__container">
         <div class="grid footer__bottom">
+            <div class="footer__col--left">
+                <p class="footer-legal">
+                  <?php if($cat){ ?>
+                    <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacte</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacitat</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del lloc</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="#" class="footer-legal__link">Baixa</a>
+                  <?php }else{ ?>
+                    <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="#" class="footer-legal__link">Baja</a>
+                  <?php } ?>
+                </p>
+                <p class="footer-copyright">©<?php echo date("Y"); ?> Amnistía Internacional España</p>
+            </div>
             <div class="footer__col--right">
                 <ul class="social-list print-hidden">
                   <?php if($cat){ ?>
@@ -16,20 +32,6 @@
                     <li class="social-list__item"><a href="http://instagram.com/amnistiaespana/" class="social-list__link--instagram" data-ga="event,Social,click,instagram">Síguenos en Instagram</a></li>
                   <?php } ?>
                 </ul>
-            </div>
-            <div class="footer__col--left">
-                <p class="footer-legal">
-                  <?php if($cat){ ?>
-                    <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacte</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacitat</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del lloc</a>
-                  <?php }else{ ?>
-                    <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a>
-                  <?php } ?>
-                </p>
-                <p class="footer-copyright">©<?php echo date("Y"); ?> Amnistía Internacional España</p>
             </div>
         </div>
     </div>

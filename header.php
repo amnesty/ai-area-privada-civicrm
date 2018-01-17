@@ -1,22 +1,40 @@
+<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <!-- Header -->
 <?php if( !in_array('administrator', $user->roles) ){ ?>
 <nav class="navbar navbar-fixed-top">
-<header class="header" data-header="" role="banner">
-    <div class="header__container" data-header-container="">
-        <div class="header__slogan-container">
-        <?php if($cat){ ?>
-            <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
-        <?php }else{ ?>
-              <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
-        <?php } ?>
-        </div>
-        <?php if($cat){ ?>
-          <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.amnistiacatalunya.org">Amnistia Internacional Catalunya</a></h1>
-        <?php }else{ ?>
-          <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
-        <?php } ?>
-    </div>
-</header>
+  <header class="header" data-header="" role="banner">
+      <div class="header__container" data-header-container="">
+          <div class="header__slogan-container">
+            <?php if($cat){ ?>
+                <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
+            <?php }else{ ?>
+                  <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
+            <?php } ?>
+          </div>
+          <?php if($cat){ ?>
+            <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.amnistiacatalunya.org">Amnistia Internacional Catalunya</a></h1>
+          <?php }else{ ?>
+            <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
+          <?php } ?>
+          <!-- Dropdown menu con Bootstrap -->
+          <div class="container" id="logout">
+              <div class="dropdown dropdown-menu-right">
+                <button class="btn btn-lg btn-warning dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">
+                  <?php echo "Hola, " . $user->name . " "; ?>
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-v3-test">Mi cuenta</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="user/logout/?destination=area-privada-v3-test">Cerrar sesión</a></li>
+                </ul>
+             </div>
+          </div>
+      </div>
+  </header>
 </nav>
 <?php } ?>
 

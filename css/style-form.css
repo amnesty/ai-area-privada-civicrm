@@ -100,6 +100,10 @@ span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address,
 	font-size: 20px;
 	padding: 10px 20px;
 }
+.content-form form {
+  margin: 0 15px;
+}
+
 /* Elementos genéricos de formulario ------------- */
 
 .content-form .webform-conditional-processed input {
@@ -228,6 +232,38 @@ div.error {
 	font-size: 16px;
 	border: 2px solid #f00; /*#8c2e0b;*/
 }
- .form-item input.error, .form-item select.error, input.error, select.error, /*div.error*/ {
+.form-item input.error, .form-item select.error, input.error, select.error, /*div.error*/ {
  border: 2px #f00 solid;
+}
+
+/********** user login ********************/
+
+#block-user-login{
+  padding: 20px;
+}
+
+#user-login-form div {
+  padding: 5px 0px;
+
+}
+
+#user-login-form input[type="text"],
+#user-login-form input[type="password"] {
+  border: 2px solid #000;
+  font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+  font-size: 21px;
+  color: #000000;
+  height: 50px;
+  /*position: relative;*/
+  margin-left: 10px;
+  list-style: none inside none;
+  padding-left: 10px;
+  /* Border radius */
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	/* Shadow */
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.63);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.63);
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.63);
 }
