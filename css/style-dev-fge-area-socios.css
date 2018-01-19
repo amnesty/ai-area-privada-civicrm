@@ -51,7 +51,7 @@
 
 /* Elementos de desplegable de fecha ----------- */
 .content-form .webform-conditional-processed .caja-content .capa-fechas div div {
-	width: 95px !important; /* FELIPEGILESTUDIO- INCORPORADO EL 19/02/15 PARA AJUSTAR CAJA AÑO */
+	width: 100px !important; /* FELIPEGILESTUDIO- INCORPORADO EL 19/02/15 PARA AJUSTAR CAJA AÑO */
 	overflow: hidden;
 	float: left;
 	border: 2px solid #000;
@@ -536,7 +536,7 @@ fieldset.webform-component-fieldset.fila-1.clearfix.webform-component--todo--cer
 
 		/** IMPORTANT - CORRIGIENDO ANCHO EN TABLET - LANSCAPE = FELIPEGILESTUDIO CUSTOMS = 29/0972016 **/
 		.content-form .webform-conditional-processed .caja-content .capa-fechas div div {
-			max-width: 87px !important;
+			max-width: 100px !important;
 		}
 
 		/** ESPECIAL ELEMENT = PARA DAR MARGEN INFERIOR A ALGUNAS CAJAS EN TABLET - PORTAIT = FELIPEGILESTUDIO CUSTOMS = 29/0972016 **/

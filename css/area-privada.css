@@ -63,7 +63,7 @@
         .webform-conditional-processed .content-datos .margin-negativo,
         .webform-conditional-processed .content-idioma .margin-negativo {
             position: absolute;
-            right: 41px;
+            /*right: 41px;*/
         }
     }
 
@@ -100,6 +100,11 @@
     }
     .webform-component--caja-datos-acceso--fila-1-acceso--usuario input {
         background: #ececec;
+    }
+
+    /* calendario de nacimiento */
+    .webform-conditional-processed .content-datos .webform-calendar {
+      margin-top: 38px;
     }
 
     .webform-conditional-processed .content-datos .capa-fechas {
@@ -953,7 +958,7 @@
     .webform-conditional-processed .content-datos select.profesion {
         background-position: 80% center;
     }
-    .webform-conditional-processed .content-datos .mobile{
+    .webform-conditional-processed .content-datos .mobile {
         max-width: 100%;
         margin-top: 0px;
     }
@@ -1049,6 +1054,14 @@
   }
 }
 
+@media only screen and (max-width: 528px) {
+  .webform-conditional-processed .content-datos .capa-fechas label {
+    visibility: hidden;
+    width: 0px;
+    margin-left: -10px;
+  }
+}
+
 /* Móviles pequeños: hasta 480px */
 @media only screen and (max-width: 480px) {
     /* generales */
@@ -1133,7 +1146,7 @@
         width: 75%;
     }
     .webform-conditional-processed .content-datos .capa-language {
-        width: 75%;d .content-datos .fila-3 label {
+        width: 75%;
         clear: both;
         margin-top: 0;
     }
@@ -1143,21 +1156,22 @@
     .webform-conditional-processed .content-datos .capa-fechas {
         width: 100%;
     }
-    .webform-conditional-processed .content-datos .capa-fechas  div div{
+    .webform-conditional-processed .content-datos .capa-fechas  div div {
         float: left;
         width: 100%;
     }
-    .webform-conditional-processed .content-datos .mobile{
+    .webform-conditional-processed .content-datos .mobile {
+        margin-top: 20px;
         margin-bottom: 20px;
     }
-    .webform-conditional-processed .content-datos a{
+    .webform-conditional-processed .content-datos a {
         float: left;
         height: 44px;
         line-height: 50px;
         margin-right: 0px;
     }
-    .webform-conditional-processed .content-datos .capa-fechas  div select {
-        background-position: 70% center;
+    .content-form .webform-conditional-processed .caja-content .capa-fechas div select {
+        background-position: 73% center !important;
     }
     .webform-conditional-processed .content-datos select.profesion {
         background-position: 78% center;
@@ -1166,7 +1180,10 @@
         background-position: 73% center;
     }
     .webform-conditional-processed .content-datos .fila-3 label{
-        height: 0px;
+        line-height: 50px;
+    }
+    .content-form .webform-conditional-processed .caja-content .capa-fechas div div {
+        max-width: 90px !important;
     }
     /* direccion */
     .webform-conditional-processed .content-direccion select.tipo-via {
@@ -1225,3 +1242,15 @@
         width: 200px;
     }
 }
+
+/* Móviles pequeños: hasta 405px */
+@media only screen and (max-width: 405px) {
+  .content-form .webform-conditional-processed .caja-content .capa-fechas div div {
+      max-width: 75px !important;
+  }
+  .content-form .webform-conditional-processed .caja-content .capa-fechas div select {
+      background: #fff;
+  }
+}
+
+/* Nota: El modelo Samsung Galaxy S5 mide 360 de ancho. Menos que esto  no está contemplado */
