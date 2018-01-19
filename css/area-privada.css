@@ -189,7 +189,7 @@
         height: 50px;
         margin-right: 10px;
         line-height: 50px;
-        margin-left: 20px;
+        /*margin-left: 20px;*/
     }
 
     .webform-conditional-processed .content-colaborar .other-quant {
@@ -857,6 +857,14 @@
     .webform-conditional-processed .content-direccion select.tipo-via {
         background-position: 83% center;
     }
+    /* donativo */
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .webform-conditional-processed .content-colaborar select.selecttime {
+        background-position: 80% center;
+    }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .ncuenta {
         margin-top: 20px;
@@ -920,9 +928,6 @@
     .webform-conditional-processed .content-datos .fila-2.clearfix {
         margin-top: 20px;
     }
-    .webform-conditional-processed .content-colaborar select.selecttime {
-        background-position: 80% center;
-    }
     .webform-conditional-processed .content-datos .fila-1 input{
         max-width: 100%;
         margin-top: 20px;
@@ -972,12 +977,16 @@
     .webform-conditional-processed .content-idioma select.language {
         background-position: 76% center !important;
     }
+
     /* direccion - se queda igual */
 
     /* donativo */
     .webform-conditional-processed .content-colaborar .capa-selecttime {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .webform-conditional-processed .content-colaborar select.selecttime {
+        background-position: 80% center;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .entidad {
@@ -1038,6 +1047,12 @@
 @media only screen and (max-width: 637px) {
   .webform-conditional-processed .content-datos .number-dni{
       max-width: 255px;
+  }
+  .content-form .webform-conditional-processed .caja-checkbox div {
+      margin-right: 0px;
+  }
+  .webform-conditional-processed .content-colaborar .capa-other-quant {
+      width: 68px;
   }
 }
 
