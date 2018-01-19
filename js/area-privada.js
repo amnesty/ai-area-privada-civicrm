@@ -261,6 +261,7 @@ jQuery(function($) {
             });
     });
 
+    // ??????????
     $('.webform-component--caja-preferncias-comunicacion--fila-1-preferencias--civicrm-1-contact-1-cg10-custom-26 label').removeClass('element-invisible');
 
     attachVisibilityClassesToBoxes();
@@ -313,10 +314,10 @@ jQuery(function($) {
       $(".menos").remove();
       $(".caja-content").each(function(){
         if($(this).hasClass("caja-hidden")){
-            $(this).find("h2").after('<img alt="+" src="/civicrm/sites/all/themes/ai-area-privada-civicrm/images/arrow.png" class="mas" />');
+            $(this).find("h2").after('<img alt="+" src="sites/all/themes/ai-area-privada-civicrm/images/arrow.png" class="mas" />');
         }
         else {
-            $(this).find("h2").after('<img alt="+" src="/civicrm/sites/all/themes/ai-area-privada-civicrm/images/arrowup.png" class="menos" />');
+            $(this).find("h2").after('<img alt="+" src="sites/all/themes/ai-area-privada-civicrm/images/arrowup.png" class="menos" />');
         }
       });
     }

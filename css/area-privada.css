@@ -51,7 +51,8 @@
       color: #000;
     }
 
-    /* --------- textos +info ------------------*/
+    /* ----------------- textos +info ------------------*/
+
     .webform-conditional-processed .content-datos .margin-negativo {
          margin-left: -32px;
     }
@@ -118,7 +119,7 @@
         visibility: hidden;
     }
 
-    /* iconos + y - deslegables */
+    /* ---------- iconos + y - deslegables ----------- */
     .mas, .menos {
       float:right;
       position: relative;
