@@ -341,7 +341,7 @@
     }
 
     .webform-conditional-processed .content-direccion .nombre-via{
-        max-width: 400px;
+        max-width: 395px;
     }
 
     .webform-conditional-processed .content-direccion .numero-bloque{
@@ -354,12 +354,12 @@
     }
 
     .webform-conditional-processed .content-direccion .poblacion{
-        max-width: 580px;
+        max-width: 575px;
     }
 
     .webform-conditional-processed .content-direccion .capa-provincia,
     .webform-conditional-processed .content-direccion .capa-pais{
-        width: 435px;
+        width: 432px;
         overflow: hidden;
         float: left;
         border: 2px solid #000;
@@ -783,22 +783,6 @@
     }
 }
 
-/* Pantallas antiguas: hasta 1082px */
-@media only screen and (max-width: 1082px){
-
-    .webform-conditional-processed .content-direccion .numero-bloque {
-	      max-width: 669px;
-	      margin-top: 20px;
-    }
-    .webform-conditional-processed .content-direccion .capa-provincia,
-    .webform-conditional-processed .content-direccion .capa-pais {
-    	margin-top: 20px;
-    }
-    .webform-conditional-processed .content-direccion .poblacion {
-    	max-width: 368px;
-    }
-}
-
 /* Tablets hasta 986px */
 @media only screen and (max-width: 986px) {
 
@@ -846,20 +830,25 @@
     }
     .webform-conditional-processed .content-direccion .numero-bloque {
         max-width: 100%;
+        margin-top: 20px;
     }
     .webform-conditional-processed .content-direccion .postal {
         max-width: 100%;
         margin-top: 0px;
         margin-bottom: 20px;
     }
-    .webform-conditional-processed .content-direccion .poblacion,
-    .webform-conditional-processed .content-direccion .capa-pais {
+    .webform-conditional-processed .content-direccion .poblacion{
         max-width: 100%;
+        /*margin-bottom: 20px;*/
     }
-    .webform-conditional-processed .content-direccion .capa-provincia,
-    .webform-conditional-processed .content-direccion .capa-pais {
+    .webform-conditional-processed .content-direccion .capa-provincia {
+        margin-top: 0px;
         width: 100%;
+    }
+    .webform-conditional-processed .content-direccion .capa-pais {
         margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
     }
     .webform-conditional-processed .content-direccion select.provincia,
     .webform-conditional-processed .content-direccion select.pais {
@@ -921,7 +910,7 @@
         line-height: 30px;
     }
     .content-form fieldset {
-        margin-top: 0;
+        margin-top: 20px;
     }
     /* datos */
     .webform-conditional-processed .content-datos .fila-1,
@@ -983,10 +972,8 @@
     .webform-conditional-processed .content-idioma select.language {
         background-position: 76% center !important;
     }
-    /* direccion */
-    .webform-conditional-processed .content-direccion .postal {
-        margin-top: 20px;
-    }
+    /* direccion - se queda igual */
+
     /* donativo */
     .webform-conditional-processed .content-colaborar .capa-selecttime {
         width: 100%;
@@ -1186,11 +1173,9 @@
         max-width: 90px !important;
     }
     /* direccion */
-    .webform-conditional-processed .content-direccion select.tipo-via {
-        background-position: 84% center;
-    }
-    .webform-conditional-processed .content-direccion select.provincia, .content-direccion select.pais {
-        background-position: 79% center;
+    .webform-conditional-processed .content-direccion .postal,
+    .webform-conditional-processed .content-direccion .capa-provincia {
+        margin-top: 20px;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .iban-numero {
