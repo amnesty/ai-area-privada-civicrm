@@ -1,5 +1,1226 @@
-/* ------- CSS especifico para el area privada ------- */
+/* ------------- CSS específico del formulario de área privada  ------------------- */
 
-#logout {
-  float: right;
+    /*********************** Contenidos generales ***************************/
+
+    #content-area{
+      margin-bottom: 160px;
+    }
+
+    .content-form .text-intro {
+        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+        font-style: normal;
+    }
+
+    .box-form-es{
+    	width: 75%;
+    	float: left;
+    }
+
+    .box-form-es img{
+        display: inline-block;
+        top: 10px;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .box-form-es p{
+      font-size: 15px;
+      color: #000000;
+      padding: 0px 20px;
+      font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+      text-align: justify;
+      font-style: italic;
+    }
+
+    .box-form-es .webform-conditional-processed .input-generic {
+        width: 100%;
+    }
+
+    /******************** Menu superior ********************/
+    #logout {
+      float: right;
+    }
+
+    #user-menu {
+      background-color: #ffff00;
+      border-color: #ffff00;
+      color: #000;
+    }
+
+    /* --------- textos +info ------------------*/
+    .webform-conditional-processed .content-datos .margin-negativo {
+         margin-left: -32px;
+    }
+    .webform-conditional-processed .content-idioma .margin-negativo {
+        line-height: 50px;
+    }
+    @media only screen and (max-width: 848px) {
+        .webform-conditional-processed .content-datos .margin-negativo,
+        .webform-conditional-processed .content-idioma .margin-negativo {
+            position: absolute;
+            right: 41px;
+        }
+    }
+
+    /*********************** Caja datos **********************/
+
+    .webform-conditional-processed .caja-content > .form-item.webform-component {
+        cursor: pointer;
+    }
+
+    .webform-conditional-processed .caja-content.caja-visible > *:not(:first-child) {
+        display: block;
+    }
+    .webform-conditional-processed .caja-content.caja-hidden > *:not(:first-child) {
+        display: none;
+    }
+
+    .webform-conditional-processed .content-form .padding-medium {
+        padding: 20px;
+    }
+
+    .webform-conditional-processed .content-form .margin-medium {
+        margin: 20px 0 20px;
+    }
+
+    .webform-conditional-processed .content-datos-acceso .col-md-4 {
+        padding: 0 10px 0 0;
+    }
+    .webform-conditional-processed .content-datos-acceso .col-md-4 label {
+        margin-left: 5px;
+    }
+    .webform-conditional-processed .content-datos-acceso .col-md-4 input {
+        margin-top: 10px;
+        z-index: 1;
+    }
+    .webform-component--caja-datos-acceso--fila-1-acceso--usuario input {
+        background: #ececec;
+    }
+
+    .webform-conditional-processed .content-datos .capa-fechas {
+      clear: left;
+    }
+
+    .webform-conditional-processed .content-datos .capa-fechas div div {
+        margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-datos .fila-3 label {
+        margin-top: 20px;
+    }
+
+    /* Esconder mensajes de info / estado */
+    .status {
+        visibility: hidden;
+    }
+
+    /* iconos + y - deslegables */
+    .mas, .menos {
+      float:right;
+      position: relative;
+      /*height: 10px;*/
+      margin-top: 5px;
+    }
+
+    /* ---------- Página de LOGIN ---------------- */
+
+    .region-content{
+      width: 100%;
+    }
+
+    #block-user-login {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+
+    /* content-colaborar  ----------------------------------------------------- */
+
+    .webform-conditional-processed .content-colaborar form .cuota-options-wrapper-general {
+    	  width: 70%;
+    	  margin: 20px 0 20px 0;
+        padding: 0;
+        clear: both;
+        overflow: visible;
+        height: 51px;
+        position: relative;
+    }
+
+    .webform-conditional-processed .content-colaborar .fila-1 {
+        margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-colaborar {
+        padding: 0px 20px 20px; /*20*/
+    }
+
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+        width: 300px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .webform-conditional-processed .content-colaborar .selecttime {
+        width: 120%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-colaborar select.selecttime {
+        background-position: 260px center;
+    }
+
+    .webform-conditional-processed .content-colaborar .capa-other-quant {
+        width: 70px;
+        overflow: hidden;
+        float: left;
+        height: 50px;
+        margin-right: 10px;
+        line-height: 50px;
+        margin-left: 20px;
+    }
+
+    .webform-conditional-processed .content-colaborar .other-quant {
+        border: 2px solid #000;
+        width: 100%;
+    }
+
+    /* content-datos ----------------------------------------------------- */
+
+    .webform-conditional-processed .content-datos .fila-1,
+    .webform-conditional-processed .content-datos .fila-2,
+    .webform-conditional-processed .content-datos .fila-3{
+        margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-datos .fila-1 input,
+    .webform-conditional-processed .content-datos .fila-3 input {
+        max-width: 227px;
+    }
+
+    .webform-conditional-processed .content-datos .fila-3 input {
+        /*float: none;*/
+        max-width: 700px;
+    }
+
+    .webform-conditional-processed .content-datos a {
+    	  font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+    	  float: left;
+        font-size: 20px;
+        color: #000;
+        height: 44px;
+        line-height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-datos .capa-document{
+        max-width: 135px;
+        border-radius: 10px 0 0 10px;
+        overflow: hidden;
+        float: left;
+        height: 50px;
+    }
+
+    .webform-conditional-processed .content-datos .document{
+    	  width: 125%;
+        z-index: 9;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .webform-conditional-processed .content-datos select.document {
+        background-position: 90px center;
+    }
+
+    .webform-conditional-processed .content-datos .number-dni {
+    	max-width: 175px; /* 162 */
+    }
+
+    .webform-conditional-processed .content-datos .mobile,
+    .webform-conditional-processed .content-datos .phone {
+      max-width: 345px;
+      float: left;
+    }
+
+    .webform-conditional-processed .content-datos .mobile{
+      clear: both;
+      margin-bottom: 20px;
+    }
+
+    .webform-conditional-processed .content-datos .number-dni {
+    	max-width: 608px;
+    }
+
+    .webform-conditional-processed .content-datos .email {
+        float: none;
+        max-width: 702px;
+        margin-bottom: 20px;
+    }
+
+    .webform-conditional-processed .content-datos .number-dni{
+        left: -30px;
+    	  margin-right: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        padding-left: 40px;
+    }
+
+    .webform-conditional-processed .content-datos .capa-genero{
+        width: 155px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-datos .genero{
+    	  width: 120%;
+        border: 0;
+    }
+
+    .webform-conditional-processed .content-datos select.genero {
+        background-position: 120px center;
+    }
+
+    .webform-conditional-processed .content-datos .fila-3 label {
+        float: left;
+    }
+
+    .webform-conditional-processed .content-datos .capa-profesion {
+        width: 270px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-datos .profesion {
+        width: 120%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-datos select.profesion {
+        background-position: 230px center;
+    }
+
+    /* content-direccion ----------------------------------------------------- */
+
+    .webform-conditional-processed .content-direccion .fila-1 {
+        margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-direccion .capa-tipo-via{
+        width: 170px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-direccion .tipo-via{
+        width: 115%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-direccion select.tipo-via {
+        background-position: 135px center;
+    }
+
+    .webform-conditional-processed .content-direccion .nombre-via{
+        max-width: 400px;
+    }
+
+    .webform-conditional-processed .content-direccion .numero-bloque{
+        max-width: 290px;
+        margin-top: 0px;
+    }
+
+    .webform-conditional-processed .content-direccion .postal{
+        max-width: 290px;
+    }
+
+    .webform-conditional-processed .content-direccion .poblacion{
+        max-width: 580px;
+    }
+
+    .webform-conditional-processed .content-direccion .capa-provincia,
+    .webform-conditional-processed .content-direccion .capa-pais{
+        width: 435px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-direccion .provincia,
+    .webform-conditional-processed .content-direccion .pais{
+        width: 120%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-direccion select.provincia,
+    .webform-conditional-processed .content-direccion select.pais {
+        background-position: 398px center;
+    }
+
+    /* content-idioma ------------------------------------- */
+
+    .webform-conditional-processed .content-idioma a {
+        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+        float: left;
+        font-size: 20px;
+        color: #000;
+        height: 44px;
+        line-height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-idioma .capa-language{
+        width: 150px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-idioma .language {
+        width: 112%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-idioma select.language {
+        background-position: 120px center;
+    }
+
+    .webform-conditional-processed .content-idioma .webform-component--caja-idioma--margin-medium-language:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .webform-conditional-processed .content-idioma .capa-language {
+        float: left;
+        width: 330px;
+        height: 50px;
+        padding-bottom: 20px;
+        overflow: hidden;
+        border: 2px solid #000;
+    }
+
+    .webform-conditional-processed .content-idioma .capa-language select.language {
+        width: 125%;
+        /*background-position: 290px center;*/
+        border: none;
+    }
+
+    @media only screen and (min-width: 993px) {
+        .webform-conditional-processed .content-idioma .capa-language select.language{
+            background-position: 290px center;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .webform-component--caja-idioma--margin-medium-language {
+            margin-top: 20px;
+        }
+    }
+
+    /* content-certificado -------------------------------------------------*/
+
+    .webform-conditional-processed .content-certificado .capa-select {
+        width: 80%;
+        height: 50px;
+        padding-bottom: 20px;
+        overflow: hidden;
+        border: 2px solid #000;
+    }
+
+    .webform-conditional-processed .content-certificado .capa-select select {
+        width: 125%;
+        background-position: 76% center;
+        border: none;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .webform-conditional-processed .content-certificado .capa-select {
+            width: 330px;
+        }
+    }
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+        .webform-conditional-processed .content-certificado .capa-select {
+            margin-top: 20px;
+        }
+    }
+    @media only screen and (min-width: 993px) {
+        .webform-conditional-processed .content-certificado .capa-select select {
+            background-position: 290px center;
+        }
+    }
+
+    /* content-preferencias ----------------------------------------------------- */
+
+     .webform-conditional-processed .content-preferencias .caja-checkbox {
+         width: 42%;
+         margin-bottom: 20px;
+         line-height: 30px;
+     }
+    .webform-conditional-processed .content-preferencias .caja-checkbox label {
+        height: inherit;
+        margin-bottom: 10px;
+    }
+
+     @media only screen and (min-width: 993px){
+         .webform-conditional-processed .content-preferencias .caja-checkbox {
+             width: 30%;
+             line-height: 30px;
+         }
+     }
+
+     .webform-conditional-processed .content-preferencias .caja-checkbox label {
+         display: block;
+         line-height: 20px;
+     }
+
+    /* content-cuenta ----------------------------------------------------- */
+
+    .webform-conditional-processed .content-cuenta .fila-1 {
+        margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-cuenta label.iban{
+        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+        float: left;
+        font-size: 20px;
+        color: #000;
+        height: 44px;
+        line-height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-cuenta .capa-iban-letras{
+        width: 95px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-cuenta  .iban-letras {
+        width: 125%;
+        border: 0;
+    }
+
+    .webform-conditional-processed .content-cuenta select.iban-letras {
+        background-position: 50px center;
+    }
+
+    .webform-conditional-processed .content-cuenta .iban-numero{
+        max-width: 55px;
+    }
+
+    .webform-conditional-processed .content-cuenta .entidad{
+        max-width: 140px;
+    }
+
+    .webform-conditional-processed .content-cuenta .oficina{
+        max-width: 150px;
+    }
+
+    .webform-conditional-processed .content-cuenta .dc{
+        max-width: 100px;
+    }
+
+    .webform-conditional-processed .content-cuenta .ncuenta{
+        max-width: 270px;
+    }
+
+    /* content-donativo ----------------------------------------------------- */
+
+    .webform-conditional-processed .content-donativo p {
+        padding: 0;
+    }
+
+    .webform-conditional-processed .content-donativo .img-donativo {
+        margin: 0;
+        max-height: 500px;
+    }
+
+    .webform-conditional-processed .content-donativo .fila-2 input {
+      max-width: 200px;
+      float: left;
+    }
+
+    .webform-conditional-processed .content-donativo .fila-2 label{
+      float: left;
+    }
+    .webform-conditional-processed .content-donativo .fila-2 span {
+      font-size: 25px;
+    }
+
+    /* content-end-form ----------------------------------------------------- */
+
+     .webform-conditional-processed .content-end-form input[type=checkbox] {
+        visibility: hidden;
+        height: 28px;
+        width: 28px;
+    }
+
+     .webform-conditional-processed .content-end-form .check {
+        width: 28px;
+        height: 28px;
+        background: yellow;
+        position: relative;
+        margin-right: 20px;
+        margin-left: 20px;
+        float: left;
+    }
+
+     .webform-conditional-processed .content-end-form .check-politica label {
+        color: #fff;
+    }
+
+     .webform-conditional-processed .content-end-form .check label:after {
+        opacity: 0;
+        content: '\2713';
+        font-size: 20px;
+        color: #000;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        left: 3px;
+    }
+
+     .webform-conditional-processed .content-end-form .check input[type=checkbox]:checked + label:after {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+        opacity: 1;
+    }
+
+     .webform-conditional-processed .content-end-form {
+        padding: 0px;
+        margin: 0px 0px 50px 0px;
+    }
+
+    /* ------------ politica de privacidad -------------- */
+     .webform-conditional-processed .content-end-form .politica{
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+        color: #000;
+    }
+
+     .webform-conditional-processed .content-end-form .politica a{
+        font-weight: bold;
+        color: #000;
+    }
+
+    /* -------------- Comodo Secure ----------------- */
+     .webform-conditional-processed .secure-img {
+        float: left;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .box-form-es  .webform-conditional-processed .secure-img img{
+        max-width: 158px;
+        display: block;
+    }
+
+    /* ------------- Boton enviar y siguiente --------------- */
+    .box-form-es .button-primary,
+    .box-form-es .webform-next,
+    .form-actions input[type="submit"],
+    .form-actions button {
+        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+        max-width: 270px; /*315px;*/
+        width: 100%;
+        height: 80px; /*100px;*/
+        font-size: 40px; /*46px;*/
+        text-align: center;
+        clear: both;
+        background: #f1e60d;
+        border: 0;
+        margin-top: 10px;
+        color: #000;
+        -webkit-appearance: none;
+        border: 2px solid #000;
+        border-radius: 17px;
+    }
+
+    /* ----------- footer ------------------ */
+
+    .footer .form-actions {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      z-index: 10;
+      padding-bottom: 10px;
+    }
+
+    .footer__container {
+      padding-top: 0px;
+    }
+
+    .footer__bottom {
+      padding: 0px;
+    }
+
+
+    /* Box Right ----------------------------------------------------- */
+
+    .box-es-right{
+    	width: 25%;
+    	float: left;
+    }
+
+    .box-es-right .three-column{
+        max-width: 340px;
+        width: 100%;
+        min-height: 295px;
+        padding: 15px;
+        background: #e3e3e3;
+        float: right;
+        margin-bottom: 30px;
+    }
+
+    .box-es-right .three-column img{
+        max-width: 80px;
+        width: 100%;
+        display: block;
+        margin: auto auto 20px;
+    }
+
+    .box-es-right .three-column h3{
+        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        color: #000;
+    }
+
+    .box-es-right .three-column p{
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: center;
+        color: #000;
+        padding: 0px;
+    }
+
+    .box-es-right .formas-pago a {
+        color:#000;
+        font-weight: bold;
+    }
+
+    /* ----------- Popups ----------------------------- */
+
+    .cboxIframe {
+        height: 100%;
+        width: 100%;
+    }
+
+/****************************** RESPONSIVE ************************************/
+
+
+/* Pantallas antiguas, Ipad: hasta 1360px */
+@media only screen and (max-width: 1360px) {
+
+    #content-area{
+      margin-bottom: -40px;
+    }
+    .content-form{
+      margin-bottom: 0px;
+    }
+
+    .box-form-es {
+        width: 100%;
+        float: none;
+    }
+    .box-form-es .content {
+        padding: 0 10px;
+    }
+    /** CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/
+    /** CORRIGIENDO PROBLEMA GRAVE QUE TAPABA EL FORM ENTERO EN EL IPAD, 1 Y 2 - VER 3 Y 4 - PORTAIT - COLUMNA DCHA Y BLOQUE EXTENDIDO **/
+    .box-es-right {
+          display: flex;
+          flex-wrap: wrap;
+      width: 100%;
+      float: left;
+    }
+    /** end CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/
+    .box-es-right .three-column {
+        max-width: 306px;
+        min-height: 420px;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 200px;
+    }
+    .box-es-right .three-column:first-child {
+        margin-left: 0;
+    }
+}
+
+/* Pantallas antiguas: hasta 1082px */
+@media only screen and (max-width: 1082px){
+
+    .webform-conditional-processed .content-direccion .numero-bloque {
+	      max-width: 669px;
+	      margin-top: 20px;
+    }
+    .webform-conditional-processed .content-direccion .capa-provincia,
+    .webform-conditional-processed .content-direccion .capa-pais {
+    	margin-top: 20px;
+    }
+    .webform-conditional-processed .content-direccion .poblacion {
+    	max-width: 368px;
+    }
+}
+
+/* Tablets hasta 986px */
+@media only screen and (max-width: 986px) {
+
+    .content-form{
+        max-width:768px;
+    }
+    .box-form-es span{
+        font-size: 37px;
+        line-height: 37px;
+    }
+    /* datos */
+    .webform-conditional-processed .content-datos
+    .fila-1 input, .content-datos .fila-3 input {
+        max-width: 227px;
+    }
+    .webform-conditional-processed .content-datos .capa-document {
+        width: 100%px;
+    }
+    .webform-conditional-processed .content-datos .number-dni{
+        max-width: 576px;
+        width: 100%;
+    }
+    .webform-conditional-processed .content-datos .mobile {
+        max-width: 200px;
+    }
+    .webform-conditional-processed .content-datos .capa-genero{
+        margin-bottom: 20px;
+    }
+    .webform-conditional-processed .content-idioma .capa-language {
+        width: 175px;
+    }
+    .webform-conditional-processed .content-idioma .language {
+        width: 112%;
+    }
+    .webform-conditional-processed .content-idioma select.language {
+        background-position: 145px center;
+    }
+    /* direccion */
+    .webform-conditional-processed .content-direccion .capa-tipo-via {
+        width: 100%;
+    }
+    .webform-conditional-processed .content-direccion .nombre-via {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-direccion .numero-bloque {
+        max-width: 100%;
+    }
+    .webform-conditional-processed .content-direccion .postal {
+        max-width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    .webform-conditional-processed .content-direccion .poblacion,
+    .webform-conditional-processed .content-direccion .capa-pais {
+        max-width: 100%;
+    }
+    .webform-conditional-processed .content-direccion .capa-provincia,
+    .webform-conditional-processed .content-direccion .capa-pais {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-direccion select.provincia,
+    .webform-conditional-processed .content-direccion select.pais {
+        background-position: 80% center;
+    }
+    .webform-conditional-processed .content-direccion select.tipo-via {
+        background-position: 83% center;
+    }
+    /* cuenta */
+    .webform-conditional-processed .content-cuenta .ncuenta {
+        margin-top: 20px;
+    }
+    /* columnas */
+    .box-es-right {
+      	display: flex;
+      	flex-wrap: wrap;
+      	width: 100%;
+      	float: left;
+      	margin: 0px 1%;
+        margin-bottom: 200px;
+    }
+    .box-es-right .three-column {
+        max-width: 100%;
+        min-height: 100%;
+    }
+    .box-es-right .three-column {
+        max-width: 242px;
+        min-height: 418px;
+    }
+    /* boton */
+    .box-form-es .webform-conditional-processed .button-primary{
+        float: none;
+        margin: 0 auto 0 250px;
+    }
+}
+
+/* hasta 813 todo bien */
+@media only screen and (max-width: 812px) {
+
+  .webform-conditional-processed .content-datos .number-dni{
+      max-width: 535px;
+  }
+
+  .webform-conditional-processed .content-datos
+  .fila-1 input, .content-datos .fila-3 input{
+      max-width: 212px;
+  }
+
+}
+
+/* max-width: 769px */
+@media only screen and (max-width: 769px) {
+
+    .content-form{
+        max-width:630px;
+    }
+    .content-form h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .content-form fieldset {
+        margin-top: 0;
+    }
+    /* datos */
+    .webform-conditional-processed .content-datos .fila-1,
+    .content-datos .fila-3 {
+        margin-top: 0;
+    }
+    .webform-conditional-processed .content-datos .fila-2.clearfix {
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-colaborar select.selecttime {
+        background-position: 80% center;
+    }
+    .webform-conditional-processed .content-datos .fila-1 input{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-datos .margin-medium{
+        margin: 0;
+    }
+    .webform-conditional-processed .content-datos .capa-document {
+        width: 30%;
+    }
+    .webform-conditional-processed .content-datos select.document {
+        background-position: 70px center;
+    }
+    .webform-conditional-processed .content-datos .number-dni{
+        max-width: 390px;
+    }
+    .webform-conditional-processed .content-datos .capa-genero {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-datos select.profesion {
+        background-position: 80% center;
+    }
+    .webform-conditional-processed .content-datos .mobile{
+        max-width: 100%;
+        margin-top: 0px;
+    }
+    .webform-conditional-processed .content-datos .capa-profesion {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-datos .capa-fechas {
+        width: 100% !important;
+    }
+    .webform-conditional-processed .content-datos select.genero {
+        background-position: 80% center;
+    }
+    /* idioma */
+    .webform-conditional-processed .content-idioma .capa-language {
+        width: 61% !important;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-idioma .info-language{
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-idioma select.language {
+        background-position: 76% center !important;
+    }
+    /* direccion */
+    .webform-conditional-processed .content-direccion .postal {
+        margin-top: 20px;
+    }
+    /* donativo */
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* cuenta */
+    .webform-conditional-processed .content-cuenta .entidad {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-cuenta .oficina {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-cuenta .dc {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-cuenta .ncuenta {
+        max-width:100%;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-cuenta .iban-numero {
+        max-width: 74%;
+        margin-right: 0;
+    }
+    /* cajas */
+    .box-es-right{
+      margin-bottom: 235px;
+    }
+    .box-es-right .three-column {
+        max-width: 100%;
+        min-height: auto;
+        margin-left: 0;
+        float: none;
+    }
+    .box-form-es .webform-conditional-processed  .button-primary{
+        margin: 0 auto;
+        padding: 0;
+        float: none;
+        width: 315px;
+    }
+    .webform-conditional-processed .content-end-form .botons-form img {
+        float: left;
+        margin: 0px auto auto;
+        display: block;
+        top: 0px;
+    }
+    .webform-conditional-processed .content-end-form {
+        padding: 0px;
+        margin: 0px 0px 50px 0px;
+    }
+    /* caja botones y politica */
+    .box-form-es .webform-conditional-processed .form-actions {
+        margin: 30px 0px 0px 0px;
+    }
+    .footer-legal {
+       border-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 637px) {
+  .webform-conditional-processed .content-datos .number-dni{
+      max-width: 255px;
+  }
+}
+
+/* Móviles pequeños: hasta 480px */
+@media only screen and (max-width: 480px) {
+    /* generales */
+    .content-form{
+        max-width:320px;
+    }
+    .content-form h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        line-height: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .box-form-es h2 img { /* dejamos de mostrar los iconos en resoluciones móviles */
+        display: none;
+    }
+    .box-form-es span {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 1;
+        font-size: 24px;
+    }
+    .box-form-es span img {
+        display: block;
+    }
+    .content-form fieldset {
+        margin-top: 20px;
+    }
+    /** CUSTOMS - CAMBIANDO ASPECTO ICONO == FELIPEGILESTUDIO - 20/SEPTEMBER 2016 **/
+    span.image-icon-titles img {
+      margin: 0 auto;
+      top: 0px;
+      position: relative;
+    }
+    /* header navbar*/
+    .image-header, .image-header--sunken {
+        margin-top: 50px;
+    }
+    /* donativo */
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .webform-conditional-processed .content-colaborar select.selecttime {
+        background-position: 79% center;
+    }
+    .webform-conditional-processed .content-colaborar .cuotas {
+        margin-top: 0;
+    }
+    .webform-conditional-processed .content-colaborar .cuotas label {
+        margin-right: 4px;
+    }
+    .webform-conditional-processed .content-colaborar .cuotas div {
+        float: none;
+        margin: 0;
+    }
+    .webform-conditional-processed .content-colaborar .capa-other-quant {
+        float: none;
+        margin: auto;
+    }
+    .webform-conditional-processed .content-colaborar .cuotas {
+        float: none;
+        text-align: center;
+    }
+    /* datos */
+    .webform-conditional-processed .content-datos .capa-document {
+        width: 44%;
+    }
+    .webform-conditional-processed .content-datos .number-dni {
+        max-width: 49%;
+    }
+    .webform-conditional-processed .content-datos .capa-profesion {
+        width: 100%;
+        float: none;
+    }
+    .webform-conditional-processed .content-datos  input#email {
+        margin-bottom: 20px;
+    }
+    .webform-conditional-processed .content-datos .capa-language {
+        width: 75%;
+    }
+    .webform-conditional-processed .content-datos .capa-language {
+        width: 75%;d .content-datos .fila-3 label {
+        clear: both;
+        margin-top: 0;
+    }
+    .webform-conditional-processed .content-datos .fila-3 label {
+        line-height: 20px;
+    }
+    .webform-conditional-processed .content-datos .capa-fechas {
+        width: 100%;
+    }
+    .webform-conditional-processed .content-datos .capa-fechas  div div{
+        float: left;
+        width: 100%;
+    }
+    .webform-conditional-processed .content-datos .mobile{
+        margin-bottom: 20px;
+    }
+    .webform-conditional-processed .content-datos a{
+        float: left;
+        height: 44px;
+        line-height: 50px;
+        margin-right: 0px;
+    }
+    .webform-conditional-processed .content-datos .capa-fechas  div select {
+        background-position: 70% center;
+    }
+    .webform-conditional-processed .content-datos select.profesion {
+        background-position: 78% center;
+    }
+    .webform-conditional-processed .content-datos select.genero {
+        background-position: 73% center;
+    }
+    .webform-conditional-processed .content-datos .fila-3 label{
+        height: 0px;
+    }
+    /* direccion */
+    .webform-conditional-processed .content-direccion select.tipo-via {
+        background-position: 84% center;
+    }
+    .webform-conditional-processed .content-direccion select.provincia, .content-direccion select.pais {
+        background-position: 79% center;
+    }
+    /* cuenta */
+    .webform-conditional-processed .content-cuenta .iban-numero {
+        max-width: 71%;
+        display: block;
+        float: none;
+    }
+    .webform-conditional-processed .content-cuenta .capa-iban-letras {
+        width: 24%;
+        float: left;
+    }
+    .webform-conditional-processed .content-cuenta .capa-iban-numero {
+        float: left;
+        width: 40%;
+        margin-top: 0px;
+    }
+    .webform-conditional-processed .content-cuenta select.iban-letras {
+        background-position: 70% center;
+    }
+    .webform-conditional-processed .content-cuenta .capa-iban-letras {
+        margin-bottom: 20px;
+    }
+    /* content end */
+    .webform-conditional-processed .content-end-form .botons-form img {
+        float: none;
+        margin: 0px auto auto;
+        clear: both;
+        top: -30px;
+    }
+    .box-form-es .webform-conditional-processed .button-primary{
+        float: none;
+        margin-top: -150px;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 78vw;
+    }
+    .webform-conditional-processed .content-end-form {
+        padding: 0px;
+        margin: 0px 0px 50px 0px;
+    }
+    .webform-conditional-processed .caja-checkbox {
+        float: none !important;
+    }
+    .webform-conditional-processed .content-end-form .botons-form {
+        margin-top: 30px;
+    }
+    .webform-conditional-processed .content-end-form .politica {
+        float: left;
+        width: 200px;
+    }
 }

@@ -1,7 +1,3 @@
-<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
-<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <!-- Header -->
 <?php if( !in_array('administrator', $user->roles) ){ ?>
 <nav class="navbar navbar-fixed-top">
@@ -21,8 +17,11 @@
           <?php } ?>
           <!-- Dropdown menu con Bootstrap -->
           <div class="container" id="logout">
+              <div class="nav-mobile">
+                <a id="nav-toggle" href="#!"><span></span></a>
+              </div>
               <div class="dropdown dropdown-menu-right">
-                <button class="btn btn-lg btn-warning dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">
+                <button class="btn btn-lg btn-warning dropdown-toggle" id="user-menu" type="button" data-toggle="dropdown">
                   <?php echo "Hola, " . $user->name . " "; ?>
                   <span class="caret"></span>
                 </button>
