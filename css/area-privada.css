@@ -684,7 +684,7 @@
     }
 
 
-    /* Box Right ----------------------------------------------------- */
+    /* Box Right: Cajas --------------------------------------------------- */
 
     .box-es-right{
     	width: 25%;
@@ -801,8 +801,8 @@
         max-width:768px;
     }
     .box-form-es span{
-        font-size: 37px;
-        line-height: 37px;
+        font-size: 22px;
+        /*line-height: 37px;*/
     }
     /* datos */
     .webform-conditional-processed .content-datos
@@ -1066,7 +1066,7 @@
         display: none;
     }
     .box-form-es span {
-        position: absolute;
+        /*position: absolute;*/
         top: 8px;
         right: 8px;
         z-index: 1;
