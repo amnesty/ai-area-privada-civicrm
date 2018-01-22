@@ -51,6 +51,10 @@
       color: #000;
     }
 
+    .dropdown-menu {
+      min-width: 120px;
+    }
+
     /* ----------------- textos +info ------------------*/
 
     .webform-conditional-processed .content-datos .margin-negativo {
@@ -839,7 +843,6 @@
     }
     .webform-conditional-processed .content-direccion .poblacion{
         max-width: 100%;
-        /*margin-bottom: 20px;*/
     }
     .webform-conditional-processed .content-direccion .capa-provincia {
         margin-top: 0px;
@@ -868,6 +871,7 @@
     /* cuenta */
     .webform-conditional-processed .content-cuenta .ncuenta {
         margin-top: 20px;
+        max-width: 580px;
     }
     /* columnas */
     .box-es-right {
@@ -989,6 +993,18 @@
         background-position: 80% center;
     }
     /* cuenta */
+    .webform-conditional-processed .content-cuenta .capa-iban-letras {
+        max-width: 48%;
+        width: 100%;
+    }
+    .webform-conditional-processed .content-cuenta select.iban-letras {
+        background-position: 73% center;
+    }
+    .webform-conditional-processed .content-cuenta .iban-numero {
+        max-width: 48%;
+        margin-right: 0px;
+        width: 100%;
+    }
     .webform-conditional-processed .content-cuenta .entidad {
         max-width: 100%;
         margin-top: 20px;
@@ -1004,10 +1020,6 @@
     .webform-conditional-processed .content-cuenta .ncuenta {
         max-width:100%;
         margin-top: 20px;
-    }
-    .webform-conditional-processed .content-cuenta .iban-numero {
-        max-width: 74%;
-        margin-right: 0;
     }
     /* cajas */
     .box-es-right{
@@ -1193,22 +1205,23 @@
         margin-top: 20px;
     }
     /* cuenta */
-    .webform-conditional-processed .content-cuenta .iban-numero {
-        max-width: 71%;
-        display: block;
+    .webform-conditional-processed .content-cuenta .capa-iban-letras {
+        width: 100%;
+        max-width: 100%;
         float: none;
     }
-    .webform-conditional-processed .content-cuenta .capa-iban-letras {
-        width: 24%;
-        float: left;
+    .webform-conditional-processed .content-cuenta select.iban-letras {
+        background-position: 75% center;
     }
     .webform-conditional-processed .content-cuenta .capa-iban-numero {
-        float: left;
-        width: 40%;
+        float: none;
         margin-top: 0px;
     }
-    .webform-conditional-processed .content-cuenta select.iban-letras {
-        background-position: 70% center;
+    .webform-conditional-processed .content-cuenta .iban-numero {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        float: none;
     }
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
         margin-bottom: 20px;
@@ -1220,7 +1233,7 @@
         clear: both;
         top: -30px;
     }
-    .box-form-es .webform-conditional-processed .button-primary{
+    .box-form-es .webform-conditional-processed .button-primary {
         float: none;
         margin-top: -150px;
         margin-left: 0;
@@ -1243,7 +1256,7 @@
     }
 }
 
-/* Móviles pequeños: hasta 405px */
+/* Móviles muy pequeños: hasta 405px */
 @media only screen and (max-width: 405px) {
   .content-form .webform-conditional-processed .caja-content .capa-fechas div div {
       max-width: 75px !important;
