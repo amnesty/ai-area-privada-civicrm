@@ -40,6 +40,10 @@
         width: 100%;
     }
 
+    ul.links, ul.links.inline {
+      display: none;
+    }
+
     /******************** Menu superior ********************/
 
     #logout {
