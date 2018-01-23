@@ -676,13 +676,12 @@
     }
 
     .form-actions {
-        /*position: fixed;
-        top: 793px;
+        /*top: 793px;
         height: 90px;*/
+        position: fixed;
         background: #000;
         width: 100%;
         text-align: center;
-
         z-index: 9;
     }
 
@@ -694,7 +693,7 @@
     }
 
     .footer {
-        position: relative;
+        position: fixed;
         bottom: 0px;
         width: 100%;
         z-index: 10;
