@@ -325,7 +325,8 @@ jQuery(function($) {
     // Mover texto del pie a la barra del boton
     if( $(".webform-conditional-processed").length > 0 ){
       var submit = $(".form-actions");
-      $(".footer__bottom").prepend(submit);
+      /*$(".footer__bottom").prepend(submit);*/
+      $(".container--wide").after(submit);
 
       $(".form-submit").click(function(){
           $(".webform-client-form").submit();
