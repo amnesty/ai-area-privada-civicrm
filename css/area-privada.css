@@ -1255,6 +1255,10 @@
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
         margin-bottom: 20px;
     }
+    /* pref comunicacion */
+    .webform-conditional-processed .content-preferencias .caja-checkbox {
+        width: 100%;
+    }
     /* content end */
     .webform-conditional-processed .content-end-form .botons-form img {
         float: none;
