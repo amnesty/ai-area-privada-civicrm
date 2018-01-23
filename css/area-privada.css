@@ -1106,7 +1106,12 @@
       float: none;
       line-height: 85px;
   }
-}
+  /* boton enviar */
+  .box-form-es .button-primary, .box-form-es .webform-next, .form-actions input[type="submit"], .form-actions button {
+      max-width: 200px;
+      height: 57px;
+      font-size: 28px;
+  }
 
 @media only screen and (max-width: 528px) {
   .webform-conditional-processed .content-datos .capa-fechas label {
