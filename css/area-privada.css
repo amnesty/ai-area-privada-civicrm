@@ -41,6 +41,7 @@
     }
 
     /******************** Menu superior ********************/
+
     #logout {
       float: right;
     }
@@ -67,7 +68,6 @@
         .webform-conditional-processed .content-datos .margin-negativo,
         .webform-conditional-processed .content-idioma .margin-negativo {
             position: absolute;
-            /*right: 41px;*/
         }
     }
 
@@ -99,7 +99,6 @@
         margin-left: 5px;
     }
     .webform-conditional-processed .content-datos-acceso .col-md-4 input {
-        margin-top: 10px;
         z-index: 1;
     }
     .webform-component--caja-datos-acceso--fila-1-acceso--usuario input {
@@ -429,7 +428,6 @@
 
     .webform-conditional-processed .content-idioma .capa-language select.language {
         width: 125%;
-        /*background-position: 290px center;*/
         border: none;
     }
 
@@ -559,6 +557,7 @@
 
     .webform-conditional-processed .content-donativo p {
         padding: 0;
+        font-size: 18px;
     }
 
     .webform-conditional-processed .content-donativo .img-donativo {
@@ -567,15 +566,18 @@
     }
 
     .webform-conditional-processed .content-donativo .fila-2 input {
-      max-width: 200px;
-      float: left;
+        max-width: 200px;
+        float: left;
     }
 
     .webform-conditional-processed .content-donativo .fila-2 label{
-      float: left;
+        float: left;
+        font-size: 19px;
     }
     .webform-conditional-processed .content-donativo .fila-2 span {
-      font-size: 25px;
+        font-size: 25px;
+        float:left;
+        line-height: 45px;
     }
 
     /* content-end-form ----------------------------------------------------- */
@@ -621,19 +623,6 @@
      .webform-conditional-processed .content-end-form {
         padding: 0px;
         margin: 0px 0px 50px 0px;
-    }
-
-    /* ------------ politica de privacidad -------------- */
-     .webform-conditional-processed .content-end-form .politica{
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 15px;
-        line-height: 28px;
-        color: #000;
-    }
-
-     .webform-conditional-processed .content-end-form .politica a{
-        font-weight: bold;
-        color: #000;
     }
 
     /* -------------- Comodo Secure ----------------- */
@@ -695,9 +684,9 @@
 
     /* Box Right: Cajas --------------------------------------------------- */
 
-    .box-es-right{
-    	width: 25%;
-    	float: left;
+    .box-es-right {
+    	   width: 25%;
+    	  float: left;
     }
 
     .box-es-right .three-column{
@@ -740,7 +729,6 @@
     }
 
     /* ----------- Popups ----------------------------- */
-
     .cboxIframe {
         height: 100%;
         width: 100%;
@@ -795,7 +783,6 @@
     }
     .box-form-es span{
         font-size: 22px;
-        /*line-height: 37px;*/
     }
     /* datos */
     .webform-conditional-processed .content-datos
@@ -981,10 +968,7 @@
     .webform-conditional-processed .content-idioma select.language {
         background-position: 76% center !important;
     }
-
-    /* direccion - se queda igual */
-
-    /* donativo */
+    /* cuota */
     .webform-conditional-processed .content-colaborar .capa-selecttime {
         width: 100%;
         margin-bottom: 20px;
@@ -1020,6 +1004,21 @@
     .webform-conditional-processed .content-cuenta .ncuenta {
         max-width:100%;
         margin-top: 20px;
+    }
+    /* donativo */
+    .content-form .webform-conditional-processed .content-donativo .fila-2 {
+      text-align: center;
+    }
+    .box-form-es .content-donativo p {
+      font-size: 18px;
+    }
+    .webform-conditional-processed .content-donativo .fila-2 span {
+        font-size: 23px;
+        line-height: 48px;
+        float: left;
+    }
+    .webform-conditional-processed .content-donativo .fila-2 input {
+        max-width: 75px;
     }
     /* cajas */
     .box-es-right{
@@ -1060,11 +1059,35 @@
   .webform-conditional-processed .content-datos .number-dni{
       max-width: 255px;
   }
-  .content-form .webform-conditional-processed .caja-checkbox div {
-      margin-right: 0px;
-  }
   .webform-conditional-processed .content-colaborar .capa-other-quant {
       width: 58px;
+  }
+  /* donativo */
+  .content-form .webform-conditional-processed .content-donativo label {
+  font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+      font-size: 19px;
+      height: 40px;
+      margin-right: 10px;
+      line-height: 30px;
+      float: none;
+  }
+  .webform-conditional-processed .content-donativo .caja-checkbox {
+      text-align: center;
+      line-height: 10px;
+      width: 100%;
+  }
+  .webform-conditional-processed .content-donativo .caja-checkbox div {
+      float: none;
+      margin: 0 auto;
+  }
+  .webform-conditional-processed .content-donativo .fila-2 input {
+      max-width:89%;
+      float: none;
+      margin-top: 20px;
+  }
+  .webform-conditional-processed .content-donativo .fila-2 span {
+      float: none;
+      line-height: 85px;
   }
 }
 
@@ -1093,7 +1116,6 @@
         display: none;
     }
     .box-form-es span {
-        /*position: absolute;*/
         top: 8px;
         right: 8px;
         z-index: 1;
@@ -1115,7 +1137,7 @@
     .image-header, .image-header--sunken {
         margin-top: 50px;
     }
-    /* donativo */
+    /* cuota */
     .webform-conditional-processed .content-colaborar .capa-selecttime {
         width: 100%;
         float: none;
@@ -1198,6 +1220,13 @@
     }
     .content-form .webform-conditional-processed .caja-content .capa-fechas div div {
         max-width: 90px !important;
+    }
+    /* donativo */
+    .content-form .webform-conditional-processed .content-donativo label {
+        font-size: 18px;
+    }
+    .content-form .webform-conditional-processed .content-donativo .fila-2 span {
+        font-size: 20px;
     }
     /* direccion */
     .webform-conditional-processed .content-direccion .postal,
