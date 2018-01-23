@@ -6,7 +6,7 @@
       margin-bottom: 160px;
     }
 
-    .content-form .text-intro {
+    .content-form .text-intro span {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         font-size: 18px;
         color: #000000;
@@ -40,6 +40,15 @@
         width: 100%;
     }
 
+    /* show more text */
+    .morecontent span {
+        display: none;
+    }
+    .morelink {
+        display: block;
+    }
+
+    /* borrar llave de private */
     ul.links, ul.links.inline {
       display: none;
     }
@@ -54,10 +63,14 @@
       background-color: #ffff00;
       border-color: #ffff00;
       color: #000;
+      font-size: 19px;
     }
 
     .dropdown-menu {
       min-width: 120px;
+    }
+    .dropdown-menu>li>a :hover {
+      background-color: #ddd;
     }
 
     /* ----------------- textos +info ------------------*/

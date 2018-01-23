@@ -17,3 +17,4 @@
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/style-form.css">
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/area-privada.css">
   <script type="text/javascript" src="<?php print $theme_path; ?>/js/area-privada.js"></script>
+    <script type="text/javascript" src="<?php print $theme_path; ?>/js/moretext.js"></script>

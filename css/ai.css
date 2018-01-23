@@ -7419,7 +7419,7 @@ x:-o-prefocus {
 .header {
     background-color: #fff;
     box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-    height: 5.1428571429rem;
+    height: 4.1428571429rem; /* fix helena */
     min-width: 20.7142857143rem;
     position: relative;
     width: 100%;
@@ -7467,13 +7467,13 @@ x:-o-prefocus {
 }
 .header__container {
     margin: 0 auto;
-    height: 100%;
+    height: 97%; /* fix helena */
     max-width: 105.142857143rem;
     position: relative
 }
 .logo,
 .logo-print {
-    height: 5.1428571429rem
+    height: 4.1428571429rem /* fix helena */
 }
 .header__container:after,
 .header__container:before {
@@ -7487,7 +7487,7 @@ x:-o-prefocus {
 @media screen and (min-width: 40em) {
     .header__slogan-container {
         display: table;
-        height: 5.1428571429rem;
+        height: 4.1428571429rem; /* fix helena */
         overflow: hidden;
         position: absolute;
         left: 13.7142857143rem;
@@ -7506,12 +7506,17 @@ x:-o-prefocus {
 }
 @media screen and (min-width: 40em) {
     .header__slogan {
-        font-size: 1.25rem
+        font-size: 1.20rem
     }
 }
 @media screen and (max-width: 692px) {
     .header__slogan-container {
         width: 11.4285714286rem
+    }
+}
+@media screen and (max-width: 692px) {
+    .header__slogan {
+      font-size: 1.1rem
     }
 }
 .logo {
@@ -7544,7 +7549,7 @@ x:-o-prefocus {
 }
 .logo__link:after,
 .logo__link:before {
-    height: 5.14286em;
+    height: 4.14286em;
     position: absolute;
     top: 0;
     background-image: url(../images/sprite.svg), none;
@@ -7554,13 +7559,13 @@ x:-o-prefocus {
 }
 .logo__link:after {
     display: inline-block;
-    background-position: -8.35714em -5.85714em;
+    background-position: -8.35714em -6.25714em; /* fix helena */
     width: 4.42857em;
     margin-right: 0;
     right: 0
 }
 .logo__link:before {
-    background-position: -8.29em -.35714em;
+    background-position: -8.20em -0.75714em; /* fix helena */
     width: 9em;
     display: block;
     left: 0
@@ -10963,11 +10968,16 @@ x:-o-prefocus {
     }
 }
 .dropdown {
-    border: 1px solid #b6b6b6
+    border: 1px solid #b6b6b6;
+    margin: .4142857143rem 0 0;
+}
+.dropdown-menu>li>a {
+  font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif; /* fix helena */
+  font-size: 17px;
 }
 @media screen and (max-width: 40em) {
     .dropdown {
-        margin: .7142857143rem 0 0
+        margin: .4142857143rem 0 0 /* fix helena */
     }
 }
 .dropdown__btn {
