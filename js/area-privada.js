@@ -326,7 +326,7 @@ jQuery(function($) {
     if( $(".webform-conditional-processed").length > 0 ){
       var submit = $(".form-actions");
       /*$(".footer__bottom").prepend(submit);*/
-      $(".container--wide").after(submit);
+      $(".footer").after(submit);
 
       $(".form-submit").click(function(){
           $(".webform-client-form").submit();
