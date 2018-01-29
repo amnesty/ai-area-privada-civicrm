@@ -1141,16 +1141,40 @@
 
 /* Móviles pequeños: hasta 480px */
 @media only screen and (max-width: 480px) {
-    /* generales */
-    .content-form{
+    /* Generales */
+    .content-form .webform-conditional-processed .input-generic {
+        font-size: 18px;
+        height: 40px;
+    }
+    .content-form .webform-conditional-processed .caja-content .capa-fechas div select {
+        height: 40px;
+        font-size: 18px;
+    }
+    .content-form .webform-conditional-processed .caja-content .capa-fechas div div,
+    .webform-conditional-processed .content-certificado .capa-select,
+    .webform-conditional-processed .content-direccion .capa-provincia,
+    .webform-conditional-processed .content-direccion .capa-pais,
+    .webform-conditional-processed .content-direccion .capa-tipo-via,
+    .webform-conditional-processed .content-idioma .capa-language,
+    .webform-conditional-processed .content-colaborar .capa-selecttime,
+    .webform-conditional-processed .content-cuenta .capa-iban-letras {
+        height: 40px;
+    }
+    .content-form {
         max-width:320px;
     }
+    .content-form .caja-content {
+        padding: 5px 10px 10px;
+    }
     .content-form h2 {
-        font-size: 30px;
+        font-size: 22px;
         padding-bottom: 10px;
         line-height: 30px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .content-form .text-intro span {
+      font-size: 16px;
     }
     .box-form-es h2 img { /* dejamos de mostrar los iconos en resoluciones móviles */
         display: none;
@@ -1207,6 +1231,7 @@
     /* datos */
     .webform-conditional-processed .content-datos .capa-document {
         width: 44%;
+        height: 40px;
     }
     .webform-conditional-processed .content-datos .number-dni {
         max-width: 49%;
@@ -1245,6 +1270,7 @@
         height: 44px;
         line-height: 50px;
         margin-right: 0px;
+        font-size: 18px;
     }
     .content-form .webform-conditional-processed .caja-content .capa-fechas div select {
         background-position: 73% center !important;
@@ -1294,6 +1320,10 @@
     }
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
         margin-bottom: 20px;
+    }
+    /* idioma */
+    .webform-conditional-processed .content-idioma a {
+      font-size: 18px;
     }
     /* pref comunicacion */
     .webform-conditional-processed .content-preferencias .caja-checkbox {
