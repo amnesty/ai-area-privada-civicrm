@@ -692,6 +692,7 @@
         width: 100%;
         text-align: center;
         z-index: 9;
+        padding: 5px 0px;
     }
 
     /* ----------- footer ------------------ */
@@ -700,8 +701,8 @@
         position: relative;;
         bottom: 0px;
         width: 100%;
-        z-index: 10;
-        padding-bottom: 10px;
+        z-index: 9;
+        padding-bottom: 90px;
     }
 
     .footer__container {
@@ -946,6 +947,10 @@
     .content-form fieldset {
         margin-top: 20px;
     }
+    /* acceso */
+    .webform-conditional-processed .content-datos-acceso .col-md-4 label {
+      font-size: 18px;
+    }
     /* datos */
     .webform-conditional-processed .content-datos .fila-1,
     .content-datos .fila-3 {
@@ -1004,6 +1009,9 @@
         background-position: 76% center !important;
     }
     /* cuota */
+    .webform-conditional-processed .content-colaborar .cuotas label {
+      font-size: 18px;
+    }
     .webform-conditional-processed .content-colaborar .capa-selecttime {
         width: 100%;
         margin-bottom: 20px;
@@ -1046,6 +1054,7 @@
     }
     .box-form-es .content-donativo p {
       font-size: 18px;
+      margin: 10px;
     }
     .webform-conditional-processed .content-donativo .fila-2 span {
         font-size: 23px;
@@ -1065,6 +1074,7 @@
         margin-left: 0;
         float: none;
     }
+    /* caja botones y politica */
     .box-form-es .webform-conditional-processed  .button-primary{
         margin: 0 auto;
         padding: 0;
@@ -1081,7 +1091,6 @@
         padding: 0px;
         margin: 0px 0px 50px 0px;
     }
-    /* caja botones y politica */
     .box-form-es .webform-conditional-processed .form-actions {
         margin: 30px 0px 0px 0px;
     }
@@ -1130,6 +1139,11 @@
       height: 57px;
       font-size: 28px;
   }
+  /* footer */
+  .footer {
+    padding-bottom: 65px;
+  }
+}
 
 @media only screen and (max-width: 528px) {
   .webform-conditional-processed .content-datos .capa-fechas label {
@@ -1326,6 +1340,9 @@
       font-size: 18px;
     }
     /* pref comunicacion */
+    .webform-conditional-processed .content-preferencias .caja-checkbox label {
+      font-size: 18px;
+    }
     .webform-conditional-processed .content-preferencias .caja-checkbox {
         width: 100%;
     }
@@ -1353,9 +1370,21 @@
     .webform-conditional-processed .content-end-form .botons-form {
         margin-top: 30px;
     }
-    .webform-conditional-processed .content-end-form .politica {
-        float: left;
-        width: 200px;
+    .form-actions {
+      padding: 0px;
+    }
+    /* cajas */
+    .box-es-right .three-column h3 {
+        font-size: 25px;
+    }
+    .box-es-right .three-column p {
+        font-size: 14px;
+    }
+    .box-es-right .three-column {
+        padding: 10px;
+    }
+    .box-es-right .three-column img {
+        margin: auto auto 0px;
     }
 }
 
