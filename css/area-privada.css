@@ -41,11 +41,21 @@
     }
 
     /* show more text */
+    .content-form .text-intro .morecontent{
+      padding: 0px 0px 0px 5px;
+    }
+    .content-form .text-intro .morecontent span,
+    .content-form .text-intro .more {
+      padding: 0px;
+    }
     .morecontent span {
         display: none;
     }
     .morecontent .less {
         display: block;
+    }
+    .morecontent a {
+      color: #23527c;
     }
 
     /* borrar llave de private */
