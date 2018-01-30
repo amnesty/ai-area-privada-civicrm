@@ -1,10 +1,9 @@
-/* ------------- CSS específico del formulario de área privada  ------------------- */
+/**************************************************************************************/
+/******************* CSS específico del formulario de área privada ********************/
+/**************************************************************************************/
 
-    /*********************** Contenidos generales ***************************/
 
-    #content-area{
-      /*margin-bottom: 160px;*/
-    }
+/*********************** Estilos generales ***************************/
 
     .content-form .text-intro span {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
@@ -36,6 +35,25 @@
       font-style: italic;
     }
 
+    .webform-conditional-processed .caja-content > .form-item.webform-component {
+        cursor: pointer;
+    }
+
+    .webform-conditional-processed .caja-content.caja-visible > *:not(:first-child) {
+        display: block;
+    }
+    .webform-conditional-processed .caja-content.caja-hidden > *:not(:first-child) {
+        display: none;
+    }
+
+    .webform-conditional-processed .content-form .padding-medium {
+        padding: 20px;
+    }
+
+    .webform-conditional-processed .content-form .margin-medium {
+        margin: 20px 0 20px;
+    }
+
     .box-form-es .webform-conditional-processed .input-generic {
         width: 100%;
     }
@@ -63,7 +81,45 @@
       display: none;
     }
 
-    /******************** Menu superior ********************/
+    /* textos +info */
+    .webform-conditional-processed .content-datos .margin-negativo {
+         margin-left: -32px;
+    }
+    .webform-conditional-processed .content-idioma .margin-negativo {
+        line-height: 50px;
+    }
+    @media only screen and (max-width: 848px) {
+        .webform-conditional-processed .content-datos .margin-negativo,
+        .webform-conditional-processed .content-idioma .margin-negativo {
+            position: absolute;
+        }
+    }
+
+    /* iconos + y - deslegables */
+    .mas, .menos {
+      float:right;
+      position: relative;
+      /*height: 10px;*/
+      margin-top: 5px;
+    }
+
+    /* Esconder mensajes de info / estado */
+    .status {
+        visibility: hidden;
+    }
+
+/********************** Página de LOGIN ***********************/
+
+    .region-content{
+      width: 100%;
+    }
+
+    #block-user-login {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+/*********************** Menu superior ************************/
 
     #logout {
       float: right;
@@ -83,41 +139,7 @@
       background-color: #ddd;
     }
 
-    /* ----------------- textos +info ------------------*/
-
-    .webform-conditional-processed .content-datos .margin-negativo {
-         margin-left: -32px;
-    }
-    .webform-conditional-processed .content-idioma .margin-negativo {
-        line-height: 50px;
-    }
-    @media only screen and (max-width: 848px) {
-        .webform-conditional-processed .content-datos .margin-negativo,
-        .webform-conditional-processed .content-idioma .margin-negativo {
-            position: absolute;
-        }
-    }
-
-    /*********************** Caja datos **********************/
-
-    .webform-conditional-processed .caja-content > .form-item.webform-component {
-        cursor: pointer;
-    }
-
-    .webform-conditional-processed .caja-content.caja-visible > *:not(:first-child) {
-        display: block;
-    }
-    .webform-conditional-processed .caja-content.caja-hidden > *:not(:first-child) {
-        display: none;
-    }
-
-    .webform-conditional-processed .content-form .padding-medium {
-        padding: 20px;
-    }
-
-    .webform-conditional-processed .content-form .margin-medium {
-        margin: 20px 0 20px;
-    }
+/*********** Caja datos acceso **********************/
 
     .webform-conditional-processed .content-datos-acceso .col-md-4 {
         padding: 0 10px 0 0;
@@ -132,102 +154,7 @@
         background: #ececec;
     }
 
-    /* calendario de nacimiento */
-    .webform-conditional-processed .content-datos .webform-calendar {
-      margin-top: 38px;
-    }
-
-    .webform-conditional-processed .content-datos .capa-fechas {
-      clear: left;
-    }
-
-    .webform-conditional-processed .content-datos .capa-fechas div div {
-        margin-top: 20px;
-    }
-
-    .webform-conditional-processed .content-datos .fila-3 label {
-        margin-top: 20px;
-    }
-
-    /* Esconder mensajes de info / estado */
-    .status {
-        visibility: hidden;
-    }
-
-    /* ---------- iconos + y - deslegables ----------- */
-    .mas, .menos {
-      float:right;
-      position: relative;
-      /*height: 10px;*/
-      margin-top: 5px;
-    }
-
-    /* ---------- Página de LOGIN ---------------- */
-
-    .region-content{
-      width: 100%;
-    }
-
-    #block-user-login {
-      margin: 0 auto;
-      width: 50%;
-    }
-
-
-    /* content-colaborar  ----------------------------------------------------- */
-
-    .webform-conditional-processed .content-colaborar form .cuota-options-wrapper-general {
-    	  width: 70%;
-    	  margin: 20px 0 20px 0;
-        padding: 0;
-        clear: both;
-        overflow: visible;
-        height: 51px;
-        position: relative;
-    }
-
-    .webform-conditional-processed .content-colaborar .fila-1 {
-        margin-top: 20px;
-    }
-
-    .webform-conditional-processed .content-colaborar {
-        padding: 0px 20px 20px; /*20*/
-    }
-
-    .webform-conditional-processed .content-colaborar .capa-selecttime {
-        width: 300px;
-        overflow: hidden;
-        float: left;
-        border: 2px solid #000;
-        height: 50px;
-        margin-right: 20px;
-    }
-
-    .webform-conditional-processed .content-colaborar .selecttime {
-        width: 120%;
-        border:0;
-    }
-
-    .webform-conditional-processed .content-colaborar select.selecttime {
-        background-position: 260px center;
-    }
-
-    .webform-conditional-processed .content-colaborar .capa-other-quant {
-        width: 70px;
-        overflow: hidden;
-        float: left;
-        height: 50px;
-        margin-right: 10px;
-        line-height: 50px;
-        /*margin-left: 20px;*/
-    }
-
-    .webform-conditional-processed .content-colaborar .other-quant {
-        border: 2px solid #000;
-        width: 100%;
-    }
-
-    /* content-datos ----------------------------------------------------- */
+/****** content-datos ----------------------------------------------------- */
 
     .webform-conditional-processed .content-datos .fila-1,
     .webform-conditional-processed .content-datos .fila-2,
@@ -241,7 +168,6 @@
     }
 
     .webform-conditional-processed .content-datos .fila-3 input {
-        /*float: none;*/
         max-width: 700px;
     }
 
@@ -274,7 +200,7 @@
     }
 
     .webform-conditional-processed .content-datos .number-dni {
-    	max-width: 175px; /* 162 */
+    	max-width: 175px;
     }
 
     .webform-conditional-processed .content-datos .mobile,
@@ -346,7 +272,24 @@
         background-position: 230px center;
     }
 
-    /* content-direccion ----------------------------------------------------- */
+    /* calendario de nacimiento */
+    .webform-conditional-processed .content-datos .webform-calendar {
+      margin-top: 38px;
+    }
+
+    .webform-conditional-processed .content-datos .capa-fechas {
+      clear: left;
+    }
+
+    .webform-conditional-processed .content-datos .capa-fechas div div {
+        margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-datos .fila-3 label {
+        margin-top: 20px;
+    }
+
+/*********** content-direccion ****************************************/
 
     .webform-conditional-processed .content-direccion .fila-1 {
         margin-top: 20px;
@@ -408,7 +351,7 @@
         background-position: 398px center;
     }
 
-    /* content-idioma ------------------------------------- */
+/******** content-idioma *********************************************/
 
     .webform-conditional-processed .content-idioma a {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
@@ -470,7 +413,150 @@
         }
     }
 
-    /* content-certificado -------------------------------------------------*/
+/*********** content-cuota  *************************/
+
+    .webform-conditional-processed .content-colaborar form .cuota-options-wrapper-general {
+      width: 70%;
+      margin: 20px 0 20px 0;
+      padding: 0;
+      clear: both;
+      overflow: visible;
+      height: 51px;
+      position: relative;
+    }
+
+    .webform-conditional-processed .content-colaborar .fila-1 {
+      margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-colaborar {
+      padding: 0px 20px 20px; /*20*/
+    }
+
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+      width: 300px;
+      overflow: hidden;
+      float: left;
+      border: 2px solid #000;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    .webform-conditional-processed .content-colaborar .selecttime {
+      width: 120%;
+      border:0;
+    }
+
+    .webform-conditional-processed .content-colaborar select.selecttime {
+      background-position: 260px center;
+    }
+
+    .webform-conditional-processed .content-colaborar .capa-other-quant {
+      width: 70px;
+      overflow: hidden;
+      float: left;
+      height: 50px;
+      margin-right: 10px;
+      line-height: 50px;
+    }
+
+    .webform-conditional-processed .content-colaborar .other-quant {
+      border: 2px solid #000;
+      width: 100%;
+    }
+
+    .webform-conditional-processed .content-colaborar .cuotas label {
+      float: left;
+    }
+
+    .webform-conditional-processed .content-colaborar .caja-checkbox div label {
+      float: none;
+    }
+
+
+/*************** content-cuenta **************************/
+
+    .webform-conditional-processed .content-cuenta .fila-1 {
+      margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-cuenta label.iban{
+      font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+      float: left;
+      font-size: 20px;
+      color: #000;
+      height: 44px;
+      line-height: 50px;
+      margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-cuenta .capa-iban-letras{
+      width: 95px;
+      overflow: hidden;
+      float: left;
+      border: 2px solid #000;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-cuenta  .iban-letras {
+      width: 125%;
+      border: 0;
+    }
+
+    .webform-conditional-processed .content-cuenta select.iban-letras {
+      background-position: 50px center;
+    }
+
+    .webform-conditional-processed .content-cuenta .iban-numero{
+      max-width: 55px;
+    }
+
+    .webform-conditional-processed .content-cuenta .entidad{
+      max-width: 140px;
+    }
+
+    .webform-conditional-processed .content-cuenta .oficina{
+      max-width: 150px;
+    }
+
+    .webform-conditional-processed .content-cuenta .dc{
+      max-width: 100px;
+    }
+
+    .webform-conditional-processed .content-cuenta .ncuenta{
+      max-width: 270px;
+    }
+
+/********************* content-donativo ***********************/
+
+    .webform-conditional-processed .content-donativo p {
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .webform-conditional-processed .content-donativo .img-donativo {
+      margin: 0;
+      max-height: 500px;
+    }
+
+    .webform-conditional-processed .content-donativo .fila-2 input {
+      max-width: 200px;
+      float: left;
+    }
+
+    .webform-conditional-processed .content-donativo .fila-2 label{
+      float: left;
+      font-size: 19px;
+    }
+    .webform-conditional-processed .content-donativo .fila-2 span {
+      font-size: 25px;
+      float:left;
+      line-height: 45px;
+    }
+
+
+/****** content-certificado ****************************************/
 
     .webform-conditional-processed .content-certificado .capa-select {
         width: 80%;
@@ -502,7 +588,7 @@
         }
     }
 
-    /* content-preferencias ----------------------------------------------------- */
+/*************** content-preferencias ***************************/
 
      .webform-conditional-processed .content-preferencias .caja-checkbox {
          width: 42%;
@@ -526,133 +612,8 @@
          line-height: 20px;
      }
 
-    /* content-cuenta ----------------------------------------------------- */
+/********************* Comodo Secure ***********************/
 
-    .webform-conditional-processed .content-cuenta .fila-1 {
-        margin-top: 20px;
-    }
-
-    .webform-conditional-processed .content-cuenta label.iban{
-        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-        float: left;
-        font-size: 20px;
-        color: #000;
-        height: 44px;
-        line-height: 50px;
-        margin-right: 10px;
-    }
-
-    .webform-conditional-processed .content-cuenta .capa-iban-letras{
-        width: 95px;
-        overflow: hidden;
-        float: left;
-        border: 2px solid #000;
-        height: 50px;
-        margin-right: 10px;
-    }
-
-    .webform-conditional-processed .content-cuenta  .iban-letras {
-        width: 125%;
-        border: 0;
-    }
-
-    .webform-conditional-processed .content-cuenta select.iban-letras {
-        background-position: 50px center;
-    }
-
-    .webform-conditional-processed .content-cuenta .iban-numero{
-        max-width: 55px;
-    }
-
-    .webform-conditional-processed .content-cuenta .entidad{
-        max-width: 140px;
-    }
-
-    .webform-conditional-processed .content-cuenta .oficina{
-        max-width: 150px;
-    }
-
-    .webform-conditional-processed .content-cuenta .dc{
-        max-width: 100px;
-    }
-
-    .webform-conditional-processed .content-cuenta .ncuenta{
-        max-width: 270px;
-    }
-
-    /* content-donativo ----------------------------------------------------- */
-
-    .webform-conditional-processed .content-donativo p {
-        padding: 0;
-        font-size: 18px;
-    }
-
-    .webform-conditional-processed .content-donativo .img-donativo {
-        margin: 0;
-        max-height: 500px;
-    }
-
-    .webform-conditional-processed .content-donativo .fila-2 input {
-        max-width: 200px;
-        float: left;
-    }
-
-    .webform-conditional-processed .content-donativo .fila-2 label{
-        float: left;
-        font-size: 19px;
-    }
-    .webform-conditional-processed .content-donativo .fila-2 span {
-        font-size: 25px;
-        float:left;
-        line-height: 45px;
-    }
-
-    /* content-end-form ----------------------------------------------------- */
-
-     .webform-conditional-processed .content-end-form input[type=checkbox] {
-        visibility: hidden;
-        height: 28px;
-        width: 28px;
-    }
-
-     .webform-conditional-processed .content-end-form .check {
-        width: 28px;
-        height: 28px;
-        background: yellow;
-        position: relative;
-        margin-right: 20px;
-        margin-left: 20px;
-        float: left;
-    }
-
-     .webform-conditional-processed .content-end-form .check-politica label {
-        color: #fff;
-    }
-
-     .webform-conditional-processed .content-end-form .check label:after {
-        opacity: 0;
-        content: '\2713';
-        font-size: 20px;
-        color: #000;
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        top: 2px;
-        left: 3px;
-    }
-
-     .webform-conditional-processed .content-end-form .check input[type=checkbox]:checked + label:after {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-        filter: alpha(opacity=100);
-        opacity: 1;
-    }
-
-     .webform-conditional-processed .content-end-form {
-        padding: 0px;
-        margin: 0px 0px 50px 0px;
-    }
-
-    /* -------------- Comodo Secure ----------------- */
      .webform-conditional-processed .secure-img {
         float: left;
         margin-left: 50px;
@@ -664,7 +625,8 @@
         display: block;
     }
 
-    /* ------------- Boton enviar y siguiente --------------- */
+/************** Boton enviar y siguiente ******************************/
+
     .box-form-es .button-primary,
     .box-form-es .webform-next,
     .form-actions input[type="submit"],
@@ -695,7 +657,7 @@
         padding: 5px 0px;
     }
 
-    /* ----------- footer ------------------ */
+/************************* footer *************************/
 
     .footer {
         position: relative;;
@@ -718,7 +680,7 @@
     }
 
 
-    /* Box Right: Cajas --------------------------------------------------- */
+/******************** Box Right: Cajas ***************************/
 
     .box-es-right {
     	   width: 25%;
@@ -764,13 +726,16 @@
         font-weight: bold;
     }
 
-    /* ----------- Popups ----------------------------- */
+/***************** Popups ***************************/
+
     .cboxIframe {
         height: 100%;
         width: 100%;
     }
 
+/******************************************************************************/
 /****************************** RESPONSIVE ************************************/
+/******************************************************************************/
 
 
 /* Pantallas antiguas, Ipad: hasta 1360px */
@@ -1170,6 +1135,7 @@
     }
     .content-form .webform-conditional-processed .caja-content .capa-fechas div div,
     .webform-conditional-processed .content-certificado .capa-select,
+    .webform-conditional-processed .content-datos .capa-profesion,
     .webform-conditional-processed .content-direccion .capa-provincia,
     .webform-conditional-processed .content-direccion .capa-pais,
     .webform-conditional-processed .content-direccion .capa-tipo-via,
