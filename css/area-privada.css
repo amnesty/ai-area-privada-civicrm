@@ -1053,7 +1053,7 @@
       text-align: center;
     }
     .box-form-es .content-donativo p {
-      font-size: 18px;
+      font-size: 16px;
       margin: 10px;
     }
     .webform-conditional-processed .content-donativo .fila-2 span {
@@ -1125,7 +1125,7 @@
       margin: 0 auto;
   }
   .webform-conditional-processed .content-donativo .fila-2 input {
-      max-width:89%;
+      max-width:36%;
       float: none;
       margin-top: 20px;
   }
