@@ -265,7 +265,7 @@
 
     .webform-conditional-processed .content-datos .document{
     	  width: 125%;
-        z-index: 9;
+        z-index: 1;
         border-radius: 10px 0 0 10px;
     }
 
