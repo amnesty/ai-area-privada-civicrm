@@ -947,6 +947,10 @@
     .content-form fieldset {
         margin-top: 20px;
     }
+    /* iconos de los bloques */
+    .box-form-es h2 img {
+        height: 60px;
+    }
     /* acceso */
     .webform-conditional-processed .content-datos-acceso .col-md-4 label {
       font-size: 18px;
@@ -1190,8 +1194,9 @@
     .content-form .text-intro span {
       font-size: 16px;
     }
-    .box-form-es h2 img { /* dejamos de mostrar los iconos en resoluciones móviles */
-        display: none;
+    /* iconos de los bloques */
+    .box-form-es h2 img {
+        height: 45px;
     }
     .box-form-es span {
         top: 8px;
@@ -1395,6 +1400,9 @@
   }
   .content-form .webform-conditional-processed .caja-content .capa-fechas div select {
       background: #fff;
+  }
+  .box-form-es h2 img { /* dejamos de mostrar los iconos en resoluciones móviles */
+      display: none;
   }
 }
 
