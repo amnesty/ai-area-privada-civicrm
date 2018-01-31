@@ -154,7 +154,7 @@
         background: #ececec;
     }
 
-/****** content-datos ----------------------------------------------------- */
+/************* content-datos ********************************/
 
     .webform-conditional-processed .content-datos .fila-1,
     .webform-conditional-processed .content-datos .fila-2,
@@ -414,6 +414,22 @@
     }
 
 /*********** content-cuota  *************************/
+
+    .webform-conditional-processed .content-colaborar .cuota_actual {
+      max-width: 100px;
+      float: left;
+      background-color: #ddd;
+    }
+
+    .webform-conditional-processed .content-colaborar .period_actual {
+      max-width: 200px;
+      float: left;
+      background-color: #ddd;
+    }
+
+    .webform-conditional-processed .content-colaborar .fila-1 label {
+      float: left;
+    }
 
     .webform-conditional-processed .content-colaborar form .cuota-options-wrapper-general {
       width: 70%;
@@ -855,6 +871,23 @@
     }
     .webform-conditional-processed .content-colaborar select.selecttime {
         background-position: 80% center;
+    }
+    /* cuota */
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+    	width: 25%;
+    	margin-top: 20px;
+      /*float: none;*/
+    }
+    .content-form .webform-conditional-processed .caja-checkbox div {
+    	/*float: none;*/
+    /*	overflow: initial;*/
+    	margin-right: 10px;
+    }
+    .webform-conditional-processed .content-colaborar .capa-other-quant {
+    	/*float: none;*/
+    }
+    .webform-conditional-processed .content-colaborar .cuotas label {
+    	/*float: none;*/
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .ncuenta {

@@ -202,6 +202,7 @@ jQuery(function($) {
             $('.account').not(".first").css("border", "#f00 2px solid");
     }
 
+    // Popups
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
     $('a.popup_little').colorbox({iframe:true, width:"50%", height:"20%", "scrolling":false});
 
@@ -212,7 +213,7 @@ jQuery(function($) {
         }, 500);
     });
 
-    // popups colorbox
+    // refrescar popups colorbox
     function refresh_popups(){
         var y = $('.cboxIframe html').height();
         $('a.popup_little').resize({ width:"50%", height:y });
@@ -306,7 +307,9 @@ jQuery(function($) {
     }
 
     // Borrar campos de nueva contraseña
-    $(".password").val("");
+    $( document ).ready(function() {
+        $(".password").val("");
+    });
 
     function masMenos() {
       // Botones de + y de -
@@ -325,7 +328,6 @@ jQuery(function($) {
     // Mover texto del pie a la barra del boton
     if( $(".webform-conditional-processed").length > 0 ){
       var submit = $(".form-actions");
-      /*$(".footer__bottom").prepend(submit);*/
       $(".footer").after(submit);
 
       $(".form-submit").click(function(){
@@ -333,5 +335,11 @@ jQuery(function($) {
       });
 
     }
+
+    // Rellenar la cuota actual
+    var cuota_act = $(".cuota input:checked").val()+' €';
+    var period_act = $(".frecuencia option:selected").text();
+    $(".cuota_actual").val(cuota_act);
+    $(".period_actual").val(period_act);
 
 })
