@@ -372,24 +372,23 @@ jQuery(function($) {
 
       // Calcular cuotas sugeridas x 1.2, 1.5 y 2
       var cuota_uno_dos = Math.round(cuota_act*1.2);
-      $(".cuotas div div:first-child input").val(cuota_uno_dos);
       $(".cuotas div div:first-child label").text(cuota_uno_dos+"€");
 
       var cuota_uno_cinco = Math.round(cuota_act*1.5);
-      $(".cuotas div div:nth-child(2) input").val(cuota_uno_cinco);
       $(".cuotas div div:nth-child(2) label").text(cuota_uno_cinco+"€");
 
       var cuota_dos = Math.round(cuota_act*2);
-      $(".cuotas div div:nth-child(3) input").val(cuota_dos);
       $(".cuotas div div:nth-child(3) label").text(cuota_dos+"€");
     }
 
     $(".cuotas").change(function(){
-      var cuota = $(".cuotas input:checked").val();
-      var period = $(".frecuencia option:selected").val();
-      cuota_input.val(cuota);
-
+        var cuota_id = $(".cuotas input:checked").attr("id");
+        var cuota_label = $("label[for='"+cuota_id+"']").text();
+        var cuota = cuota_label.substr(0, cuota_label.length-1);
+        cuota_input.val(cuota);
     });
 
-
+    $(".otra_cuota").keyup(function(){
+        cuota_input.val($(".otra_cuota").val());
+    });
 })
