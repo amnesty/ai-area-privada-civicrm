@@ -363,22 +363,24 @@ jQuery(function($) {
     if( $(".cuota_actual").length > 0 ){
 
       // Rellenar la cuota actual
-      var cuota_act = $(".cuota input:checked").val();
+      var cuota_input = $("[name='submitted[caja_cuota][fieldset_fila_1_1][civicrm_1_contact_1_cg6_custom_14]']");
+      var cuota_act = cuota_input.val();
       var period_act = $(".frecuencia option:selected").text();
+
       $(".cuota_actual").val(cuota_act+' €');
       $(".period_actual").val(period_act);
 
       // Calcular cuotas sugeridas x 1.2, 1.5 y 2
       var cuota_uno_dos = Math.round(cuota_act*1.2);
-      $(".cuotas div div:first-child input").val(cuota_uno_dos);
+      cuota_input.val(cuota_uno_dos);
       $(".cuotas div div:first-child label").text(cuota_uno_dos+"€");
 
       var cuota_uno_cinco = Math.round(cuota_act*1.5);
-      $(".cuotas div div:nth-child(2) input").val(cuota_uno_cinco);
+      cuota_input.val(cuota_uno_cinco);
       $(".cuotas div div:nth-child(2) label").text(cuota_uno_cinco+"€");
 
       var cuota_dos = Math.round(cuota_act*2);
-      $(".cuotas div div:nth-child(3) input").val(cuota_dos);
+      cuota_input.val(cuota_dos);
       $(".cuotas div div:nth-child(3) label").text(cuota_dos+"€");
     }
 
