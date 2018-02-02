@@ -363,7 +363,7 @@ jQuery(function($) {
     if( $(".cuota_actual").length > 0 ){
 
       // Rellenar la cuota actual
-      var cuota_input = $("[name='submitted[caja_cuota][fieldset_fila_1_1][civicrm_1_contact_1_cg6_custom_14]']");
+      var cuota_input = $("[name='submitted[caja_cuota][fieldset_fila_1_1][civicrm_1_contact_1_cg15_custom_48]']");
       var cuota_act = cuota_input.val();
       var period_act = $(".frecuencia option:selected").text();
 
