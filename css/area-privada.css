@@ -881,7 +881,6 @@
     /* cuota */
     .webform-conditional-processed .content-colaborar .capa-selecttime {
     	width: 30%;
-    	margin-top: 20px;
     }
     .content-form .webform-conditional-processed .content-colaborar .caja-checkbox div {
     	margin-right: 0px;
@@ -929,12 +928,6 @@
   /* cuota */
   .webform-conditional-processed .content-colaborar .capa-other-quant {
       overflow: visible;
-  }
-  .webform-conditional-processed .content-colaborar .capa-other-quant {
-      margin-top: 20px;
-  }
-  .webform-conditional-processed .content-colaborar .cuotas label {
-    /*float: none;*/
   }
 
 }
