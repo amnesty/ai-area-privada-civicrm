@@ -461,7 +461,6 @@
       float: left;
       border: 2px solid #000;
       height: 50px;
-      /*margin-right: 20px;*/
     }
 
     .webform-conditional-processed .content-colaborar .selecttime {
@@ -914,6 +913,27 @@
     }
 }
 
+@media only screen and (max-width: 852px) {
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .webform-conditional-processed .content-colaborar select.selecttime {
+        background-position: 80% center;
+    }
+    .webform-conditional-processed .content-colaborar .capa-other-quant {
+        margin-top: 45px;
+    }
+    .webform-conditional-processed .content-colaborar .caja-checkbox div  {
+        overflow: visible;
+        float: none;
+    }
+    .webform-conditional-processed .content-colaborar .caja-checkbox div div {
+        float: left;
+    }
+
+}
+
 /* hasta 813 todo bien */
 @media only screen and (max-width: 812px) {
 
@@ -1008,23 +1028,6 @@
     /* cuota */
     .webform-conditional-processed .content-colaborar .cuotas label {
       font-size: 18px;
-    }
-    .webform-conditional-processed .content-colaborar .capa-selecttime {
-        width: 100%;
-        margin-top: 20px;
-    }
-    .webform-conditional-processed .content-colaborar select.selecttime {
-        background-position: 80% center;
-    }
-    .webform-conditional-processed .content-colaborar .capa-other-quant {
-        margin-top: 45px;
-    }
-    .webform-conditional-processed .content-colaborar .caja-checkbox div  {
-        overflow: visible;
-        float: none;
-    }
-    .webform-conditional-processed .content-colaborar .caja-checkbox div div {
-        float: left;
     }
     .webform-conditional-processed .content-colaborar .cuota_actual,
     .webform-conditional-processed .content-colaborar .period_actual {
