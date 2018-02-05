@@ -381,6 +381,7 @@ jQuery(function($) {
       $(".cuotas div div:nth-child(3) label").text(cuota_dos+"€");
     }
 
+    // Actualizar el campo oculto de cuota cada vez que se modifica
     $(".cuotas").change(function(){
         var cuota_id = $(".cuotas input:checked").attr("id");
         var cuota_label = $("label[for='"+cuota_id+"']").text();
