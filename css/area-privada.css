@@ -927,14 +927,11 @@
       max-width: 212px;
   }
   /* cuota */
-  .webform-conditional-processed .content-colaborar .other-quant {
-      margin-top: 20px;
-  }
   .webform-conditional-processed .content-colaborar .capa-other-quant {
       overflow: visible;
   }
   .webform-conditional-processed .content-colaborar .capa-other-quant {
-    /*float: none;*/
+      margin-top: 20px;
   }
   .webform-conditional-processed .content-colaborar .cuotas label {
     /*float: none;*/
