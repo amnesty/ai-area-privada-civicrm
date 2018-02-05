@@ -418,7 +418,7 @@
 /*********** content-cuota  *************************/
 
     .webform-conditional-processed .content-colaborar .cuota_actual {
-      max-width: 50px;
+      max-width: 80px;
       float: left;
       background-color: transparent;
       border: 0px;
@@ -456,7 +456,7 @@
     }
 
     .webform-conditional-processed .content-colaborar .capa-selecttime {
-      width: 210px;
+      width: 370px;
       overflow: hidden;
       float: left;
       border: 2px solid #000;
@@ -470,7 +470,7 @@
     }
 
     .webform-conditional-processed .content-colaborar select.selecttime {
-      background-position: 180px center;
+      background-position: 330px center;
     }
 
     .webform-conditional-processed .content-colaborar .capa-other-quant {
@@ -880,7 +880,7 @@
     }
     /* cuota */
     .webform-conditional-processed .content-colaborar .capa-selecttime {
-    	width: 30%;
+    	width: 370px;
     }
     .content-form .webform-conditional-processed .content-colaborar .caja-checkbox div {
     	margin-right: 0px;
