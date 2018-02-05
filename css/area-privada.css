@@ -1026,15 +1026,13 @@
         background-position: 76% center !important;
     }
     /* cuota */
-    .webform-conditional-processed .content-colaborar label {
-      font-size: 18px;
-    }
     .webform-conditional-processed .content-colaborar .cuota_actual,
     .webform-conditional-processed .content-colaborar .period_actual {
       	float: none;
     }
     .webform-conditional-processed .content-colaborar .fila-1 label {
     	 float: none;
+       font-size: 18px;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
