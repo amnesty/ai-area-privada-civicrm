@@ -925,10 +925,6 @@
   .fila-1 input, .content-datos .fila-3 input{
       max-width: 212px;
   }
-  /* cuota */
-  .webform-conditional-processed .content-colaborar .capa-other-quant {
-      overflow: visible;
-  }
 
 }
 
@@ -1015,10 +1011,27 @@
     }
     .webform-conditional-processed .content-colaborar .capa-selecttime {
         width: 100%;
-        margin-bottom: 20px;
+        margin-top: 20px;
     }
     .webform-conditional-processed .content-colaborar select.selecttime {
         background-position: 80% center;
+    }
+    .webform-conditional-processed .content-colaborar .capa-other-quant {
+        margin-top: 45px;
+    }
+    .webform-conditional-processed .content-colaborar .caja-checkbox div  {
+        overflow: visible;
+        float: none;
+    }
+    .webform-conditional-processed .content-colaborar .caja-checkbox div div {
+        float: left;
+    }
+    .webform-conditional-processed .content-colaborar .cuota_actual,
+    .webform-conditional-processed .content-colaborar .period_actual {
+      	float: none;
+    }
+    .webform-conditional-processed .content-colaborar .fila-1 label {
+    	 float: none;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
