@@ -426,7 +426,7 @@
     }
 
     .webform-conditional-processed .content-colaborar .period_actual {
-      max-width: 200px;
+      max-width: 170px;
       float: left;
       background-color: transparent;
       border: 0px;
@@ -1026,7 +1026,7 @@
         background-position: 76% center !important;
     }
     /* cuota */
-    .webform-conditional-processed .content-colaborar .cuotas label {
+    .webform-conditional-processed .content-colaborar label {
       font-size: 18px;
     }
     .webform-conditional-processed .content-colaborar .cuota_actual,
@@ -1332,6 +1332,13 @@
     .webform-conditional-processed .content-direccion .postal,
     .webform-conditional-processed .content-direccion .capa-provincia {
         margin-top: 20px;
+    }
+    /* cuota */
+    .webform-conditional-processed .content-colaborar .caja-checkbox div div {
+        float: none;
+    }
+    .webform-conditional-processed .content-colaborar .fila-1 div {
+      text-align: center;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
