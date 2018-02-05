@@ -271,7 +271,7 @@
     }
 
     .webform-conditional-processed .content-datos select.profesion {
-        background-position: 655px center;
+        background-position: 640px center;
     }
 
     /* calendario de nacimiento */
@@ -876,11 +876,11 @@
         margin-bottom: 20px;
     }
     .webform-conditional-processed .content-colaborar select.selecttime {
-        background-position: 80% center;
+        background-position: 78% center;
     }
     /* cuota */
     .webform-conditional-processed .content-colaborar .capa-selecttime {
-    	width: 25%;
+    	width: 30%;
     	margin-top: 20px;
     }
     .content-form .webform-conditional-processed .content-colaborar .caja-checkbox div {
@@ -1196,7 +1196,7 @@
         font-size: 21px;
         padding-bottom: 10px;
         line-height: 30px;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-bottom: 10px;
     }
     .content-form .text-intro span {
