@@ -134,6 +134,7 @@
 
     .dropdown-menu {
       min-width: 120px;
+      left: -50px;
     }
     .dropdown-menu>li>a :hover {
       background-color: #ddd;
@@ -416,15 +417,19 @@
 /*********** content-cuota  *************************/
 
     .webform-conditional-processed .content-colaborar .cuota_actual {
-      max-width: 100px;
+      max-width: 50px;
       float: left;
-      background-color: #ddd;
+      background-color: transparent;
+      border: 0px;
+      color: #666;
     }
 
     .webform-conditional-processed .content-colaborar .period_actual {
       max-width: 200px;
       float: left;
-      background-color: #ddd;
+      background-color: transparent;
+      border: 0px;
+      color: #666;
     }
 
     .webform-conditional-processed .content-colaborar .fila-1 label {
@@ -450,12 +455,12 @@
     }
 
     .webform-conditional-processed .content-colaborar .capa-selecttime {
-      width: 300px;
+      width: 210px;
       overflow: hidden;
       float: left;
       border: 2px solid #000;
       height: 50px;
-      margin-right: 20px;
+      /*margin-right: 20px;*/
     }
 
     .webform-conditional-processed .content-colaborar .selecttime {
@@ -464,7 +469,7 @@
     }
 
     .webform-conditional-processed .content-colaborar select.selecttime {
-      background-position: 260px center;
+      background-position: 180px center;
     }
 
     .webform-conditional-processed .content-colaborar .capa-other-quant {
@@ -916,6 +921,13 @@
         float: none;
         margin: 0 auto 0 250px;
     }
+}
+
+@media only screen and (max-width: 868px) {
+  .webform-conditional-processed .content-colaborar .other-quant {
+    margin-top: 20px;
+    overflow: visible;
+  }
 }
 
 /* hasta 813 todo bien */

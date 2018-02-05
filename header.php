@@ -28,6 +28,8 @@
                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-v3-test">Mi cuenta</a></li>
                   <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-v3-passw-test">Cambiar contraseña</a></li>
+                  <li role="presentation" class="divider"></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="user/logout/?destination=area-privada-v3-test">Cerrar sesión</a></li>
                 </ul>
              </div>

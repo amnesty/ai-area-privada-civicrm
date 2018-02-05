@@ -1,6 +1,6 @@
 <?php
 
-function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_id) {
+/*function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_id) {
   //if ($form_id == 'webform_client_form_148' || $form_id == 'webform_client_form_169') {
     global $user;
     $currentUser = user_load($user->uid);
@@ -23,7 +23,7 @@ function validate_custom($form, &$form_state) {
   if ($form_state['values']['submitted']['caja_datos_acceso']['fila_1_acceso']['nueva_contrasena'] != $form_state['values']['submitted']['caja_datos_acceso']['fila_1_acceso']['repite_contrasena']) {
     form_set_error('submitted][caja_datos_acceso][fila_1_acceso][repite_contrasena', t('Las contraseñas deben coincidir.'));
   }
-}
+}*/
 
 /*function areaprivada_theme() {
     $items = array();
