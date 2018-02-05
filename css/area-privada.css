@@ -256,7 +256,8 @@
     }
 
     .webform-conditional-processed .content-datos .capa-profesion {
-        width: 270px;
+        width: 100%;
+        max-width: 700px;
         overflow: hidden;
         float: left;
         border: 2px solid #000;
@@ -270,7 +271,7 @@
     }
 
     .webform-conditional-processed .content-datos select.profesion {
-        background-position: 230px center;
+        background-position: 655px center;
     }
 
     /* calendario de nacimiento */
@@ -881,18 +882,9 @@
     .webform-conditional-processed .content-colaborar .capa-selecttime {
     	width: 25%;
     	margin-top: 20px;
-      /*float: none;*/
     }
-    .content-form .webform-conditional-processed .caja-checkbox div {
-    	/*float: none;*/
-    /*	overflow: initial;*/
-    	margin-right: 10px;
-    }
-    .webform-conditional-processed .content-colaborar .capa-other-quant {
-    	/*float: none;*/
-    }
-    .webform-conditional-processed .content-colaborar .cuotas label {
-    	/*float: none;*/
+    .content-form .webform-conditional-processed .content-colaborar .caja-checkbox div {
+    	margin-right: 0px;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .ncuenta {
@@ -923,13 +915,6 @@
     }
 }
 
-@media only screen and (max-width: 868px) {
-  .webform-conditional-processed .content-colaborar .other-quant {
-    margin-top: 20px;
-    overflow: visible;
-  }
-}
-
 /* hasta 813 todo bien */
 @media only screen and (max-width: 812px) {
 
@@ -940,6 +925,19 @@
   .webform-conditional-processed .content-datos
   .fila-1 input, .content-datos .fila-3 input{
       max-width: 212px;
+  }
+  /* cuota */
+  .webform-conditional-processed .content-colaborar .other-quant {
+      margin-top: 20px;
+  }
+  .webform-conditional-processed .content-colaborar .capa-other-quant {
+      overflow: visible;
+  }
+  .webform-conditional-processed .content-colaborar .capa-other-quant {
+    /*float: none;*/
+  }
+  .webform-conditional-processed .content-colaborar .cuotas label {
+    /*float: none;*/
   }
 
 }
@@ -1003,7 +1001,6 @@
     }
     .webform-conditional-processed .content-datos .capa-profesion {
         width: 100%;
-        margin-top: 20px;
     }
     .webform-conditional-processed .content-datos .capa-fechas {
         width: 100% !important;
@@ -1269,6 +1266,7 @@
     .webform-conditional-processed .content-datos .capa-profesion {
         width: 100%;
         float: none;
+        margin-top: 20px;
     }
     .webform-conditional-processed .content-datos  input#email {
         margin-bottom: 20px;

@@ -35,7 +35,9 @@
   /* Cajas laterales */
 
   $titulo_caja_buenas_noticias = '<h3>¡Buenas Noticias!</h3>';
-  $texto_caja_buenas_noticias = '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  $texto_caja_buenas_noticias = '<p>"Gracias a Amnistía Internacional. Sin ustedes, no habría salido de la cárcel".
+	Como Clovis, son miles las personas a las que has ayudado en, son miles los agradecimientos...
+	Conoce los logros y las buenas noticias que se han conseguido gracias a tu apoyo:
     <a class="link-caja-buenas-noticias" target="_blank" href="https://www.es.amnesty.org/en-que-estamos/para-celebrar" title="buenas noticias: en qué estamos - para celebrar">CONOCE MÁS</a>.
     </p>';
 

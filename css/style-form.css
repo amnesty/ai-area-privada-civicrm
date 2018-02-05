@@ -104,6 +104,10 @@ span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address,
   margin: 0 15px;
 }
 
+.content-form a:hover {
+  text-decoration: underline;
+}
+
 /* Elementos genéricos de formulario ------------- */
 
 .content-form .webform-conditional-processed input {
