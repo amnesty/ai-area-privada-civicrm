@@ -1433,4 +1433,18 @@
   }
 }
 
+@media only screen and (max-width: 385px) {
+  /* cuota */
+  .webform-conditional-processed .content-colaborar .cuota_actual{
+      margin-left: 10%;
+  }
+  .webform-conditional-processed .content-colaborar .period_actual{
+      margin-left: 30%;
+  }
+  .webform-conditional-processed .content-colaborar .fila-1 label,
+  .webform-conditional-processed .content-colaborar .cuotas label {
+    font-size: 17px;
+  }
+}
+
 /* Nota: El modelo Samsung Galaxy S5 mide 360 de ancho. Menos que esto  no está contemplado */
