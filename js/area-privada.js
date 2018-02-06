@@ -313,34 +313,33 @@ jQuery(function($) {
     }
 
     toggleBoxVisibility();
-    masMenos();
 
     function toggleBoxVisibility() {
         $('.node-type-webform .webform-client-form .caja-content > .form-item.webform-component').on('click', function (event){
             $containerBox = $(this).parent();
             if ($containerBox.hasClass('caja-visible')) {
-
-                return;
+                $containerBox.removeClass('caja-visible').addClass('caja-hidden');
             }
-
-            var $boxes = $('.node-type-webform .webform-client-form .caja-content');
-            $boxes.each(function(index) {
-                var $box = $(this);
-                $box.removeClass('caja-visible');
-                $box.addClass('caja-hidden');
-            });
-            $containerBox.removeClass('caja-hidden').addClass('caja-visible');
-            event.preventDefault();
-            $('html,body').animate(
-                {
-                    scrollTop: $(this).offset().top - 55
-                },
-                0
-            );
-
+            else {
+              var $boxes = $('.node-type-webform .webform-client-form .caja-content');
+              $boxes.each(function(index) {
+                  var $box = $(this);
+                  $box.removeClass('caja-visible');
+                  $box.addClass('caja-hidden');
+              });
+              $containerBox.removeClass('caja-hidden').addClass('caja-visible');
+              event.preventDefault();
+              $('html,body').animate(
+                  {
+                      scrollTop: $(this).offset().top - 55
+                  },
+                  0
+              );
+            }
             masMenos();
         });
     }
+    masMenos();
 
     // Cambiar los símbolos con el despliegue de los bloques
     function masMenos() {
