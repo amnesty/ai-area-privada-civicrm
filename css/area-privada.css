@@ -616,17 +616,11 @@
          margin-bottom: 20px;
          line-height: 30px;
      }
+
     .webform-conditional-processed .content-preferencias .caja-checkbox label {
         height: inherit;
         margin-bottom: 10px;
     }
-
-     @media only screen and (min-width: 993px){
-         .webform-conditional-processed .content-preferencias .caja-checkbox {
-             width: 30%;
-             line-height: 30px;
-         }
-     }
 
      .webform-conditional-processed .content-preferencias .caja-checkbox label {
          display: block;
@@ -635,15 +629,8 @@
 
 /********************* Comodo Secure ***********************/
 
-     .webform-conditional-processed .secure-img {
-        float: left;
-        margin-left: 50px;
-        margin-top: 20px;
-    }
-
-    .box-form-es  .webform-conditional-processed .secure-img img{
-        max-width: 158px;
-        display: block;
+    .webform-conditional-processed .botons-form p {
+        text-align: center;
     }
 
 /************** Boton enviar y siguiente ******************************/
@@ -794,6 +781,13 @@
     }
     .box-es-right .three-column:first-child {
         margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 993px){
+    .webform-conditional-processed .content-preferencias .caja-checkbox {
+        width: 30%;
+        line-height: 30px;
     }
 }
 
@@ -1100,12 +1094,6 @@
         float: none;
         width: 315px;
     }
-    .webform-conditional-processed .content-end-form .botons-form img {
-        float: left;
-        margin: 0px auto auto;
-        display: block;
-        top: 0px;
-    }
     .webform-conditional-processed .content-end-form {
         padding: 0px;
         margin: 0px 0px 50px 0px;
@@ -1113,6 +1101,14 @@
     .box-form-es .webform-conditional-processed .form-actions {
         margin: 30px 0px 0px 0px;
     }
+    /* comodo secure */
+    .webform-conditional-processed .content-end-form .botons-form img {
+        float: left;
+        margin: 0px auto auto;
+        display: block;
+        top: 0px;
+    }
+    /* footer */
     .footer-legal {
        border-top: 0px;
     }
