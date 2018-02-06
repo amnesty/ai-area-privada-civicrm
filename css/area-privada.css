@@ -1029,10 +1029,14 @@
     .webform-conditional-processed .content-colaborar .cuota_actual,
     .webform-conditional-processed .content-colaborar .period_actual {
       	float: none;
+        font-size: 18px;
     }
     .webform-conditional-processed .content-colaborar .fila-1 label {
     	 float: none;
        font-size: 18px;
+    }
+    .webform-conditional-processed .content-colaborar .cuotas label {
+        font-size: 18px;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
@@ -1336,7 +1340,10 @@
         float: none;
     }
     .webform-conditional-processed .content-colaborar .fila-1 div {
-      text-align: center;
+        text-align: center;
+    }
+    .webform-conditional-processed .content-colaborar .cuotas label {
+        float: none;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
