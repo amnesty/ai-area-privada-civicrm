@@ -250,6 +250,11 @@ jQuery(function($) {
           $('a.popup_little').resize({ width:"50%", height:y });
       }
 
+      // cerrar cuando se clica donde sea
+      function closeIFrame(){
+          $(".cboxIframe").close();
+      }
+
     }
 
     // 0 del DNI
