@@ -31,8 +31,8 @@
       color: #000000;
       padding: 0px 20px;
       font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-      text-align: justify;
-      font-style: italic;
+      /*text-align: justify;*/
+      /*font-style: italic;*/
     }
 
     .webform-conditional-processed .caja-content > .form-item.webform-component {
@@ -558,7 +558,8 @@
 
     .webform-conditional-processed .content-donativo .img-donativo {
       margin: 0;
-      max-height: 500px;
+      max-height: 300px;
+      width: 100%;
     }
 
     .webform-conditional-processed .content-donativo .fila-2 input {
@@ -571,9 +572,10 @@
       font-size: 19px;
     }
     .webform-conditional-processed .content-donativo .fila-2 span {
-      font-size: 25px;
+      font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+      font-size: 23px;
       float:left;
-      line-height: 45px;
+      line-height: 50px;
     }
 
 
