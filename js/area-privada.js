@@ -9,7 +9,7 @@ function getUrlVars() {
 
 jQuery(function($) {
 
-    // Scrolling the active block of fields
+    // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima
 
     if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
 
@@ -19,134 +19,77 @@ jQuery(function($) {
               $(this).addClass('active');
 
           });
-          /*$(".content-datos-acceso").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-
-          });*/
         }
-
         if( $(".content-colaborar").length > 0 ){
           $(".content-colaborar").hover( function(){
               $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          /*$(".content-colaborar").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-
-          });*/
         }
-
         if( $(".content-datos").length > 0 ){
           $(".content-datos").hover( function(){
               $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          /*$(".content-datos").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-
-          });*/
         }
-
         if( $(".content-direccion").length > 0 ){
           $(".content-direccion").hover( function(){
               $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          /*$(".content-direccion").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-          });*/
         }
-
         if( $(".content-cuenta").length > 0 ){
           $(".content-cuenta").hover( function(){
               $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          /*$(".content-cuenta").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-
-          });*/
         }
-
         if( $(".content-idioma").length > 0 ){
           $(".content-idioma").hover( function(){
               $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          /*$(".content-idioma").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-
-          });*/
         }
-
         if( $(".content-donativo").length > 0 ){
           $(".content-donativo").hover( function(){
               $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          /*$(".content-donativo").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-
-          });*/
         }
-
         if( $(".content-certificado").length > 0 ){
           $(".content-certificado").hover( function(){
               $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          /*$(".content-certificado").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-
-          });*/
         }
-
         if( $(".content-historial").length > 0 ){
           $(".content-historial").hover( function(){
               $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          /*$(".content-historial").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-          });*/
         }
-
         if( $(".content-preferencias").length > 0 ){
           $(".content-preferencias").hover( function(){
               $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          /*$(".content-preferencias").keyup( function(){
-              $(".caja-content").removeClass('active');
-              $(this).addClass('active');
-
-          });*/
         }
-
     }
     else {
         $(".caja-content").removeClass('active');
     }
 
     // Sort the countries
+
     $( document ).ready(function() {
       if( $(".pais").length > 0 ){
           var options = $('.pais option');
@@ -162,9 +105,12 @@ jQuery(function($) {
     });
 
     // Province label
+
     $('.provincia option[value=""]').text("-Provincia-");
 
+
     // Etiquetas de fecha de nacimiento
+
     url = window.location.href;
     if(url.indexOf("/cat") > -1){ // AmnistiaCAT
       $('.day option[value=""]').text("Dia");
@@ -173,25 +119,23 @@ jQuery(function($) {
     }
 
     // Make the IBAN fields to automatically move the cursor through when any field is fullfilled.
+
     if( $(".country").length > 0 ){
         $(".country").keyup( function(){
           if($(".country").val().length >= 2){
               $(".entity").focus();
           }
         });
-
         $(".entity").keyup( function(){
           if($(".entity").val().length >= 4){
               $(".office").focus();
           }
         });
-
         $(".office").keyup( function(){
           if($(".office").val().length >= 4){
               $(".check").focus();
           }
         });
-
         $(".check").keyup( function(){
           if($(".check").val().length >= 2){
               $(".account").focus();
@@ -200,6 +144,7 @@ jQuery(function($) {
     }
 
     // Mark errors in select boxes
+
     $(".error").not(".messages").each( function(){
       if ($(this).is("select")){
           $(this).parent().addClass("form-error");
@@ -211,6 +156,7 @@ jQuery(function($) {
     });
 
     // Cuenta entera en rojo
+
     if($('.account').hasClass('error') || $('.dc').hasClass('error') ){
             $('.entity').css("border", "#f00 2px solid");
             $('.office').css("border", "#f00 2px solid");
@@ -219,6 +165,7 @@ jQuery(function($) {
     }
 
     // Popups
+
     if( $("a.popup").length > 0 ){
 
       // device detection
@@ -257,6 +204,7 @@ jQuery(function($) {
     }
 
     // 0 del DNI
+
     if( $(".number-dni").length > 0 ){
       $('.number-dni').first().focusout(function(){
           var dni = String($(this).val());
@@ -269,7 +217,6 @@ jQuery(function($) {
     // Redes sociales
 
     function share(title, summary, url, image) {
-        //var sharer="https://www.facebook.com/sharer/sharer.php?u=example.org";
         window.open(
             'https://www.facebook.com/sharer.php?u=' + encodeURIComponent(url)
             + '&t=' + encodeURIComponent(title),
@@ -321,6 +268,8 @@ jQuery(function($) {
             var $box = $(this);
             $box.addClass(boxClass);
         });
+        // Excepción para página de modificación de contraseña
+        $(".content-datos-acceso").removeClass('caja-hidden').addClass('caja-visible');
     }
 
     function toggleBoxVisibility() {
@@ -366,9 +315,8 @@ jQuery(function($) {
     // Borrar campos de nueva contraseña
 
     if( $(".password").length > 0 ){
-      $( document ).ready(function() {
           $(".password").each().val("");
-      });
+          $(".password").each().text("");
     }
 
     // Mover boton de submit al footer
