@@ -11,7 +11,7 @@ jQuery(function($) {
 
     // Scrolling the active block of fields
 
-    if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
+    /*if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
 
         if( $(".content-datos-acceso").length > 0 ){
           $(".content-datos-acceso").hover( function(){
@@ -145,7 +145,7 @@ jQuery(function($) {
     }
     else {
         $(".caja-content").removeClass('active');
-    }
+    }*/
 
     // Sort the countries
     $( document ).ready(function() {
@@ -163,7 +163,7 @@ jQuery(function($) {
     });
 
     // Province label
-    //$('.provincia option[value=""]').text("-Provincia-");
+    $('.provincia option[value=""]').text("-Provincia-");
 
     // Etiquetas de fecha de nacimiento
     url = window.location.href;
@@ -329,10 +329,9 @@ jQuery(function($) {
               var $boxes = $('.node-type-webform .webform-client-form .caja-content');
               $boxes.each(function(index) {
                   var $box = $(this);
-                  $box.removeClass('caja-visible');
-                  $box.addClass('caja-hidden');
+                  $box.removeClass('caja-visible').removeClass('active').addClass('caja-hidden');
               });
-              $containerBox.removeClass('caja-hidden').addClass('caja-visible');
+              $containerBox.removeClass('caja-hidden').addClass('caja-visible').addClass('active');
               event.preventDefault();
               $('html,body').animate(
                   {
