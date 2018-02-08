@@ -1,16 +1,17 @@
 <?php
 
 // Funciones para el cambio de contraseña
-
 function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_id) {
-  //if ($form_id == 'webform_client_form_148' || $form_id == 'webform_client_form_169') {
+  include_once("config.php");
+
+  if ($form_id == $form_cambio_contrasena) {
     global $user;
     $currentUser = user_load($user->uid);
     $form['submitted']['caja_datos_acceso']['fila_1_acceso']['usuario']['#value'] = $currentUser->name;
     $form['#submit'][] = 'custom_settings_form_submit';
 
     $form['#validate'][] = 'validate_custom';
-  //}
+  }
 }
 
 function custom_settings_form_submit($form, &$form_state) {
