@@ -302,14 +302,21 @@ jQuery(function($) {
             });
     });
 
-    // ??????????
-    //$('.webform-component--caja-preferncias-comunicacion--fila-1-preferencias--civicrm-1-contact-1-cg10-custom-26 label').removeClass('element-invisible');
-
-    // Bloques plegables
+    // Inicializar las cajas con sus clases CSS correspondientes
+    // y los bloques plegados o no según convenga
     attachVisibilityClassesToBoxes();
+
+    // Función que cambia las clases CSS de los bloques cada vez que se clica
+    // en uno de ellos y los pliega o despliega
+    toggleBoxVisibility();
+
+    // Función que asigna las flechas de bloque cerrado o abierto
+    // y que las cambia cada vez que se clica un bloque
+    masMenos();
+
     function attachVisibilityClassesToBoxes() {
         var $boxes = $('.node-type-webform .webform-client-form .caja-content');
-        var bloqueDatosPersonalesIndex = 0;
+        var bloqueDatosPersonalesIndex = -1; //ningún bloque abierto
         $boxes.each(function(index) {
             var boxClass = index == bloqueDatosPersonalesIndex ? 'caja-visible' : 'caja-hidden';
             var $box = $(this);
@@ -317,13 +324,11 @@ jQuery(function($) {
         });
     }
 
-    toggleBoxVisibility();
-
     function toggleBoxVisibility() {
         $('.node-type-webform .webform-client-form .caja-content > .form-item.webform-component').on('click', function (event){
             $containerBox = $(this).parent();
             if ($containerBox.hasClass('caja-visible')) {
-                $containerBox.removeClass('caja-visible').addClass('caja-hidden');
+                $containerBox.removeClass('caja-visible').removeClass('active').addClass('caja-hidden');
             }
             else {
               var $boxes = $('.node-type-webform .webform-client-form .caja-content');
@@ -343,7 +348,6 @@ jQuery(function($) {
             masMenos();
         });
     }
-    masMenos();
 
     // Cambiar los símbolos con el despliegue de los bloques
     function masMenos() {
@@ -363,7 +367,7 @@ jQuery(function($) {
     // Borrar campos de nueva contraseña
     if( $(".password").length > 0 ){
       $( document ).ready(function() {
-          $(".password").val("");
+          $(".password").each().val("");
       });
     }
 
