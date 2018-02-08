@@ -11,141 +11,140 @@ jQuery(function($) {
 
     // Scrolling the active block of fields
 
-    /*if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
+    if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
 
         if( $(".content-datos-acceso").length > 0 ){
           $(".content-datos-acceso").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-datos-acceso").keyup( function(){
+          /*$(".content-datos-acceso").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
 
-          });
+          });*/
         }
 
         if( $(".content-colaborar").length > 0 ){
           $(".content-colaborar").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-colaborar").keyup( function(){
+          /*$(".content-colaborar").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
 
-          });
+          });*/
         }
 
         if( $(".content-datos").length > 0 ){
           $(".content-datos").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-datos").keyup( function(){
+          /*$(".content-datos").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
 
-          });
+          });*/
         }
 
         if( $(".content-direccion").length > 0 ){
           $(".content-direccion").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-direccion").keyup( function(){
+          /*$(".content-direccion").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
-          });
+          });*/
         }
 
         if( $(".content-cuenta").length > 0 ){
           $(".content-cuenta").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-cuenta").keyup( function(){
+          /*$(".content-cuenta").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
 
-          });
+          });*/
         }
 
         if( $(".content-idioma").length > 0 ){
           $(".content-idioma").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-idioma").keyup( function(){
+          /*$(".content-idioma").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
 
-          });
+          });*/
         }
 
         if( $(".content-donativo").length > 0 ){
           $(".content-donativo").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-donativo").keyup( function(){
+          /*$(".content-donativo").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
 
-          });
+          });*/
         }
 
         if( $(".content-certificado").length > 0 ){
           $(".content-certificado").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-certificado").keyup( function(){
+          /*$(".content-certificado").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
 
-          });
+          });*/
         }
 
         if( $(".content-historial").length > 0 ){
           $(".content-historial").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-historial").keyup( function(){
+          /*$(".content-historial").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
-
-          });
+          });*/
         }
 
         if( $(".content-preferencias").length > 0 ){
           $(".content-preferencias").hover( function(){
-              $(".caja-content").removeClass('active');
+              $(".caja-content").not('.caja-visible').removeClass('active');
               $(this).addClass('active');
 
           });
-          $(".content-preferencias").keyup( function(){
+          /*$(".content-preferencias").keyup( function(){
               $(".caja-content").removeClass('active');
               $(this).addClass('active');
 
-          });
+          });*/
         }
 
     }
     else {
         $(".caja-content").removeClass('active');
-    }*/
+    }
 
     // Sort the countries
     $( document ).ready(function() {
@@ -365,21 +364,25 @@ jQuery(function($) {
     }
 
     // Borrar campos de nueva contraseña
+
     if( $(".password").length > 0 ){
       $( document ).ready(function() {
           $(".password").each().val("");
       });
     }
 
-    // Mover texto del pie a la barra del boton
-    //if( $(".webform-conditional-processed").length > 0 ){
+    // Mover boton de submit al footer
+
+    if( $(".webform-conditional-processed").length > 0 ){
       var submit = $(".form-actions");
       $(".footer").after(submit);
 
       $(".form-submit").click(function(){
           $(".webform-client-form").submit();
       });
-    //}
+    }
+
+    /* Cálculo de la cuota actual y de las cuotas sugeridas */
 
     if( $(".cuota_actual").length > 0 ){
 
