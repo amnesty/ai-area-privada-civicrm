@@ -42,7 +42,7 @@ function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_
         '#name' => 'guardar_datos',
   );
 
-  $form['submitted'] += drupal_get_form('webform_client_form_62');
+  //$form['submitted'] += drupal_get_form('webform_client_form_62');
 
 }
 
