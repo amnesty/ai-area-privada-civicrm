@@ -7,6 +7,32 @@ function getUrlVars() {
     return vars;
 }
 
+function submit_certificado(){
+
+  jQuery(function($) {
+
+    $.ajax({
+         url: 'sites/all/themes/ai-area-privada-civicrm/certificado.php',
+         type: 'POST',
+         dataType: "json",
+         data: {
+             name: 'Helena',
+             email: ''
+         },
+         success: function(){
+           location.reload();
+         }
+     }).error(function(xhr) {
+        console.log("This is an error: ");
+        console.log(xhr.responseText);
+        console.log(xhr.status);
+        console.log(xhr.statusText);
+     });
+
+  });
+
+}
+
 jQuery(function($) {
 
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima
@@ -105,9 +131,9 @@ jQuery(function($) {
     });
 
     // Province label
-
-    $('.provincia option[value=""]').text("-Provincia-");
-
+    if( $(".provincia").length > 0 ){
+      $('.provincia option[value=""]').text("-Provincia-");
+    }
 
     // Etiquetas de fecha de nacimiento
 
@@ -364,4 +390,5 @@ jQuery(function($) {
     $(".otra_cuota").keyup(function(){
         cuota_input.val($(".otra_cuota").val());
     });
-})
+
+});

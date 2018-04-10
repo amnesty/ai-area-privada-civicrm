@@ -18,7 +18,7 @@
                                       echo $titulo_caja_buenas_noticias;
                                       echo $texto_caja_buenas_noticias;
                                     ?>
-                                    <img style="width: 100%; max-width: 200px; margin-top: 20px;"src="<?php print $images_path; ?>buenas_noticias.jpg" />
+                                    <img style="width: 100%; max-width: 200px; margin-top: 20px;"src="<?php print $images_path; ?>buenas_noticias.png" />
                           </div>
                           <div class="three-column ventajas bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                    <img src="<?php print $images_path; ?>pig.png" alt="pig"/>

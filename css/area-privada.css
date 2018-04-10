@@ -595,7 +595,9 @@
         text-align: center;
         color: #fff;
         padding: 12px;
-        background: #000
+        background: #000;
+        height: 50px;
+        width: 180px;
     }
 
     .webform-conditional-processed .content-certificado .btn-certificado:hover {
