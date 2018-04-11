@@ -124,7 +124,7 @@
 
     .dropdown-menu {
       min-width: 120px;
-      left: -50px;
+      left: -95px;
     }
     .dropdown-menu>li>a :hover {
       background-color: #ddd;
@@ -597,7 +597,7 @@
         padding: 12px;
         background: #000;
         height: 50px;
-        width: 180px; 
+        width: 180px;
     }
 
     .webform-conditional-processed .content-certificado .btn-certificado:hover {

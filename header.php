@@ -4,9 +4,9 @@
   <header class="header" data-header="" role="banner">
       <div class="header__container" data-header-container="">
           <div class="header__slogan-container">
-            <?php if($cat){ ?>
+            <?php if($cat) { ?>
                 <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
-            <?php }else{ ?>
+            <?php } else { ?>
                   <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
             <?php } ?>
           </div>
@@ -26,14 +26,16 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-v3-test">Mi cuenta</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada">Mi cuenta</a></li>
                   <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-v3-passw-test">Cambiar contraseña</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-certificado">Descargar certificado IRPF</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-acceso">Cambiar contraseña</a></li>
                   <li role="presentation" class="divider"></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="user/logout/?destination=area-privada-v3-test">Cerrar sesión</a></li>
                 </ul>
              </div>
-          </div>
+        </div>
       </div>
   </header>
 </nav>
@@ -52,7 +54,9 @@
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
+              <a href="area-privada">
                 <span class="heading--tape--dark"><?php  $title = explode('#',$node->title); echo $title[0];  ?></span>
+              </a>
             </h2>
         </div>
     </div>

@@ -7,28 +7,29 @@ function getUrlVars() {
     return vars;
 }
 
-function submit_certificado(){
+function donativo(){
 
   jQuery(function($) {
 
-    $.ajax({
-         url: 'sites/all/themes/ai-area-privada-civicrm/certificado.php',
-         type: 'POST',
-         dataType: "json",
-         data: {
-             name: 'Helena',
-             email: ''
-         },
-         success: function(){
-           location.reload();
-         }
-     }).error(function(xhr) {
-        console.log("This is an error: ");
-        console.log(xhr.responseText);
-        console.log(xhr.status);
-        console.log(xhr.statusText);
-     });
-
+    var donativo = $(".donativo").val();
+    if(donativo == ""){
+      alert("Debes introducir algún valor para poder realizar el donativo. Gracias");
+    } else {
+      //alert("Estás a punto de hacer un donativo de "+donativo+" €. ¿Estás de acuerdo?");
+      $( "#dialog-confirm" ).dialog({
+        resizable: false,
+        height:140,
+        modal: true,
+        buttons: {
+          "Delete all items": function() {
+            $( this ).dialog( "close" );
+          },
+          Cancel: function() {
+            $( this ).dialog( "close" );
+          }
+        }
+      });
+    }
   });
 
 }
@@ -296,6 +297,8 @@ jQuery(function($) {
         });
         // Excepción para página de modificación de contraseña
         $(".content-datos-acceso").removeClass('caja-hidden').addClass('caja-visible');
+        // Excepción para página de bajada del certificado
+        $(".content-certificado-download").removeClass('caja-hidden').addClass('caja-visible');
     }
 
     function toggleBoxVisibility() {

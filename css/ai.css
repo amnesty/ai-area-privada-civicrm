@@ -9266,6 +9266,10 @@ x:-o-prefocus {
     text-align: center;
     width: 100%
 }
+.image-headline__actua-title a:hover {
+    text-decoration: none;
+}
+
 .image-header,
 .image-header--sunken {
     background-position: 50% 50%;

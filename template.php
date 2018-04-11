@@ -1,76 +1,45 @@
 <?php
 
-// Funciones para el cambio de contraseña
 function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_id) {
 
   require_once("config.php");
 
   if ($form_id == $form_cambio_contrasena) {
-    global $user;
-    $currentUser = user_load($user->uid);
-    $form['submitted']['caja_datos_acceso']['fila_1_acceso']['usuario']['#value'] = $currentUser->name;
-    $form['#submit'][] = 'custom_settings_form_submit';
+      global $user;
+      $currentUser = user_load($user->uid);
+      $form['submitted']['caja_datos_acceso']['fila_1_acceso']['usuario']['#value'] = $currentUser->name;
+      $form['#submit'][] = 'custom_settings_form_submit';
 
-    $form['#validate'][] = 'validate_custom';
+      $form['#validate'][] = 'validate_custom';
   }
 
+  if ($form_id == $form_descarga_certificado) {
+      // Crear botón para descargar el certificado si hay algún año seleccionado
+      $form['submitted']['caja_mi_certificado_fiscal']['fila_1_certificado']['boton_certificado'] = array(
+          '#type' => 'submit',
+          '#name' => 'descargar_certificado',
+          '#value' => 'Descargar',
+          '#submit' => array('descargar_certificado'),
+          '#attributes' => array('class' => array('btn-certificado')),
+      );
+  }
+  // Boton de prueba
   /*$form['submitted']['caja_mi_certificado_fiscal']['fila_1_certificado']['boton_certificado2'] = array(
       '#type' => 'button',
       '#name' => 'descargar_certificado2',
-      '#value' => t('Descargar2'),
-      '#executes_submit_callback' => TRUE,
-      '#submit' => array('descargar_certificado2'),
-      '#attributes' => array('class' => array('btn-certificado')),
+      '#value' => t('Descargalo ya!'),
+      '#attributes' => array(
+            'class' => array('btn-certificado'),
+            'onclick' => 'this.form.submit();'
+      ),
       '#id' => 'boton_certificado2',
   );*/
-
-    // Crear botón para descargar el certificado si hay algún año sleeccionado
-    $form['submitted']['caja_mi_certificado_fiscal']['fila_1_certificado']['boton_certificado'] = array(
-        '#type' => 'button',
-        '#name' => 'descargar_certificado',
-        '#value' => t('Descargar'),
-        '#executes_submit_callback' => TRUE,
-        '#submit' => array('descargar_certificado'),
-        '#attributes' => array('class' => array('btn-certificado')),
-        '#id' => 'boton_certificado',
-    );
-
-  $form['submit'] = array(
-        '#value' => 'Guardar',
-        '#type'  => 'submit',
-        '#executes_submit_callback' => TRUE,
-        '#name' => 'guardar_datos',
-  );
-
-  //$form['submitted'] += drupal_get_form('webform_client_form_62');
-
 }
 
-function areaprivada_form_webform_client_form_submit($form_id,$form_values) {
-    drupal_set_message(t('Your form has been saved.'));
-}
-
-function descargar_certificado2(&$form, &$form_state){
-
-    //$node = node_load(57);
-
-    //need to set the submitted key in the values, as this is required by webform
-    //$form_state['values'] = $form_state['values']['submitted'];
-
-    //print("<pre>".print_r($form_state,true)."</pre>");
-    //exit(1);
-
-    //drupal_form_submit($form['#form_id'], $form_state);
-
-    return $form;
-
-    /*if (form_get_errors() != '') {
-      print 'Webform_Error';
-      print ''.print_r(form_get_errors(), 1).'';
-    }
-    else print 'Webform_Success';*/
-}
-
+/*
+  Función que crea un PDF con el certificado y lo rellena con los datos actuales del formulario
+  y los datos ecnonómicos del año seleccionado
+*/
 function descargar_certificado(&$form, &$form_state){
 
   // Solo si está el año seleccionado
@@ -95,6 +64,8 @@ function descargar_certificado(&$form, &$form_state){
       }
 
       require_once("certificado.php");
+
+      $form_state['redirect'] = 'node/57';
 
     }
 
