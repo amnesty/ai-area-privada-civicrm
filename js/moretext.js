@@ -1,3 +1,5 @@
+jQuery(function($) {
+
 $(document).ready(function() {
     // Configure/customize these variables.
     var showChar = 174;  // How many characters are shown by default
@@ -32,4 +34,6 @@ $(document).ready(function() {
         $(this).prev().toggle();
         return false;
     });
+});
+
 });
