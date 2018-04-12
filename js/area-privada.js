@@ -344,8 +344,8 @@ jQuery(function($) {
     // Borrar campos de nueva contraseña
 
     if( $(".password").length > 0 ){
-          $(".password").each().val("");
-          $(".password").each().text("");
+          $(".password").val("");
+          $(".password").text("");
     }
 
     // Mover boton de submit al footer
@@ -357,6 +357,11 @@ jQuery(function($) {
       $(".form-submit").click(function(){
           $(".webform-client-form").submit();
       });
+    }
+
+    // Eliminar boton de footer cuando es la descarga del certificado
+    if( $(".content-certificado-download").length > 0 ){
+        $(".form-actions").hide();
     }
 
     /* Cálculo de la cuota actual y de las cuotas sugeridas */
