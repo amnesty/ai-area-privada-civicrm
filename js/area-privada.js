@@ -8,33 +8,37 @@ function getUrlVars() {
 }
 
 function donativo(){
-
   jQuery(function($) {
-
     var donativo = $(".donativo").val();
+
     if(donativo == ""){
       alert("Debes introducir algún valor para poder realizar el donativo. Gracias");
-    } else {
-      //alert("Estás a punto de hacer un donativo de "+donativo+" €. ¿Estás de acuerdo?");
-      $( "#dialog-confirm" ).dialog({
+    }
+    else {
+      $("#dialog-confirm").dialog("open");
+    }
+
+  });
+}
+
+jQuery(function($) {
+
+    // Pop-up de donativo
+    $( "#dialog-confirm" ).dialog({
+        autoOpen: false,
         resizable: false,
-        height:140,
+        height:300,
         modal: true,
         buttons: {
-          "Delete all items": function() {
+          Cancel: function() {
             $( this ).dialog( "close" );
           },
-          Cancel: function() {
+          "Estoy de acuerdo": function() {
+            $(".webform-client-form").submit();
             $( this ).dialog( "close" );
           }
         }
       });
-    }
-  });
-
-}
-
-jQuery(function($) {
 
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima
 
