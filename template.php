@@ -23,17 +23,7 @@ function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_
           '#attributes' => array('class' => array('btn-certificado')),
       );
   }
-  // Boton de prueba
-  /*$form['submitted']['caja_mi_certificado_fiscal']['fila_1_certificado']['boton_certificado2'] = array(
-      '#type' => 'button',
-      '#name' => 'descargar_certificado2',
-      '#value' => t('Descargalo ya!'),
-      '#attributes' => array(
-            'class' => array('btn-certificado'),
-            'onclick' => 'this.form.submit();'
-      ),
-      '#id' => 'boton_certificado2',
-  );*/
+
 }
 
 /*

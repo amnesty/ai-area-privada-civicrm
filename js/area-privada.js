@@ -12,10 +12,18 @@ function donativo(){
     var donativo = $(".donativo").val();
 
     if(donativo == ""){
-      alert("Debes introducir algún valor para poder realizar el donativo. Gracias");
+        $("#dialog-amount").dialog("open");
+    }
+    else if(/^([0-9])+$/.test(donativo) == 0){
+        $("#dialog-numeric").dialog("open");
     }
     else {
-      $("#dialog-confirm").dialog("open");
+        var parrafo = $("#dialog-confirm p");
+        var texto = parrafo.text();
+        var donativo = $(".donativo").val();
+        texto = texto.replace("#donativo", donativo);
+        parrafo.text(texto);
+        $("#dialog-confirm").dialog("open");
     }
 
   });
@@ -23,11 +31,11 @@ function donativo(){
 
 jQuery(function($) {
 
-    // Pop-up de donativo
+    // Pop-ups de donativo
     $( "#dialog-confirm" ).dialog({
         autoOpen: false,
         resizable: false,
-        height:300,
+        height:200,
         modal: true,
         buttons: {
           Cancel: function() {
@@ -38,6 +46,16 @@ jQuery(function($) {
             $( this ).dialog( "close" );
           }
         }
+      });
+      $( "#dialog-amount" ).dialog({
+          autoOpen: false,
+          resizable: false,
+          height:150,
+      });
+      $( "#dialog-numeric" ).dialog({
+          autoOpen: false,
+          resizable: false,
+          height:150,
       });
 
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima

@@ -545,7 +545,6 @@
       padding: 0;
       font-size: 18px;
     }
-
     .webform-conditional-processed .content-donativo .img-donativo {
       margin: 0;
       max-height: 300px;
@@ -556,7 +555,6 @@
       max-width: 200px;
       float: left;
     }
-
     .webform-conditional-processed .content-donativo .fila-2 label{
       float: left;
       font-size: 19px;
@@ -566,6 +564,21 @@
       font-size: 23px;
       float:left;
       line-height: 50px;
+    }
+    .webform-conditional-processed .content-donativo .btn-donativo {
+        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        padding: 12px;
+        background: #000;
+        height: 50px;
+        width: 180px;
+        border: 0px;
+    }
+    .webform-conditional-processed .content-donativo .btn-donativo:hover {
+      text-decoration: none;
+      background-color: #333;
     }
 
 
@@ -578,17 +591,14 @@
         overflow: hidden;
         border: 2px solid #000;
     }
-
     .webform-conditional-processed .content-certificado .capa-select select {
         width: 125%;
         background-position: 76% center;
         border: none;
     }
-
     .webform-conditional-processed .content-certificado div:nth-child(2) p {
       padding-top: 10px;
     }
-
     .webform-conditional-processed .content-certificado .btn-certificado {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         font-size: 20px;
@@ -599,12 +609,10 @@
         height: 50px;
         width: 180px;
     }
-
     .webform-conditional-processed .content-certificado .btn-certificado:hover {
       text-decoration: none;
       background-color: #333;
     }
-
     @media only screen and (min-width: 768px) {
         .webform-conditional-processed .content-certificado .capa-select {
             width: 330px;
