@@ -50,12 +50,24 @@ jQuery(function($) {
       $( "#dialog-amount" ).dialog({
           autoOpen: false,
           resizable: false,
-          height:150,
+          modal: true,
+          height:180,
+          buttons: {
+            Ok: function() {
+              $( this ).dialog( "close" );
+            }
+          }
       });
       $( "#dialog-numeric" ).dialog({
           autoOpen: false,
           resizable: false,
-          height:150,
+          modal: true,
+          height:180,
+          buttons: {
+            Ok: function() {
+              $( this ).dialog( "close" );
+            }
+          }
       });
 
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima
