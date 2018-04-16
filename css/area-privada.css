@@ -584,12 +584,21 @@
 
 /******************* content-certificado ****************************************/
 
-    .webform-conditional-processed .content-certificado .fila-1 {
+    .webform-conditional-processed .content-certificado .fila-1,
+    .webform-conditional-processed .content-certificado .fila-2,
+    .webform-conditional-processed .content-certificado .fila-3 {
       float: left;
     }
 
-    .webform-conditional-processed .content-certificado .fila-2 {
-      float: left;
+    .webform-conditional-processed .content-certificado .fila-3 p {
+	      padding: 0px 0px 0px 10px;
+	      margin-top: 10px;
+    }
+
+    .webform-conditional-processed .content-certificado .fila-3 p a {
+      	padding: 12px;
+      	height: 40px;
+      	width: 180px;
     }
 
     .webform-conditional-processed .content-certificado {
@@ -620,7 +629,7 @@
         padding: 12px;
         background: #000;
         height: 50px;
-        width: 180px;
+        width: 160px;
     }
     .webform-conditional-processed .content-certificado .btn-certificado:hover {
       text-decoration: none;
@@ -1193,6 +1202,9 @@
   .webform-conditional-processed .content-certificado div:nth-child(2) p {
       text-align: center;
   }
+  .webform-conditional-processed .content-certificado .btn-certificado {
+  	width: 98px;
+  }
   /* boton enviar */
   .box-form-es .button-primary, .box-form-es .webform-next, .form-actions input[type="submit"], .form-actions button {
       max-width: 200px;
@@ -1210,6 +1222,10 @@
     visibility: hidden;
     width: 0px;
     margin-left: -10px;
+  }
+  /* certificado */
+  .webform-conditional-processed .content-certificado .fila-1 {
+      float: none;
   }
 }
 
@@ -1504,11 +1520,12 @@
   }
   .webform-conditional-processed .content-colaborar .fila-1 label,
   .webform-conditional-processed .content-colaborar .cuotas label {
-    font-size: 17px;
+      font-size: 17px;
   }
   /* certificado */
   .webform-conditional-processed .content-certificado .fila-1,
-  .webform-conditional-processed .content-certificado .fila-2  {
+  .webform-conditional-processed .content-certificado .fila-2,
+  .webform-conditional-processed .content-certificado .fila-3  {
       float: none;
       text-align: center;
   }
@@ -1516,7 +1533,7 @@
       margin-top: 10px;
   }
   .webform-conditional-processed .content-certificado .capa-select {
-  	width: 100%;
+  	  width: 100%;
   }
 }
 
