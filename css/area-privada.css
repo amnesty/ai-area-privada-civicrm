@@ -584,6 +584,19 @@
 
 /******************* content-certificado ****************************************/
 
+    .webform-conditional-processed .content-certificado .fila-1 {
+      float: left;
+    }
+
+    .webform-conditional-processed .content-certificado .fila-2 {
+      float: left;
+    }
+
+    .webform-conditional-processed .content-certificado {
+      clear: both;
+      overflow: auto;
+    }
+
     .webform-conditional-processed .content-certificado .capa-select {
         width: 80%;
         height: 50px;
@@ -593,11 +606,11 @@
     }
     .webform-conditional-processed .content-certificado .capa-select select {
         width: 125%;
-        background-position: 76% center;
+        background-position: 70% center;
         border: none;
     }
     .webform-conditional-processed .content-certificado div:nth-child(2) p {
-      padding-top: 10px;
+      padding: 10px;
     }
     .webform-conditional-processed .content-certificado .btn-certificado {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
@@ -618,11 +631,11 @@
             width: 330px;
         }
     }
-    @media only screen and (min-width: 480px) and (max-width: 768px) {
+    /*@media only screen and (min-width: 480px) and (max-width: 768px) {
         .webform-conditional-processed .content-certificado .capa-select {
             margin-top: 20px;
         }
-    }
+    }*/
     @media only screen and (min-width: 993px) {
         .webform-conditional-processed .content-certificado .capa-select select {
             background-position: 290px center;
@@ -1173,6 +1186,13 @@
       float: none;
       line-height: 85px;
   }
+  .box-form-es .content-donativo p {
+      text-align: center;
+  }
+  /* certificado */
+  .webform-conditional-processed .content-certificado div:nth-child(2) p {
+      text-align: center;
+  }
   /* boton enviar */
   .box-form-es .button-primary, .box-form-es .webform-next, .form-actions input[type="submit"], .form-actions button {
       max-width: 200px;
@@ -1259,7 +1279,9 @@
     }
     /* iconos + y - deslegables */
     .mas, .menos {
-      height: 10px;
+      /*height: 10px;*/
+      visibility: hidden;
+      height: 0px;
     }
     /* cuota */
     .webform-conditional-processed .content-colaborar .capa-selecttime {
@@ -1400,6 +1422,15 @@
     .webform-conditional-processed .content-donativo .img-donativo {
       max-height: 100px;
     }
+    /* certificado */
+    .webform-conditional-processed .content-certificado .btn-certificado {
+      font-size: 18px;
+    }
+    .webform-conditional-processed .content-certificado .btn-certificado-download {
+    	padding: 0px;
+    	height: 40px;
+    	width: 140px;
+    }
     /* pref comunicacion */
     .webform-conditional-processed .content-preferencias .caja-checkbox label {
       font-size: 18px;
@@ -1474,6 +1505,18 @@
   .webform-conditional-processed .content-colaborar .fila-1 label,
   .webform-conditional-processed .content-colaborar .cuotas label {
     font-size: 17px;
+  }
+  /* certificado */
+  .webform-conditional-processed .content-certificado .fila-1,
+  .webform-conditional-processed .content-certificado .fila-2  {
+      float: none;
+      text-align: center;
+  }
+  .webform-conditional-processed .content-certificado .btn-certificado  {
+      margin-top: 10px;
+  }
+  .webform-conditional-processed .content-certificado .capa-select {
+  	width: 100%;
   }
 }
 
