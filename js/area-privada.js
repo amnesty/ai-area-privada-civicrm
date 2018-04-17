@@ -56,8 +56,11 @@ jQuery(function($) {
         $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val("");
         // Vaciar el campo cuota si está seleccionada otra cantidad con valor vacío
         var checked = $('.cuota input[type="radio"]:checked').val();
+        console.log("patata");
         if( checked == "0" && $(".otra_cuota").val() == "" ){
-            $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val($(".cuota_actual").val());
+            var cuota_act = $(".cuota_actual").val();
+            console.log(cuota_act.substring(0, cuota_act.length-2));
+            $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val( cuota_act.substring(0, cuota_act.length-3) );
         }
     });
 
