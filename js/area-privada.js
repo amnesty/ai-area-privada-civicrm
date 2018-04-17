@@ -24,7 +24,7 @@ function donativo(){
         if( /[0-9]+€/.test(texto) )
         {
             var match = texto.match(/[0-9]+€/);
-            texto = texto.replace(match, donativo);
+            texto = texto.replace(match, donativo+"€");
         } else {
             texto = texto.replace("#donativo", donativo);
         }
