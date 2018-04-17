@@ -47,6 +47,8 @@ function donativo(){
 
 jQuery(function($) {
 
+    $(".donativo-amount").val("");
+
     // Pop-ups de donativo
     $( "#dialog-confirm" ).dialog({
         autoOpen: false,
@@ -55,6 +57,8 @@ jQuery(function($) {
         modal: true,
         buttons: {
           Cancel: function() {
+            $(".donativo-amount").val("");
+            $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val("");
             $( this ).dialog( "close" );
           },
           "Estoy de acuerdo": function() {
