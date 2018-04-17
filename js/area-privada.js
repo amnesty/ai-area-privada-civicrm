@@ -47,7 +47,12 @@ function donativo(){
 
 jQuery(function($) {
 
+    /* Vaciar campos de donativo */
     $(".donativo-amount").val("");
+
+    $(".webform-submit").click(function(){
+        $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val("");
+    });
 
     // Pop-ups de donativo
     $( "#dialog-confirm" ).dialog({
