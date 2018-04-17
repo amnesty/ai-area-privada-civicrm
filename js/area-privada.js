@@ -13,6 +13,10 @@ function donativo(){
     if ( $(".donativo-amount").val() > 0 ){
       $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val( $(".donativo-amount").val() );
     }
+    else {
+      var checked = $('.donativo input[type="radio"]:checked').val();
+      $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val(checked);
+    }
     var donativo = $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val();
 
     if(donativo == ""){
