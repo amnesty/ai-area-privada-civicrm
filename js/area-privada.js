@@ -57,7 +57,7 @@ jQuery(function($) {
         // Vaciar el campo cuota si está seleccionada otra cantidad con valor vacío
         var checked = $('.cuota input[type="radio"]:checked').val();
         if( checked == "0" && $(".otra_cuota").val() == "" ){
-            $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val($("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val());
+            $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val($(".cuota_actual").val());
         }
     });
 
