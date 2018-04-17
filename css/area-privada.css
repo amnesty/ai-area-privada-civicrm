@@ -477,7 +477,7 @@
     }
 
     .webform-conditional-processed .content-colaborar .cuotas label,
-    .webform-conditional-processed .content-colaborar .donativos label {
+    .webform-conditional-processed .content-donativo .donativos label {
       float: left;
     }
 
@@ -1075,7 +1075,7 @@
        font-size: 18px;
     }
     .webform-conditional-processed .content-colaborar .cuotas label,
-    .webform-conditional-processed .content-colaborar .donativos label {
+    .webform-conditional-processed .content-donativo .donativos label {
         font-size: 18px;
     }
     /* cuenta */
@@ -1311,15 +1311,15 @@
         background-position: 79% center;
     }
     .webform-conditional-processed .content-colaborar .cuotas,
-    .webform-conditional-processed .content-colaborar .donativos {
+    .webform-conditional-processed .content-donativo .donativos {
         margin-top: 0;
     }
     .webform-conditional-processed .content-colaborar .cuotas label,
-    .webform-conditional-processed .content-colaborar .donativos label {
+    .webform-conditional-processed .content-donativo .donativos label {
         margin-right: 4px;
     }
     .webform-conditional-processed .content-colaborar .cuotas div,
-    .webform-conditional-processed .content-colaborar .donativos div {
+    .webform-conditional-processed .content-donativo .donativos div {
         float: none;
         margin: 0;
     }
@@ -1328,7 +1328,7 @@
         margin: auto;
     }
     .webform-conditional-processed .content-colaborar .cuotas,
-    .webform-conditional-processed .content-colaborar .donativos {
+    .webform-conditional-processed .content-donativo .donativos {
         float: none;
         text-align: center;
     }
@@ -1412,7 +1412,7 @@
         text-align: center;
     }
     .webform-conditional-processed .content-colaborar .cuotas label,
-    .webform-conditional-processed .content-colaborar .donativos label {
+    .webform-conditional-processed .content-donativo .donativos label {
         float: none;
     }
     /* cuenta */
@@ -1527,7 +1527,7 @@
   }
   .webform-conditional-processed .content-colaborar .fila-1 label,
   .webform-conditional-processed .content-colaborar .cuotas label,
-  .webform-conditional-processed .content-colaborar .donativos label {
+  .webform-conditional-processed .content-donativo .donativos label {
       font-size: 17px;
   }
   /* certificado */
