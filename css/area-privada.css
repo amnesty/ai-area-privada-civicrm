@@ -543,6 +543,10 @@
 
 /********************* content-donativo ***********************/
 
+    .webform-conditional-processed .content-donativo .donativo {
+      margin: 20px 5px 0px 0px;
+    }
+    
     .webform-conditional-processed .content-donativo p {
       padding: 0;
       font-size: 18px;
