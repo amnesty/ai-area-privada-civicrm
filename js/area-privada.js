@@ -20,7 +20,7 @@ function donativo(){
     else {
         var parrafo = $("#dialog-confirm p");
         var texto = parrafo.text();
-        var donativo = $(".donativo").val();
+        var donativo = $(".donativo-amount").val();
         texto = texto.replace("#donativo", donativo);
         parrafo.text(texto);
         $("#dialog-confirm").dialog("open");
