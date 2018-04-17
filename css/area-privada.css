@@ -476,7 +476,8 @@
       width: 100%;
     }
 
-    .webform-conditional-processed .content-colaborar .cuotas label {
+    .webform-conditional-processed .content-colaborar .cuotas label,
+    .webform-conditional-processed .content-colaborar .donativos label {
       float: left;
     }
 
@@ -1073,7 +1074,8 @@
     	 float: none;
        font-size: 18px;
     }
-    .webform-conditional-processed .content-colaborar .cuotas label {
+    .webform-conditional-processed .content-colaborar .cuotas label,
+    .webform-conditional-processed .content-colaborar .donativos label {
         font-size: 18px;
     }
     /* cuenta */
@@ -1308,13 +1310,16 @@
     .webform-conditional-processed .content-colaborar select.selecttime {
         background-position: 79% center;
     }
-    .webform-conditional-processed .content-colaborar .cuotas {
+    .webform-conditional-processed .content-colaborar .cuotas,
+    .webform-conditional-processed .content-colaborar .donativos {
         margin-top: 0;
     }
-    .webform-conditional-processed .content-colaborar .cuotas label {
+    .webform-conditional-processed .content-colaborar .cuotas label,
+    .webform-conditional-processed .content-colaborar .donativos label {
         margin-right: 4px;
     }
-    .webform-conditional-processed .content-colaborar .cuotas div {
+    .webform-conditional-processed .content-colaborar .cuotas div,
+    .webform-conditional-processed .content-colaborar .donativos div {
         float: none;
         margin: 0;
     }
@@ -1322,7 +1327,8 @@
         float: none;
         margin: auto;
     }
-    .webform-conditional-processed .content-colaborar .cuotas {
+    .webform-conditional-processed .content-colaborar .cuotas,
+    .webform-conditional-processed .content-colaborar .donativos {
         float: none;
         text-align: center;
     }
@@ -1405,7 +1411,8 @@
     .webform-conditional-processed .content-colaborar .fila-1 div {
         text-align: center;
     }
-    .webform-conditional-processed .content-colaborar .cuotas label {
+    .webform-conditional-processed .content-colaborar .cuotas label,
+    .webform-conditional-processed .content-colaborar .donativos label {
         float: none;
     }
     /* cuenta */
@@ -1519,7 +1526,8 @@
       margin-left: 30%;
   }
   .webform-conditional-processed .content-colaborar .fila-1 label,
-  .webform-conditional-processed .content-colaborar .cuotas label {
+  .webform-conditional-processed .content-colaborar .cuotas label,
+  .webform-conditional-processed .content-colaborar .donativos label {
       font-size: 17px;
   }
   /* certificado */
