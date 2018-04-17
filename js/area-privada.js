@@ -9,15 +9,18 @@ function getUrlVars() {
 
 function donativo(){
   jQuery(function($) {
-    // otra cantidad
-    if ( $(".donativo-amount").val() > 0 ){
-      $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val( $(".donativo-amount").val() );
+
+    /* recoger el valor del donativo */
+    var checked = $('.donativo input[type="radio"]:checked').val();
+    if ( checked > 0 ){
+        $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val(checked);
     }
     else {
-      var checked = $('.donativo input[type="radio"]:checked').val();
-      $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val(checked);
+      // otra cantidad
+      $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val( $(".donativo-amount").val() );
     }
     var donativo = $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val();
+    console.log(donativo);
 
     if(donativo == ""){
         $("#dialog-amount").dialog("open");
