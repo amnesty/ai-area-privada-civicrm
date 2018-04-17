@@ -12,7 +12,7 @@
                   <?php }else{ ?>
                     <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link" target="_blank">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link" target="_blank">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link" target="_blank">Mapa del sitio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link" target="_blank">Mapa del sitio</a>
                   <?php } ?>
                 </p>
                 <p class="footer-copyright">©<?php echo date("Y"); ?> Amnistía Internacional España</p>
