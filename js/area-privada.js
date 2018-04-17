@@ -9,7 +9,11 @@ function getUrlVars() {
 
 function donativo(){
   jQuery(function($) {
-    var donativo = $(".donativo-amount").val();
+    // otra cantidad
+    if ( $(".donativo-amount").val() > 0 ){
+      $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val( $(".donativo-amount").val() );
+    }
+    var donativo = $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val();
 
     if(donativo == ""){
         $("#dialog-amount").dialog("open");
@@ -20,7 +24,6 @@ function donativo(){
     else {
         var parrafo = $("#dialog-confirm p");
         var texto = parrafo.text();
-        var donativo = $(".donativo-amount").val();
         if( /[0-9]+€/.test(texto) )
         {
             var match = texto.match(/[0-9]+€/);
