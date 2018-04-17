@@ -9,7 +9,7 @@ function getUrlVars() {
 
 function donativo(){
   jQuery(function($) {
-    var donativo = $(".donativo").val();
+    var donativo = $(".donativo-amount").val();
 
     if(donativo == ""){
         $("#dialog-amount").dialog("open");
