@@ -21,7 +21,13 @@ function donativo(){
         var parrafo = $("#dialog-confirm p");
         var texto = parrafo.text();
         var donativo = $(".donativo-amount").val();
-        texto = texto.replace("#donativo", donativo);
+        if( /[0-9]+€/.test(texto) )
+        {
+            var match = texto.match(/[0-9]+€/);
+            texto = texto.replace(match, donativo);
+        } else {
+            texto = texto.replace("#donativo", donativo);
+        }
         parrafo.text(texto);
         $("#dialog-confirm").dialog("open");
     }
