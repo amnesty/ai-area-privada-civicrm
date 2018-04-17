@@ -20,7 +20,6 @@ function donativo(){
       $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val( $(".donativo-amount").val() );
     }
     var donativo = $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val();
-    //console.log(donativo);
 
     if(donativo == ""){
         $("#dialog-amount").dialog("open");
@@ -50,8 +49,16 @@ jQuery(function($) {
     /* Vaciar campos de donativo */
     $(".donativo-amount").val("");
 
+    // Acciones antes del submit
     $(".webform-submit").click(function(){
+
+        // Vaciar valor del donativo, solo se hace un donativo mediante su propio boton
         $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val("");
+        // Vaciar el campo cuota si está seleccionada otra cantidad con valor vacío
+        var checked = $('.cuota input[type="radio"]:checked').val();
+        if( checked == "0" && $(".otra_cuota").val() == "" ){
+            $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val("");
+        }
     });
 
     // Pop-ups de donativo
