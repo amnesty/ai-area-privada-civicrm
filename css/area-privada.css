@@ -5,6 +5,11 @@
 
 /*********************** Estilos generales ***************************/
 
+    /* fix para el tema schroedich de civicrm */
+    #content {
+      margin-top: -20px;
+    }
+
     .content-form .text-intro span {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         font-size: 18px;
