@@ -1221,7 +1221,12 @@
   }
   .webform-conditional-processed .content-certificado button {
   	width: 100px;
+    font-size: 18px;
   }
+  .webform-conditional-processed .content-certificado .btn-certificado {
+	   font-size: 18px;
+     width: 100px;
+   }
   /* boton enviar */
   .box-form-es .button-primary, .box-form-es .webform-next, .form-actions input[type="submit"], .form-actions button {
       max-width: 200px;
