@@ -1466,6 +1466,11 @@
     .webform-conditional-processed .content-certificado .fila-3 p a {
     	padding: 8.5px;
     }
+    .webform-conditional-processed .content-certificado .btn-certificado span {
+    	font-size: 20px;
+    	top: 0px;
+    	right: 0px;
+    }
 
     /* pref comunicacion */
     .webform-conditional-processed .content-preferencias .caja-checkbox label {
