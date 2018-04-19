@@ -1224,7 +1224,7 @@
     font-size: 18px;
   }
   .webform-conditional-processed .content-certificado .btn-certificado {
-	   font-size: 18px;
+	   font-size: 20px;
      width: 100px;
    }
   /* boton enviar */
@@ -1471,7 +1471,7 @@
     }
     .webform-conditional-processed .content-certificado .btn-certificado-download {
     	 padding: 0px;
-    	 height: 40px;
+    	 height: 42px;
     	 width: 140px;
        margin-top: 20px;
     }
