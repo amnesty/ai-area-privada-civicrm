@@ -1444,21 +1444,29 @@
     }
     /* idioma */
     .webform-conditional-processed .content-idioma a {
-      font-size: 18px;
+       font-size: 18px;
     }
     /* donativo */
     .webform-conditional-processed .content-donativo .img-donativo {
-      max-height: 100px;
+       max-height: 100px;
     }
     /* certificado */
     .webform-conditional-processed .content-certificado .btn-certificado {
-      font-size: 18px;
+       font-size: 18px;
     }
     .webform-conditional-processed .content-certificado .btn-certificado-download {
-    	padding: 0px;
-    	height: 40px;
-    	width: 140px;
+    	 padding: 0px;
+    	 height: 40px;
+    	 width: 140px;
+       margin-top: 20px;
     }
+    .webform-conditional-processed .content-certificado .fila-3 p {
+	    margin-top: 26px;
+    }
+    .webform-conditional-processed .content-certificado .fila-3 p a {
+    	padding: 8.5px;
+    }
+
     /* pref comunicacion */
     .webform-conditional-processed .content-preferencias .caja-checkbox label {
       font-size: 18px;
@@ -1544,6 +1552,14 @@
   }
   .webform-conditional-processed .content-certificado .btn-certificado  {
       margin-top: 10px;
+  }
+  .webform-conditional-processed .content-certificado .fila-3 p {
+	   margin-top: 15px;
+     margin-bottom: 10px;
+     padding: 0px;
+  }
+  .webform-conditional-processed .content-certificado .fila-3 p a {
+	   padding: 8.5px 11px;
   }
   .webform-conditional-processed .content-certificado .capa-select {
   	  width: 100%;
