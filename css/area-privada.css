@@ -933,6 +933,16 @@
         margin-top: 20px;
         max-width: 580px;
     }
+    /* certificado */
+    .webform-conditional-processed .content-certificado button span{
+        font-size: 20px;
+    }
+    .webform-conditional-processed .content-certificado .fila-3 p a {
+    	padding: 15px 13px 11px 13px;
+    }
+    .webform-conditional-processed .content-certificado .fila-3 p {
+      margin-top: 12px;
+    }
     /* columnas */
     .box-es-right {
       	display: flex;
@@ -1209,8 +1219,8 @@
   .webform-conditional-processed .content-certificado div:nth-child(2) p {
       text-align: center;
   }
-  .webform-conditional-processed .content-certificado .btn-certificado {
-  	width: 98px;
+  .webform-conditional-processed .content-certificado button {
+  	width: 100px;
   }
   /* boton enviar */
   .box-form-es .button-primary, .box-form-es .webform-next, .form-actions input[type="submit"], .form-actions button {

@@ -16,9 +16,10 @@ function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_
   if ($form_id == $form_descarga_certificado) {
       // Crear botón para descargar el certificado si hay algún año seleccionado
       $form['submitted']['caja_mi_certificado_fiscal']['fila_2_certificado']['boton_certificado'] = array(
-          '#type' => 'submit',
+          '#type' => 'button',
           '#name' => 'descargar_certificado',
           '#value' => 'Descargar',
+          '#executes_submit_callback' => TRUE,
           '#submit' => array('descargar_certificado'),
           '#attributes' => array('class' => array('btn-certificado', 'btn-certificado-download')),
       );
