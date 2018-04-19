@@ -32,7 +32,7 @@
                   <li role="presentation" class="divider"></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-acceso">Cambiar contraseña</a></li>
                   <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="user/logout/?destination=area-privada-v3-test">Cerrar sesión</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="user/logout/?destination=area-privada">Cerrar sesión</a></li>
                 </ul>
              </div>
         </div>
