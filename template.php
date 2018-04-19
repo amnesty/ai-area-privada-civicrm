@@ -31,10 +31,8 @@ function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_
   y los datos ecnonómicos del año seleccionado
 */
 function descargar_certificado(&$form, &$form_state){
-
   // Solo si está el año seleccionado
   if( $form['submitted']['caja_mi_certificado_fiscal']['fila_1_certificado']['ano_certificado']['#value'] != '' ){
-
       // Leemos las variables
       $destinatario = $form['submitted']['caja_datos_personales']['fieldset_fila_1']['civicrm_1_contact_1_contact_first_name']["#value"];
       $dni = $form['submitted']['caja_datos_personales']['fieldset_fila_2']['margin_medium_nif']['civicrm_1_contact_1_cg1_custom_2']["#value"];
@@ -44,21 +42,19 @@ function descargar_certificado(&$form, &$form_state){
       $poblacion = $form['submitted']['caja_direccion']['fieldset_fila_2_b_2']['civicrm_1_contact_1_address_city']["#value"];
       $provincia = $form['submitted']['caja_direccion']['fieldset_direccion_3']['margin_medium_prov']['civicrm_1_contact_1_address_state_province_id']['#value']; // falta traduccion
       $anyo = $form['submitted']['caja_mi_certificado_fiscal']['fila_1_certificado']['ano_certificado']['#value'];
-      switch( $anyo ){
+      /*switch( $anyo ){
         case '2017':
           $importe = 10; //coger el valor que toca
           break;
         default:
           $importe = 0;
           break;
-      }
+      }*/
+      $importe = $form['submitted']['civicrm_1_contact_1_cg15_custom_111']['#value'];
 
       require_once("certificado.php");
-
       $form_state['redirect'] = 'node/57';
-
     }
-
 }
 
 function custom_settings_form_submit($form, &$form_state) {
