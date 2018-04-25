@@ -35,7 +35,7 @@
   /* Cajas laterales */
 
   $titulo_caja_buenas_noticias = '<h3>¡Buenas Noticias!</h3>';
-  $texto_caja_buenas_noticias = '<p>Son miles las personas a las que has ayudado en, son miles los agradecimientos... Conoce los logros y las buenas noticias que se han conseguido gracias a tu apoyo:
+  $texto_caja_buenas_noticias = '<p>Son miles las personas a las que has ayudado, son miles los agradecimientos... Conoce los logros y las buenas noticias que se han conseguido gracias a tu apoyo:
     <a class="link-caja-buenas-noticias" target="_blank" href="https://www.es.amnesty.org/en-que-estamos/para-celebrar" title="buenas noticias: en qué estamos - para celebrar">CONOCE MÁS</a>.
     </p>';
 

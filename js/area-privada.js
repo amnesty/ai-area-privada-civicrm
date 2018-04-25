@@ -21,7 +21,7 @@ function donativo(){
     }
     var donativo = $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val();
 
-    if(donativo == ""){
+    if(donativo == "" || donativo == 0){
         $("#dialog-amount").dialog("open");
     }
     else if(/^([0-9])+$/.test(donativo) == 0){
