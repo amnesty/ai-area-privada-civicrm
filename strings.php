@@ -35,9 +35,7 @@
   /* Cajas laterales */
 
   $titulo_caja_buenas_noticias = '<h3>¡Buenas Noticias!</h3>';
-  $texto_caja_buenas_noticias = '<p>"Gracias a Amnistía Internacional. Sin ustedes, no habría salido de la cárcel".
-	Como Clovis, son miles las personas a las que has ayudado en, son miles los agradecimientos...
-	Conoce los logros y las buenas noticias que se han conseguido gracias a tu apoyo:
+  $texto_caja_buenas_noticias = '<p>Son miles las personas a las que has ayudado en, son miles los agradecimientos... Conoce los logros y las buenas noticias que se han conseguido gracias a tu apoyo:
     <a class="link-caja-buenas-noticias" target="_blank" href="https://www.es.amnesty.org/en-que-estamos/para-celebrar" title="buenas noticias: en qué estamos - para celebrar">CONOCE MÁS</a>.
     </p>';
 
@@ -55,6 +53,6 @@
 
   $titulo_caja_transparencia_cat = "<h3>Transparència, el nostre compromís</h3>";
   $titulo_caja_transparencia = "<h3>Transparencia, nuestro compromiso</h3>";
-  $texto_caja_transparencia = "<p>Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>";
-  $texto_caja_transparencia_cat = "<p>Els nostres comptes són públics i pots veure'ls a la nostra web.</p>";
+  $texto_caja_transparencia = "<p>Nuestras cuentas son públicas y puedes verlas <b><a href='https://www.es.amnesty.org/quienes-somos/quien-financia-nuestra-labor' target='_blank'>en nuestra web</a></b>.</p>";
+  $texto_caja_transparencia_cat = "<p>Els nostres comptes són públics i pots veure'ls <b><a href='https://www.es.amnesty.org/quienes-somos/quien-financia-nuestra-labor' target='_blank'>a la nostra web</a></b>.</p>";
 ?>
