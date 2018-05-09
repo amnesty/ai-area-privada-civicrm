@@ -13,7 +13,7 @@
   $certificado = str_replace("@domiciliofiscal@", htmlentities( $domicilio, ENT_QUOTES, "UTF-8" ), $certificado);
   $certificado = str_replace("@codposfiscal@",$codigo_postal,$certificado);
   $certificado = str_replace("@poblacfiscal@", htmlentities( $poblacion, ENT_QUOTES, "UTF-8" ), $certificado);
-  $certificado = str_replace("@provinfiscal@", htmlentities( $provincia, ENT_QUOTES, "UTF-8" ),$certificado);
+  $certificado = str_replace("@provinfiscal@", htmlentities( $provincia_def, ENT_QUOTES, "UTF-8" ),$certificado);
   $certificado = str_replace("@importenumero@",$importe,$certificado);
   $certificado = str_replace("@fecha@",$fecha,$certificado);
   $certificado = str_replace("@anyo@",$anyo,$certificado);
