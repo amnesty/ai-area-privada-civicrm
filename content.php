@@ -33,7 +33,7 @@
                                    ?>
                           </div>
                           <div class="three-column formas-pago bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                   <img src="<?php print $images_path; ?>cartera.png" alt="cartera"/>
+                                   <img src="<?php print $images_path; ?>whatsapp_icon.png" alt="cartera"/>
                                    <?php
                                     if($cat){
                                       echo $titulo_caja_formas_pago_cat;

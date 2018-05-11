@@ -46,10 +46,13 @@
   $texto_caja_ventajas = "<p>Todas tus aportaciones desgravan un 75% los primeros 150€. A partir de esa cifra, el 30%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 35% para premiar tu fidelidad. Estas deducciones no aplican en País Vasco y Navarra.";
   $texto_caja_ventajas_cat = "<p>Totes les teves aportacions desgraven un 75% els primers 150€. A partir d'aquesta xifra, el 30%. Si els últims 3 anys has mantingut o augmentat l'aportació a l'organització, la desgravació puja fins un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc ni a Navarra.";
 
-  $titulo_caja_formas_pago_cat = "<h3>Altres mètodes de pagament</h3>";
+  $titulo_caja_formas_pago_cat = "<h3>Contacta amb Amnistia</h3>";
   $texto_caja_formas_pago_cat = "<p>Si tens algún problema en realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913101277</b> (extensions <b>30</b> i <b>37</b>) o escriu-nos a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
-  $titulo_caja_formas_pago = "<h3>Otras formas de pago</h3>";
-  $texto_caja_formas_pago = "<p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
+  $titulo_caja_formas_pago = "<h3>Contacta con Amnistía</h3>";
+  $texto_caja_formas_pago = "<p>Puedes ponerte en contacto con nosotros por <b>Whatsapp</b> añadiendo <b>+34913101277</b> a tus contactos.
+            Nuestro horario de atención es de Lunes a Jueves, de 9 a 14h y de 15 a 17h, viernes de 9 a 14h.
+            Tu número quedará registrado en nuestro sistema y nos autorizas a enviarte información de nuestro trabajo por esta vía.
+            También puedes llamarnos al <b>913101277</b> (ext. <b>30</b> y <b>37</b>) o escribirnos a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
 
   $titulo_caja_transparencia_cat = "<h3>Transparència, el nostre compromís</h3>";
   $titulo_caja_transparencia = "<h3>Transparencia, nuestro compromiso</h3>";
