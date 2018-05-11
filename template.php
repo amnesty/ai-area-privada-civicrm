@@ -36,6 +36,8 @@ function descargar_certificado(&$form, &$form_state){
   if( $form['submitted']['caja_mi_certificado_fiscal']['fila_1_certificado']['ano_certificado']['#value'] != '' ){
       // Leemos las variables
       $destinatario = $form['submitted']['caja_datos_personales']['fieldset_fila_1']['civicrm_1_contact_1_contact_first_name']["#value"];
+      $destinatario .= ' '.$form['submitted']['caja_datos_personales']['fieldset_fila_1']['civicrm_1_contact_1_contact_last_name']["#value"];
+      $destinatario .= ' '.$form['submitted']['caja_datos_personales']['fieldset_fila_1']['civicrm_1_contact_1_contact_middle_name']["#value"];
       $dni = $form['submitted']['caja_datos_personales']['fieldset_fila_2']['margin_medium_nif']['civicrm_1_contact_1_cg1_custom_2']["#value"];
       $domicilio = $form['submitted']['caja_direccion']['fieldset_fila_1_b']['civicrm_1_contact_1_address_street_address']["#value"] . ' '
         . $form['submitted']['caja_direccion']['fieldset_fila_1_b']['margin_medium_bloque']['civicrm_1_contact_1_address_supplemental_address_1']["#value"];
