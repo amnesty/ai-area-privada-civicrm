@@ -52,7 +52,7 @@
   $texto_caja_formas_pago = "<p>Puedes ponerte en contacto con nosotros por <b>Whatsapp</b> añadiendo <b>+34913101277</b> a tus contactos.
             Nuestro horario de atención es de Lunes a Jueves, de 9 a 14h y de 15 a 17h, viernes de 9 a 14h.
             Tu número quedará registrado en nuestro sistema y nos autorizas a enviarte información de nuestro trabajo por esta vía.
-            También puedes llamarnos al <b>913101277</b> (ext. <b>30</b> y <b>37</b>) o escribirnos a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
+            También puedes llamarnos al <b>913101277</b> (ext.37) o escribirnos a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
 
   $titulo_caja_transparencia_cat = "<h3>Transparència, el nostre compromís</h3>";
   $titulo_caja_transparencia = "<h3>Transparencia, nuestro compromiso</h3>";
