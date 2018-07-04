@@ -440,9 +440,10 @@ jQuery(function($) {
       // Rellenar la cuota actual
       var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']"); //$("[name='submitted[caja_cuota][fieldset_fila_1_1][civicrm_1_contact_1_cg6_custom_14]']");
       var cuota_act = cuota_input.val();
+      var period_num = $(".frecuencia option:selected").val();
       var period_act = $(".frecuencia option:selected").text();
 
-      $(".cuota_actual").val(Math.round(cuota_act/period_act)+' €');
+      $(".cuota_actual").val(Math.round(cuota_act/period_num)+' €');
       $(".period_actual").val(period_act);
 
       // Calcular cuotas sugeridas x 1.2, 1.5 y 2
