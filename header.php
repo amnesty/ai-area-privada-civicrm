@@ -22,7 +22,7 @@
               </div>
               <div class="dropdown dropdown-menu-right">
                 <button class="btn btn-lg btn-warning dropdown-toggle" id="user-menu" type="button" data-toggle="dropdown">
-                  <?php echo "Hola, " . $user->name . " "; ?>
+                  <?php echo $user->name . " "; ?>
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">

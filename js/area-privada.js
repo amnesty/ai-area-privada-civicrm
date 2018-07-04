@@ -442,7 +442,7 @@ jQuery(function($) {
       var cuota_act = cuota_input.val();
       var period_act = $(".frecuencia option:selected").text();
 
-      $(".cuota_actual").val(Math.round(cuota_act)+' €');
+      $(".cuota_actual").val(Math.round(cuota_act/period_act)+' €');
       $(".period_actual").val(period_act);
 
       // Calcular cuotas sugeridas x 1.2, 1.5 y 2
