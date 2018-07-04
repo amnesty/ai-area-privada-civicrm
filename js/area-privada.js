@@ -462,7 +462,8 @@ jQuery(function($) {
         var cuota_id = $(".cuotas input:checked").attr("id");
         var cuota_label = $("label[for='"+cuota_id+"']").text();
         var cuota = cuota_label.substr(0, cuota_label.length-1);
-        cuota_input.val(cuota);
+        var frec = $(".frecuencia:selected").val();
+        cuota_input.val(cuota*frec);
     });
 
     $(".otra_cuota").keyup(function(){
