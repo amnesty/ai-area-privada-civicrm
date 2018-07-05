@@ -463,11 +463,12 @@ jQuery(function($) {
         var cuota_label = $("label[for='"+cuota_id+"']").text();
         var cuota = cuota_label.substr(0, cuota_label.length-1);
         var frec = $(".frecuencia:selected").val();
+        alert(cuota*frec);
         cuota_input.val(cuota*frec);
     });
 
     $(".otra_cuota").keyup(function(){
-        cuota_input.val($(".otra_cuota").val());
+        cuota_input.val($(".otra_cuota").val()*frec);
     });
 
 });
