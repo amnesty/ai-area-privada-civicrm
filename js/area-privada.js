@@ -440,10 +440,9 @@ jQuery(function($) {
       // Rellenar la cuota actual
       var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']"); //$("[name='submitted[caja_cuota][fieldset_fila_1_1][civicrm_1_contact_1_cg6_custom_14]']");
       var period_num = $(".frecuencia option:selected").val();
-      var cuota_act = cuota_input.val()/period_num;
+      var cuota_act = Math.round(cuota_input.val())/Math.round(period_num);
       var period_act = $(".frecuencia option:selected").text();
-
-      $(".cuota_actual").val(Math.round(cuota_act)+' €');
+      $(".cuota_actual").val(cuota_act+' €');
       $(".period_actual").val(period_act);
 
       // Calcular cuotas sugeridas x 1.2, 1.5 y 2
@@ -462,13 +461,28 @@ jQuery(function($) {
         var cuota_id = $(".cuotas input:checked").attr("id");
         var cuota_label = $("label[for='"+cuota_id+"']").text();
         var cuota = cuota_label.substr(0, cuota_label.length-1);
-        var frec = $(".frecuencia:selected").val();
-        alert(cuota*frec);
+        var frec = $(".frecuencia option:selected").val();
         cuota_input.val(cuota*frec);
     });
 
     $(".otra_cuota").keyup(function(){
-        cuota_input.val($(".otra_cuota").val()*frec);
+        var frec = $(".frecuencia option:selected").val();
+        var otra_cuota = $(".otra_cuota").val();
+        cuota_input.val(otra_cuota*frec);
+    });
+
+    $(".frecuencia").change(function(){
+        if( $(".cuotas input:checked").val() == 0 ){
+          var frec = $(".frecuencia option:selected").val();
+          var otra_cuota = $(".otra_cuota").val();
+          cuota_input.val(otra_cuota*frec);
+        } else {
+          var cuota_id = $(".cuotas input:checked").attr("id");
+          var cuota_label = $("label[for='"+cuota_id+"']").text();
+          var cuota = cuota_label.substr(0, cuota_label.length-1);
+          var frec = $(".frecuencia option:selected").val();
+          cuota_input.val(cuota*frec);
+        }
     });
 
 });
