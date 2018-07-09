@@ -44,10 +44,17 @@ function donativo(){
   });
 }
 
+function cuota(){
+  jQuery(function($) {
+    $("#cuota-confirm").dialog("open");
+  });
+}
+
 jQuery(function($) {
 
-    /* Vaciar campos de donativo */
+    // Vaciar campos de donativo y cuota
     $(".donativo-amount").val("");
+    $(".otra_cuota").val("");
 
     // Acciones antes del submit
     $(".webform-submit").click(function(){
@@ -56,7 +63,7 @@ jQuery(function($) {
         $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val("");
         // Vaciar el campo cuota si está seleccionada otra cantidad con valor vacío
         var checked = $('.cuota input[type="radio"]:checked').val();
-        console.log("patata");
+        //console.log("patata");
         if( checked == "0" && $(".otra_cuota").val() == "" ){
             var cuota_act = $(".cuota_actual").val();
             console.log(cuota_act.substring(0, cuota_act.length-2));
@@ -64,7 +71,8 @@ jQuery(function($) {
         }
     });
 
-    // Pop-ups de donativo
+    /* -- POP-UPS de donación -- */
+
     $( "#dialog-confirm" ).dialog({
         autoOpen: false,
         resizable: false,
@@ -103,6 +111,24 @@ jQuery(function($) {
               $( this ).dialog( "close" );
             }
           }
+      });
+
+    /* -- POP-UPS de cuota -- */
+
+    $( "#cuota-confirm" ).dialog({
+        autoOpen: false,
+        resizable: false,
+        height:200,
+        modal: true,
+        buttons: {
+          Cancel: function() {
+            $( this ).dialog( "close" );
+          },
+          "Estoy de acuerdo": function() {
+            $(".webform-client-form").submit();
+            $( this ).dialog( "close" );
+          }
+        }
       });
 
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima

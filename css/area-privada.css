@@ -576,7 +576,8 @@
       float:left;
       line-height: 50px;
     }
-    .webform-conditional-processed .content-donativo .btn-donativo {
+    .webform-conditional-processed .content-donativo .btn-donativo,
+    .webform-conditional-processed .content-colaborar .btn-cuota {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         font-size: 20px;
         text-align: center;
@@ -587,7 +588,8 @@
         width: 180px;
         border: 0px;
     }
-    .webform-conditional-processed .content-donativo .btn-donativo:hover {
+    .webform-conditional-processed .content-donativo .btn-donativo:hover,
+    .webform-conditional-processed .content-colaborar .btn-cuota:hover {
       text-decoration: none;
       background-color: #333;
     }
