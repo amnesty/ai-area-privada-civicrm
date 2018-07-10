@@ -61,9 +61,13 @@ jQuery(function($) {
 
         // Vaciar valor del donativo, solo se hace un donativo mediante su propio boton
         $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val("");
+
+        // Desmarcar valor de la cuota, solo se hace un donativo mediante su propio boton
+        $(".cuotas input:checked").prop("checked", false);
+
         // Vaciar el campo cuota si está seleccionada otra cantidad con valor vacío
         var checked = $('.cuota input[type="radio"]:checked').val();
-        //console.log("patata");
+
         if( checked == "0" && $(".otra_cuota").val() == "" ){
             var cuota_act = $(".cuota_actual").val();
             console.log(cuota_act.substring(0, cuota_act.length-2));
@@ -122,6 +126,7 @@ jQuery(function($) {
         modal: true,
         buttons: {
           Cancel: function() {
+            $(".otra_cuota").val("");
             $( this ).dialog( "close" );
           },
           "Estoy de acuerdo": function() {
