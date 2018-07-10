@@ -65,6 +65,7 @@ jQuery(function($) {
 
         // Vaciar el campo cuota y desmarcar la opcion, solo se hace con su propio boton
         $(".otra_cuota").val("");
+        $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val("");
         $('.cuota input[type="radio"]:checked').prop("checked", false);
 
     });
