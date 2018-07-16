@@ -65,9 +65,9 @@ jQuery(function($) {
 
         // Vaciar el campo cuota y desmarcar la opcion, solo se hace con su propio boton
         $(".otra_cuota").val("");
-        var cuota_inicial = $(".cuota_actual").val();
-        cuota_inicial = cuota_inicial.substring(1,cuota_inicial.length-1);
-        $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val(cuota_inicial);
+        var cuota_old = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][cuota_actual_oculta]']").val();
+        //$("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg6_custom_17]']").val(cuota_old); //local
+        $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val(cuota_old);
         $('.cuota input[type="radio"]:checked').prop("checked", false);
 
     });
@@ -466,10 +466,16 @@ jQuery(function($) {
     if( $(".cuota_actual").length > 0 ){
 
       // Rellenar la cuota actual
-      var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']"); //$("[name='submitted[caja_cuota][fieldset_fila_1_1][civicrm_1_contact_1_cg6_custom_14]']");
+      //var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg6_custom_17]']"); //local
+      var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
       var period_num = $(".frecuencia option:selected").val();
       var cuota_act = Math.round(cuota_input.val())/Math.round(period_num);
       var period_act = $(".frecuencia option:selected").text();
+
+      // Guardamos cuota actual anual
+      $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][cuota_actual_oculta]']").val(Math.round(cuota_input.val()));
+
+      // Pintamos cuota y frecuancia
       $(".cuota_actual").val(cuota_act+' €');
       $(".period_actual").val(period_act);
 
