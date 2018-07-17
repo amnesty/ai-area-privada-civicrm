@@ -466,10 +466,8 @@ jQuery(function($) {
     if( $(".cuota_actual").length > 0 ){
 
       // Rellenar la cuota actual
-      //var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg6_custom_17]']"); //local
-      var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
-      //console.log(cuota_input.val());
-      //throw "";
+      var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg6_custom_17]']"); //local
+      //var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
 
       var period_num = $(".frecuencia option:selected").val();
       var cuota_act = Math.round(cuota_input.val())/Math.round(period_num);
@@ -487,9 +485,11 @@ jQuery(function($) {
       $(".cuotas div div:first-child label").text(cuota_uno_dos+"€");
 
       var cuota_uno_cinco = Math.round(cuota_act*1.5);
+      if(cuota_uno_dos == cuota_uno_cinco){ cuota_uno_cinco++; }
       $(".cuotas div div:nth-child(2) label").text(cuota_uno_cinco+"€");
 
       var cuota_dos = Math.round(cuota_act*2);
+      if(cuota_uno_cinco == cuota_dos){ cuota_dos++; }
       $(".cuotas div div:nth-child(3) label").text(cuota_dos+"€");
     }
 
