@@ -482,15 +482,15 @@ jQuery(function($) {
 
       // Calcular cuotas sugeridas x 1.2, 1.5 y 2
       var cuota_uno_dos = Math.round(cuota_act*1.2);
-      if(cuota_act == cuota_uno_dos){ cuota_uno_dos++; }
+      if(cuota_act >= cuota_uno_dos){ cuota_uno_dos = cuota_act+1; }
       $(".cuotas div div:first-child label").text(cuota_uno_dos+"€");
 
       var cuota_uno_cinco = Math.round(cuota_act*1.5);
-      if(cuota_uno_dos == cuota_uno_cinco){ cuota_uno_cinco++; }
+      if(cuota_uno_dos >= cuota_uno_cinco){ cuota_uno_cinco = cuota_uno_dos+1; }
       $(".cuotas div div:nth-child(2) label").text(cuota_uno_cinco+"€");
 
       var cuota_dos = Math.round(cuota_act*2);
-      if(cuota_uno_cinco == cuota_dos){ cuota_dos++; }
+      if(cuota_uno_cinco >= cuota_dos){ cuota_dos = cuota_uno_cinco+1; }
       $(".cuotas div div:nth-child(3) label").text(cuota_dos+"€");
     }
 
