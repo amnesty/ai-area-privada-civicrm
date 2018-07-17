@@ -466,8 +466,8 @@ jQuery(function($) {
     if( $(".cuota_actual").length > 0 ){
 
       // Rellenar la cuota actual
-      var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg6_custom_17]']"); //local
-      //var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
+      //var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg6_custom_17]']"); //local
+      var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
 
       var period_num = $(".frecuencia option:selected").val();
       var cuota_act = Math.round(cuota_input.val())/Math.round(period_num);
