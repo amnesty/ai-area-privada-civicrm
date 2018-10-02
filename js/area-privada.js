@@ -133,6 +133,9 @@ jQuery(function($) {
         }
       });
 
+    // Disable NIF
+    $( ".document" ).prop( "disabled", true ); //Disable
+
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima
 
     if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
