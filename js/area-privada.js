@@ -438,89 +438,94 @@ jQuery(function($) {
       });
     }
 
-    // Borrar campos de nueva contraseña
+    /* Funciones al cargar la página. Esto hace que tambien se ejecute si vuelve de un error en las validaciones */
+    $( document ).ready(function() {
 
-    if( $(".password").length > 0 ){
-          $(".password").val("");
-          $(".password").text("");
-    }
+      // Borrar campos de nueva contraseña
 
-    // Mover boton de submit al footer
+      if( $(".password").length > 0 ){
+            $(".password").val("");
+            $(".password").text("");
+      }
 
-    if( $(".webform-conditional-processed").length > 0 ){
-      var submit = $(".form-actions");
-      $(".footer").after(submit);
+      // Mover boton de submit al footer
 
-      $(".form-submit").click(function(){
-          $(".webform-client-form").submit();
-      });
-    }
+      if( $(".webform-conditional-processed").length > 0 ){
+        var submit = $(".form-actions");
+        $(".footer").after(submit);
 
-    // Eliminar boton de footer cuando es la descarga del certificado
-    if( $(".content-certificado-download").length > 0 ){
-        $(".form-actions").hide();
-    }
+        $(".form-submit").click(function(){
+            $(".webform-client-form").submit();
+        });
+      }
 
-    /* Cálculo de la cuota actual y de las cuotas sugeridas */
+      // Eliminar boton de footer cuando es la descarga del certificado
+      if( $(".content-certificado-download").length > 0 ){
+          $(".form-actions").hide();
+      }
 
-    if( $(".cuota_actual").length > 0 ){
+      /* Cálculo de la cuota actual y de las cuotas sugeridas */
 
-      // Rellenar la cuota actual
-      //var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg6_custom_17]']"); //local
-      var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
+      if( $(".cuota_actual").length > 0 ){
 
-      var period_num = $(".frecuencia option:selected").val();
-      var cuota_act = Math.round(cuota_input.val())/Math.round(period_num);
-      var period_act = $(".frecuencia option:selected").text();
+        // Rellenar la cuota actual
+        //var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg6_custom_17]']"); //local
+        var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
 
-      // Guardamos cuota actual anual
-      $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][cuota_actual_oculta]']").val(Math.round(cuota_input.val()));
+        var period_num = $(".frecuencia option:selected").val();
+        var cuota_act = Math.round(cuota_input.val())/Math.round(period_num);
+        var period_act = $(".frecuencia option:selected").text();
 
-      // Pintamos cuota y frecuancia
-      $(".cuota_actual").val(cuota_act+' €');
-      $(".period_actual").val(period_act);
+        // Guardamos cuota actual anual
+        $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][cuota_actual_oculta]']").val(Math.round(cuota_input.val()));
 
-      // Calcular cuotas sugeridas x 1.2, 1.5 y 2
-      var cuota_uno_dos = Math.round(cuota_act*1.2);
-      if(cuota_act >= cuota_uno_dos){ cuota_uno_dos = cuota_act+1; }
-      $(".cuotas div div:first-child label").text(cuota_uno_dos+"€");
+        // Pintamos cuota y frecuancia
+        $(".cuota_actual").val(cuota_act+' €');
+        $(".period_actual").val(period_act);
 
-      var cuota_uno_cinco = Math.round(cuota_act*1.5);
-      if(cuota_uno_dos >= cuota_uno_cinco){ cuota_uno_cinco = cuota_uno_dos+1; }
-      $(".cuotas div div:nth-child(2) label").text(cuota_uno_cinco+"€");
+        // Calcular cuotas sugeridas x 1.2, 1.5 y 2
+        var cuota_uno_dos = Math.round(cuota_act*1.2);
+        if(cuota_act >= cuota_uno_dos){ cuota_uno_dos = cuota_act+1; }
+        $(".cuotas div div:first-child label").text(cuota_uno_dos+"€");
 
-      var cuota_dos = Math.round(cuota_act*2);
-      if(cuota_uno_cinco >= cuota_dos){ cuota_dos = cuota_uno_cinco+1; }
-      $(".cuotas div div:nth-child(3) label").text(cuota_dos+"€");
-    }
+        var cuota_uno_cinco = Math.round(cuota_act*1.5);
+        if(cuota_uno_dos >= cuota_uno_cinco){ cuota_uno_cinco = cuota_uno_dos+1; }
+        $(".cuotas div div:nth-child(2) label").text(cuota_uno_cinco+"€");
 
-    // Actualizar el campo oculto de cuota cada vez que se modifica
-    $(".cuotas").change(function(){
-        var cuota_id = $(".cuotas input:checked").attr("id");
-        var cuota_label = $("label[for='"+cuota_id+"']").text();
-        var cuota = cuota_label.substr(0, cuota_label.length-1);
-        var frec = $(".frecuencia option:selected").val();
-        cuota_input.val(cuota*frec);
-    });
+        var cuota_dos = Math.round(cuota_act*2);
+        if(cuota_uno_cinco >= cuota_dos){ cuota_dos = cuota_uno_cinco+1; }
+        $(".cuotas div div:nth-child(3) label").text(cuota_dos+"€");
+      }
 
-    $(".otra_cuota").keyup(function(){
-        var frec = $(".frecuencia option:selected").val();
-        var otra_cuota = $(".otra_cuota").val();
-        cuota_input.val(otra_cuota*frec);
-    });
-
-    $(".frecuencia").change(function(){
-        if( $(".cuotas input:checked").val() == 0 ){
-          var frec = $(".frecuencia option:selected").val();
-          var otra_cuota = $(".otra_cuota").val();
-          cuota_input.val(otra_cuota*frec);
-        } else {
+      // Actualizar el campo oculto de cuota cada vez que se modifica
+      $(".cuotas").change(function(){
           var cuota_id = $(".cuotas input:checked").attr("id");
           var cuota_label = $("label[for='"+cuota_id+"']").text();
           var cuota = cuota_label.substr(0, cuota_label.length-1);
           var frec = $(".frecuencia option:selected").val();
           cuota_input.val(cuota*frec);
-        }
+      });
+
+      $(".otra_cuota").keyup(function(){
+          var frec = $(".frecuencia option:selected").val();
+          var otra_cuota = $(".otra_cuota").val();
+          cuota_input.val(otra_cuota*frec);
+      });
+
+      $(".frecuencia").change(function(){
+          if( $(".cuotas input:checked").val() == 0 ){
+            var frec = $(".frecuencia option:selected").val();
+            var otra_cuota = $(".otra_cuota").val();
+            cuota_input.val(otra_cuota*frec);
+          } else {
+            var cuota_id = $(".cuotas input:checked").attr("id");
+            var cuota_label = $("label[for='"+cuota_id+"']").text();
+            var cuota = cuota_label.substr(0, cuota_label.length-1);
+            var frec = $(".frecuencia option:selected").val();
+            cuota_input.val(cuota*frec);
+          }
+      });
+
     });
 
 });
