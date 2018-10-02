@@ -134,7 +134,7 @@ jQuery(function($) {
       });
 
     // Disable NIF
-    $( ".document" ).prop( "disabled", true ); //Disable
+    $( ".document" ).prop( "disabled", "true" ); //Disable
 
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima
 
