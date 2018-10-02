@@ -133,9 +133,6 @@ jQuery(function($) {
         }
       });
 
-    // Disable NIF
-    $( ".document" ).prop( "disabled", "true" ); //Disable
-
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima
 
     if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
@@ -443,6 +440,9 @@ jQuery(function($) {
 
     /* Funciones al cargar la página. Esto hace que tambien se ejecute si vuelve de un error en las validaciones */
     $( document ).ready(function() {
+
+      // Disable NIF
+      $( ".document" ).prop( "disabled", "true" ); //Disable
 
       // Borrar campos de nueva contraseña
 
