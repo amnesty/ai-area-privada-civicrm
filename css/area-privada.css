@@ -189,6 +189,7 @@
     	  width: 125%;
         z-index: 1;
         border-radius: 10px 0 0 10px;
+        pointer-events: none;
     }
 
     .webform-conditional-processed .content-datos select.document {
