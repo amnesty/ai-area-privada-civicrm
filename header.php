@@ -26,8 +26,8 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                  <!--li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada">Mi cuenta</a></li>
-                  <li role="presentation" class="divider"></li-->
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada">Mi cuenta</a></li>
+                  <li role="presentation" class="divider"></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-certificado">Descargar certificado IRPF</a></li>
                   <li role="presentation" class="divider"></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-acceso">Cambiar contraseña</a></li>
@@ -54,9 +54,9 @@
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
-              <!--a href="area-privada"-->
+              <a href="area-privada">
                 <span class="heading--tape--dark"><?php  $title = explode('#',$node->title); echo $title[0];  ?></span>
-              <!--/a-->
+              </a>
             </h2>
         </div>
     </div>
