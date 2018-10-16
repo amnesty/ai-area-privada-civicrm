@@ -8,6 +8,7 @@ function getUrlVars() {
 }
 
 function donativo(){
+
   jQuery(function($) {
 
     /* recoger el valor del donativo */
@@ -15,12 +16,12 @@ function donativo(){
     if ( checked > 0 ){
         $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val(checked);
     }
-    else {
-      // otra cantidad
+    else { // otra cantidad
       $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val( $(".donativo-amount").val() );
     }
     var donativo = $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val();
 
+    /* comprobaciones con el valor del donativo */
     if(donativo == "" || donativo == '0'){
         $("#dialog-amount").dialog("open");
     }
@@ -45,8 +46,22 @@ function donativo(){
 }
 
 function cuota(){
+
   jQuery(function($) {
-    $("#cuota-confirm").dialog("open");
+
+    // comprobamos que hay algun valor superior a 0 en cuota marcada o casilla de otra cuota
+    var cuota_id = $(".cuotas input:checked").attr("id");
+    var cuota_label = $("label[for='"+cuota_id+"']").text();
+    var cuota_amount = cuota_label.substr(0, cuota_label.length-1);
+    var otra_cuota = $(".otra_cuota").val();
+
+    if(cuota_amount > 0 || otra_cuota > 0 ){
+      $("#cuota-confirm").dialog("open");
+    }
+    else {
+      $("#cuota-amount").dialog("open");
+    }
+
   });
 }
 
@@ -131,6 +146,17 @@ jQuery(function($) {
             $( this ).dialog( "close" );
           }
         }
+      });
+      $( "#cuota-amount" ).dialog({
+          autoOpen: false,
+          resizable: false,
+          modal: true,
+          height:180,
+          buttons: {
+            Ok: function() {
+              $( this ).dialog( "close" );
+            }
+          }
       });
 
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima
@@ -464,22 +490,26 @@ jQuery(function($) {
           $(".form-actions").hide();
       }
 
-      /* Cálculo de la cuota actual y de las cuotas sugeridas */
+      /******* Cálculo de la cuota actual y de las cuotas sugeridas *********/
 
       if( $(".cuota_actual").length > 0 ){
 
-        // Rellenar la cuota actual, si ya la tenemos (venimos de error) o si acabamos de entrar
+        // campo donde va a ir la cuota defitiva
+        var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
+
+        // Rellenar la cuota actual, dependiendo de si ya la tenemos en "cuota_old" (venimos de error) o si acabamos de entrar
         var cuota_old = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][cuota_actual_oculta]']").val();
+        // si es la primera vez y NO tenemos "cuota_old", dejamos la actual
         if(cuota_old > 0){
-          var cuota_input = cuota_old;
-        }
-        else {
-          var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
+          //console.log("venimos de error");
+          cuota_input.val(cuota_old);
+          //console.log(cuota_input.val());
         }
 
+        // Guardamos los valores de frecuencia y de cuota (la pasamos de anual a fraccionada)
         var period_num = $(".frecuencia option:selected").val();
-        var cuota_act = Math.round(cuota_input.val())/Math.round(period_num);
         var period_act = $(".frecuencia option:selected").text();
+        var cuota_act = Math.round(cuota_input.val())/Math.round(period_num);
 
         // Guardamos cuota actual anual
         $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][cuota_actual_oculta]']").val(Math.round(cuota_input.val()));
