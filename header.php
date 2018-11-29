@@ -3,39 +3,47 @@
 <nav class="navbar navbar-fixed-top">
   <header class="header" data-header="" role="banner">
       <div class="header__container" data-header-container="">
-          <div class="header__slogan-container">
+
+        <!-- Logo -->
+        <div class="header__slogan-container">
             <?php if($cat) { ?>
                 <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
             <?php } else { ?>
                   <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
             <?php } ?>
-          </div>
-          <?php if($cat){ ?>
-            <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.amnistiacatalunya.org">Amnistia Internacional Catalunya</a></h1>
-          <?php }else{ ?>
-            <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
-          <?php } ?>
-          <!-- Dropdown menu con Bootstrap -->
-          <div class="container" id="logout">
-              <div class="nav-mobile">
-                <a id="nav-toggle" href="#!"><span></span></a>
-              </div>
-              <div class="dropdown dropdown-menu-right">
-                <button class="btn btn-lg btn-warning dropdown-toggle" id="user-menu" type="button" data-toggle="dropdown">
-                  <?php echo $user->name . " "; ?>
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada">Mi cuenta</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-certificado">Descargar certificado IRPF</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-acceso">Cambiar contraseña</a></li>
-                  <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="user/logout/?destination=area-privada-certificado">Cerrar sesión</a></li>
-                </ul>
-             </div>
         </div>
+        <?php if($cat){ ?>
+            <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.amnistiacatalunya.org">Amnistia Internacional Catalunya</a></h1>
+        <?php }else{ ?>
+            <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
+        <?php } ?>
+
+          <!-- Dropdown menu con Bootstrap -->
+          <?php if( $user->uid ){  // Si está logueado mostramos menú de usuario, sino no ?>
+            <div class="container" id="logout">
+                <div class="nav-mobile">
+                  <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <div class="dropdown dropdown-menu-right">
+                  <button class="btn btn-lg btn-warning dropdown-toggle" id="user-menu" type="button" data-toggle="dropdown">
+                    <?php echo $user->name . " "; ?>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada">Mi cuenta</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="agf2019">Asamblea General Federal</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-certificado">Descargar certificado IRPF</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-acceso">Cambiar contraseña</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="user/logout/?destination=area-privada">Cerrar sesión</a></li>
+                  </ul>
+               </div>
+           </div>
+         <?php } ?>
+
       </div>
   </header>
 </nav>
