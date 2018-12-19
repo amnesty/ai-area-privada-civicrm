@@ -67,6 +67,9 @@ function cuota(){
 
 jQuery(function($) {
 
+    // Origen area privada
+    $("[name='submitted[civicrm_1_contact_1_contact_source]']").val('area_privada');
+
     // Vaciar campos de donativo y cuota al inicio
     $(".donativo-amount").val("");
     $(".otra_cuota").val("");
