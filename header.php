@@ -32,7 +32,7 @@
                   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada">Mi cuenta</a></li>
                     <li role="presentation" class="divider"></li>
-                  <?php if( !in_array('agf2019', $user->roles) ){ ?>
+                  <?php if( in_array('agf2019', $user->roles) ){ ?>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="agf2019">Asamblea General Federal</a></li>
                     <li role="presentation" class="divider"></li>
                   <?php } ?>
