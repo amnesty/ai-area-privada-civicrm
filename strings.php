@@ -34,6 +34,10 @@
 
   /* Cajas laterales */
 
+  $titulo_caja_agf = '<h3>Asamblea General</h3>';
+  $texto_caja_agf = '<p>Ya queda muy poco para la Asamblea que celebraremos en Ourense... Toda la documentación y la información necesaria para quienes os habéis inscrito está disponible '.
+                    '<a href="https://agf2019.es.amnesty.org"><b>AQUÍ</b></a>.</p>';
+
   $titulo_caja_buenas_noticias = '<h3>¡Buenas Noticias!</h3>';
   $texto_caja_buenas_noticias = '<p>Son miles las personas a las que has ayudado, son miles los agradecimientos... Conoce los logros y las buenas noticias que se han conseguido gracias a tu apoyo:
     <a class="link-caja-buenas-noticias" target="_blank" href="https://www.es.amnesty.org/en-que-estamos/para-celebrar" title="buenas noticias: en qué estamos - para celebrar">CONOCE MÁS</a>.

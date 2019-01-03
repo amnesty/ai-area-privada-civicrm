@@ -12,6 +12,15 @@
 
                   <!-- ********************************** CAJAS LATERALES ******************** -->
                   <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
+                      <?php if( in_array('agf2019', $user->roles) ){ ?>
+                          <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                             <img src="<?php print $images_path; ?>icon-altavoz2.png" alt="imagen altavoz" />
+                             <?php
+                                echo $titulo_caja_agf;
+                                echo $texto_caja_agf;
+                              ?>
+                          </div>
+                      <?php } else { ?>
                           <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                    <img src="<?php print $images_path; ?>icon-good-news.png" alt="imagen cara sonriente" />
                                    <?php
@@ -20,6 +29,7 @@
                                     ?>
                                     <img style="width: 100%; max-width: 200px; margin-top: 20px;"src="<?php print $images_path; ?>buenas_noticias.png" />
                           </div>
+                      <?php } ?>
                           <div class="three-column ventajas bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                    <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
                                    <?php
