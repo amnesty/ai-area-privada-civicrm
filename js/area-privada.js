@@ -535,13 +535,13 @@ jQuery(function($) {
         case 'NORMAL':
           est_act = 'al corriente';
           break;
-        case 'DEVO1':
+        case 'DEVO 1':
           est_act = 'pendiente por recibo devuelto';
           break;
-        case 'DEVO2':
+        case 'DEVO 2':
           est_act = 'pendiente por recibo devuelto';
           break;
-        case 'DEVO3':
+        case 'DEVO 3':
           est_act = 'pendiente por recibo devuelto';
           break;
         case 'PREBAJA':
