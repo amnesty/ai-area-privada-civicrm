@@ -47,7 +47,7 @@ function donativo(){
 
 function cuota(){
 
-  jQuery(function($) {
+  /*jQuery(function($) {
 
     // comprobamos que hay algun valor superior a 0 en cuota marcada o casilla de otra cuota
     var cuota_id = $(".cuotas input:checked").attr("id");
@@ -62,7 +62,7 @@ function cuota(){
       $("#cuota-amount").dialog("open");
     }
 
-  });
+  });*/
 }
 
 jQuery(function($) {
@@ -82,11 +82,11 @@ jQuery(function($) {
         $('.donativos [type="radio"]:checked').prop("checked", false);
 
         // Vaciar el campo cuota y desmarcar la opcion, solo se hace con su propio boton
-        $(".otra_cuota").val("");
+        /*$(".otra_cuota").val("");
         var cuota_old = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][cuota_actual_oculta]']").val();
         //$("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg6_custom_17]']").val(cuota_old); //local
         $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']").val(cuota_old);
-        $('.cuota input[type="radio"]:checked').prop("checked", false);
+        $('.cuota input[type="radio"]:checked').prop("checked", false);*/
 
     });
 
@@ -134,7 +134,7 @@ jQuery(function($) {
 
     /* -- POP-UPS de cuota -- */
 
-    $( "#cuota-confirm" ).dialog({
+    /*$( "#cuota-confirm" ).dialog({
         autoOpen: false,
         resizable: false,
         height:200,
@@ -160,7 +160,7 @@ jQuery(function($) {
               $( this ).dialog( "close" );
             }
           }
-      });
+      });*/
 
     // Funciones que resaltan los bloques en amarillo cuando se pasa el cursor por encima
 
@@ -498,71 +498,59 @@ jQuery(function($) {
       if( $(".cuota_actual").length > 0 ){
 
         // campo donde va a ir la cuota defitiva
-        var cuota_input = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][civicrm_1_contact_1_cg15_custom_101]']");
+        var cantidad_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_101]']").val();
+        var frec_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_43]']").val();
 
-        // Rellenar la cuota actual, dependiendo de si ya la tenemos en "cuota_old" (venimos de error) o si acabamos de entrar
-        var cuota_old = $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][cuota_actual_oculta]']").val();
-        // si es la primera vez y NO tenemos "cuota_old", dejamos la actual
-        if(cuota_old > 0){
-          //console.log("venimos de error");
-          cuota_input.val(cuota_old);
-          //console.log(cuota_input.val());
+        // Calculamos la cuota, la pasamos de anual a fraccionada
+        var cuota_act = Math.round(cantidad_actual/Math.round(frec_actual));
+
+        // Calculamos frecuencia
+        var period_act = '';
+        switch(frec_actual){
+          case '1':
+            period_act = 'anual';
+            break;
+          case '2':
+            period_act = 'semestral';
+            break;
+          case '4':
+            period_act = 'trimestral';
+            break;
+          case '12':
+            period_act = 'mensual';
+            break;
         }
-
-        // Guardamos los valores de frecuencia y de cuota (la pasamos de anual a fraccionada)
-        var period_num = $(".frecuencia option:selected").val();
-        var period_act = $(".frecuencia option:selected").text();
-        var cuota_act = Math.round(cuota_input.val())/Math.round(period_num);
-
-        // Guardamos cuota actual anual
-        $("[name='submitted[caja_cuota][fila_2_nueva_periodicidad][cuota_actual_oculta]']").val(Math.round(cuota_input.val()));
 
         // Pintamos cuota y frecuancia
         $(".cuota_actual").val(cuota_act+' €');
         $(".period_actual").val(period_act);
 
-        // Calcular cuotas sugeridas x 1.2, 1.5 y 2
-        var cuota_uno_dos = Math.round(cuota_act*1.2);
-        if(cuota_act >= cuota_uno_dos){ cuota_uno_dos = cuota_act+1; }
-        $(".cuotas div div:first-child label").text(cuota_uno_dos+"€");
-
-        var cuota_uno_cinco = Math.round(cuota_act*1.5);
-        if(cuota_uno_dos >= cuota_uno_cinco){ cuota_uno_cinco = cuota_uno_dos+1; }
-        $(".cuotas div div:nth-child(2) label").text(cuota_uno_cinco+"€");
-
-        var cuota_dos = Math.round(cuota_act*2);
-        if(cuota_uno_cinco >= cuota_dos){ cuota_dos = cuota_uno_cinco+1; }
-        $(".cuotas div div:nth-child(3) label").text(cuota_dos+"€");
       }
 
-      // Actualizar el campo oculto de cuota cada vez que se modifica
-      $(".cuotas").change(function(){
-          var cuota_id = $(".cuotas input:checked").attr("id");
-          var cuota_label = $("label[for='"+cuota_id+"']").text();
-          var cuota = cuota_label.substr(0, cuota_label.length-1);
-          var frec = $(".frecuencia option:selected").val();
-          cuota_input.val(cuota*frec);
-      });
+      /******* Fecha de alta y estado *********/
+      var fecha_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_68]']").val();
+      var estado_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_67]']").val();
 
-      $(".otra_cuota").keyup(function(){
-          var frec = $(".frecuencia option:selected").val();
-          var otra_cuota = $(".otra_cuota").val();
-          cuota_input.val(otra_cuota*frec);
-      });
-
-      $(".frecuencia").change(function(){
-          if( $(".cuotas input:checked").val() == 0 ){
-            var frec = $(".frecuencia option:selected").val();
-            var otra_cuota = $(".otra_cuota").val();
-            cuota_input.val(otra_cuota*frec);
-          } else {
-            var cuota_id = $(".cuotas input:checked").attr("id");
-            var cuota_label = $("label[for='"+cuota_id+"']").text();
-            var cuota = cuota_label.substr(0, cuota_label.length-1);
-            var frec = $(".frecuencia option:selected").val();
-            cuota_input.val(cuota*frec);
-          }
-      });
+      switch(estado_actual){
+        case 'NORMAL':
+          est_act = 'al corriente';
+          break;
+        case 'DEVO1':
+          est_act = 'pendiente por recibo devuelto';
+          break;
+        case 'DEVO2':
+          est_act = 'pendiente por recibo devuelto';
+          break;
+        case 'DEVO3':
+          est_act = 'pendiente por recibo devuelto';
+          break;
+        case 'PREBAJA':
+          est_act = 'pendiente por recibo devuelto';
+          break;
+      }
+      var alta = fecha_actual.split(" ");
+      $(".fecha_actual").val(alta[0]);
+      $(".estado_actual").val(est_act);
 
     });
 

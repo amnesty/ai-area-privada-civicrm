@@ -414,7 +414,7 @@
 /*********** content-cuota  *************************/
 
     .webform-conditional-processed .content-colaborar .cuota_actual {
-      max-width: 80px;
+      max-width: 50px;
       float: left;
       background-color: transparent;
       border: 0px;
@@ -422,6 +422,22 @@
     }
 
     .webform-conditional-processed .content-colaborar .period_actual {
+      max-width: 170px;
+      float: left;
+      background-color: transparent;
+      border: 0px;
+      color: #666;
+    }
+
+    .webform-conditional-processed .content-colaborar .fecha_actual {
+      max-width: 115px;
+      float: left;
+      background-color: transparent;
+      border: 0px;
+      color: #666;
+    }
+
+    .webform-conditional-processed .content-colaborar .estado_actual {
       max-width: 170px;
       float: left;
       background-color: transparent;
