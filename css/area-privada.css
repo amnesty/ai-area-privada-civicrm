@@ -1105,17 +1105,22 @@
     }
     /* cuota */
     .webform-conditional-processed .content-colaborar .cuota_actual,
-    .webform-conditional-processed .content-colaborar .period_actual {
+    .webform-conditional-processed .content-colaborar .period_actual,
+    .webform-conditional-processed .content-colaborar .fecha_actual,
+    .webform-conditional-processed .content-colaborar .estado_actual {
       	float: none;
-        font-size: 18px;
+        font-size: 20px;
     }
     .webform-conditional-processed .content-colaborar .fila-1 label {
     	 float: none;
-       font-size: 18px;
+       font-size: 20px;
     }
     .webform-conditional-processed .content-colaborar .cuotas label,
     .webform-conditional-processed .content-donativo .donativos label {
         font-size: 18px;
+    }
+    .webform-conditional-processed .content-colaborar .fila-1 {
+	      margin-top: 0px;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
@@ -1208,6 +1213,16 @@
   }
   .webform-conditional-processed .content-colaborar .capa-other-quant {
       width: 58px;
+  }
+  /* cuota */
+  .webform-conditional-processed .content-colaborar .cuota_actual,
+  .webform-conditional-processed .content-colaborar .period_actual,
+  .webform-conditional-processed .content-colaborar .fecha_actual,
+  .webform-conditional-processed .content-colaborar .estado_actual {
+      font-size:18px;
+  }
+  .webform-conditional-processed .content-colaborar .fila-1 label {
+     font-size: 18px;
   }
   /* donativo */
   .content-form .webform-conditional-processed .content-donativo label {
@@ -1452,12 +1467,18 @@
     .webform-conditional-processed .content-colaborar .caja-checkbox div div {
         float: none;
     }
-    .webform-conditional-processed .content-colaborar .fila-1 div {
-        text-align: center;
-    }
     .webform-conditional-processed .content-colaborar .cuotas label,
     .webform-conditional-processed .content-donativo .donativos label {
         float: none;
+    }
+    .webform-conditional-processed .content-colaborar .fecha_actual{
+        max-width: 138px;
+    }
+    .webform-conditional-processed .content-colaborar .estado_actual{
+        max-width: 140px;
+    }
+    .webform-conditional-processed .content-colaborar .period_actual{
+        max-width: 165px;
     }
     /* cuenta */
     .webform-conditional-processed .content-cuenta .capa-iban-letras {
@@ -1574,13 +1595,23 @@
   }
 }
 
-@media only screen and (max-width: 385px) {
+@media only screen and (max-width: 383px) {
   /* cuota */
+  .webform-conditional-processed .content-colaborar .fila-1 div {
+      text-align: center;
+  }
   .webform-conditional-processed .content-colaborar .cuota_actual{
-      margin-left: 10%;
+      margin-left: 5%;
   }
   .webform-conditional-processed .content-colaborar .period_actual{
       margin-left: 30%;
+      max-width: 155px;
+  }
+  .webform-conditional-processed .content-colaborar .fecha_actual{
+      margin-left: 10%;
+  }
+  .webform-conditional-processed .content-colaborar .estado_actual{
+      margin-left: 20%;
   }
   .webform-conditional-processed .content-colaborar .fila-1 label,
   .webform-conditional-processed .content-colaborar .cuotas label,
