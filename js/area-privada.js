@@ -549,7 +549,8 @@ jQuery(function($) {
           break;
       }
       var alta = fecha_actual.split(" ");
-      $(".fecha_actual").val(alta[0]);
+      var fecha = alta[0].split("-");
+      $(".fecha_actual").val(fecha[2]+"-"+fecha[1]+"-"+fecha[0]);
       $(".estado_actual").val(est_act);
 
     });
