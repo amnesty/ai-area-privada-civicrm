@@ -536,16 +536,16 @@ jQuery(function($) {
           est_act = 'al corriente';
           break;
         case 'DEVO 1':
-          est_act = 'pendiente por recibo devuelto';
+          est_act = 'recibo devuelto';
           break;
         case 'DEVO 2':
-          est_act = 'pendiente por recibo devuelto';
+          est_act = 'recibo devuelto';
           break;
         case 'DEVO 3':
-          est_act = 'pendiente por recibo devuelto';
+          est_act = 'recibo devuelto';
           break;
         case 'PREBAJA':
-          est_act = 'pendiente por recibo devuelto';
+          est_act = 'recibo devuelto';
           break;
       }
       var alta = fecha_actual.split(" ");
