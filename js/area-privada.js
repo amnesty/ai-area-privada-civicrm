@@ -528,31 +528,34 @@ jQuery(function($) {
       }
 
       /******* Fecha de alta y estado *********/
-      var fecha_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_68]']").val();
-      var estado_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_67]']").val();
 
-      switch(estado_actual){
-        case 'NORMAL':
-          est_act = 'al corriente';
-          break;
-        case 'DEVO 1':
-          est_act = 'recibo devuelto';
-          break;
-        case 'DEVO 2':
-          est_act = 'recibo devuelto';
-          break;
-        case 'DEVO 3':
-          est_act = 'recibo devuelto';
-          break;
-        case 'PREBAJA':
-          est_act = 'recibo devuelto';
-          break;
+      if( $(".fecha_actual").length > 0 ){
+          var fecha_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_68]']").val();
+          var estado_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_67]']").val();
+
+          switch(estado_actual){
+            case 'NORMAL':
+              est_act = 'al corriente';
+              break;
+            case 'DEVO 1':
+              est_act = 'recibo devuelto';
+              break;
+            case 'DEVO 2':
+              est_act = 'recibo devuelto';
+              break;
+            case 'DEVO 3':
+              est_act = 'recibo devuelto';
+              break;
+            case 'PREBAJA':
+              est_act = 'recibo devuelto';
+              break;
+          }
+          var alta = fecha_actual.split(" ");
+          var fecha = alta[0].split("-");
+          $(".fecha_actual").val(fecha[2]+"-"+fecha[1]+"-"+fecha[0]);
+          $(".estado_actual").val(est_act);
       }
-      var alta = fecha_actual.split(" ");
-      var fecha = alta[0].split("-");
-      $(".fecha_actual").val(fecha[2]+"-"+fecha[1]+"-"+fecha[0]);
-      $(".estado_actual").val(est_act);
 
-    });
+  });
 
 });
