@@ -425,6 +425,8 @@ jQuery(function($) {
         $(".content-datos-acceso").removeClass('caja-hidden').addClass('caja-visible');
         // Excepción para página de bajada del certificado
         $(".content-certificado-download").removeClass('caja-hidden').addClass('caja-visible');
+        // Excepción para datos personales en formulario premium
+        $(".content-datos-premium").removeClass('caja-hidden').addClass('caja-visible');
     }
 
     function toggleBoxVisibility() {
