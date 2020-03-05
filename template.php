@@ -13,7 +13,7 @@ function areaprivada_form_webform_client_form_alter(&$form, &$form_state, $form_
       $form['#validate'][] = 'validate_custom';
   }
 
-  if ($form_id == $form_descarga_certificado) {
+  if ($form_id == $form_descarga_certificado || $form_id == $form_descarga_certificado_premium) {
       // Crear botón para descargar el certificado si hay algún año seleccionado
       $form['submitted']['caja_mi_certificado_fiscal']['fila_2_certificado']['boton_certificado'] = array(
           '#type' => 'button',
