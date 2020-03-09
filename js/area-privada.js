@@ -67,8 +67,20 @@ function cuota(){
 
 jQuery(function($) {
 
-    // Origen area privada
-    $("[name='submitted[civicrm_1_contact_1_contact_source]']").val('area_privada');
+    /* ***************** ORIGEN ************************ */
+
+    // Recogemos variable GET
+    var urlVars = getUrlVars();
+    var get_source = urlVars["origen"];
+
+    if( get_source != '' && get_source ){
+      $("[name='submitted[civicrm_1_contact_1_contact_source]']").val(get_source);
+      $("[name='submitted[civicrm_1_contribution_1_contribution_source]']").val(get_source);
+    }
+    else {
+      $("[name='submitted[civicrm_1_contact_1_contact_source]']").val('area_privada');
+      $("[name='submitted[civicrm_1_contribution_1_contribution_source]']").val('area_privada');
+    }
 
     // Vaciar campos de donativo y cuota al inicio
     $(".donativo-amount").val("");
@@ -556,6 +568,31 @@ jQuery(function($) {
           var fecha = alta[0].split("-");
           $(".fecha_actual").val(fecha[2]+"-"+fecha[1]+"-"+fecha[0]);
           $(".estado_actual").val(est_act);
+      }
+
+      /******** Fecha de baja **********/
+      var fecha_baja = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_69]']").val();
+      console.log(fecha_baja);
+      if( fecha_baja ){
+        // Bloquear todos los campos
+        $('.content-datos input, .content-direccion input, .content-cuenta input, .content-idioma input, .content-preferencias input,'+
+        '.content-datos select, .content-direccion select, .content-cuenta select, .content-idioma select, .content-preferencias select').each(
+          function(){
+            $(this).attr("readonly", true);
+            $(this).css("background-color", "#eee");
+          }
+        );
+        // Quitar elementos de cuota y añadir fecha de baja
+        var baja = fecha_baja.split(" ");
+        var bajastr = baja[0].split("-");
+        $(".content-colaborar .fila-1").each(function(){
+            $(this).css("visibility", "hidden");
+            $(this).css("height","0px");
+        });
+        $(".content-colaborar").append(
+          "<p style='font-size:20px;margin-top:-30px;'>Te diste de baja de la organización el <b>"+bajastr[2]+"-"+bajastr[1]+"-"+bajastr[0]+"</b>.</p></br>"+
+          "<p style='font-size:18px;margin-top:20px;'>Si quieres volver a colaborar con Amnistía Internacional rellena el <a href='https://crm.es.amnesty.org/unete-a-amnistia' target='_blank'>siguiente formulario</a> o escríbenos a <a href='mailto:sociosysocias@es.amnesty.org'>sociosysocias@es.amnesty.org</a>. ¡Gracias!"
+        )
       }
 
   });
