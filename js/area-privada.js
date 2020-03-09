@@ -75,11 +75,11 @@ jQuery(function($) {
 
     if( get_source != '' && get_source ){
       $("[name='submitted[civicrm_1_contact_1_contact_source]']").val(get_source);
-      $("[name='submitted[civicrm_1_contribution_1_contribution_source]']").val(get_source);
+      $("[name='submitted[caja_quiero_hacer_un_donativo][civicrm_1_contribution_1_contribution_source]']").val(get_source);
     }
     else {
       $("[name='submitted[civicrm_1_contact_1_contact_source]']").val('area_privada');
-      $("[name='submitted[civicrm_1_contribution_1_contribution_source]']").val('area_privada');
+      $("[name='submitted[caja_quiero_hacer_un_donativo][civicrm_1_contribution_1_contribution_source]']").val('area_privada');
     }
 
     // Vaciar campos de donativo y cuota al inicio
