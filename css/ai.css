@@ -9487,7 +9487,7 @@ x:-o-prefocus {
 }
 .image-header__content--medium {
     /*padding-top: 37.5%;*/ /* H */
-    padding-top: 8%; /* quitamos foto */
+    padding-top: 12%; /* quitamos foto */
 }
 @media screen and (max-width: 30em) {
     .image-header__content--medium {
