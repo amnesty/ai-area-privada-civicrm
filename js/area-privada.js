@@ -433,6 +433,8 @@ jQuery(function($) {
             var $box = $(this);
             $box.addClass(boxClass);
         });
+        // Excepción para caja donativo en AP
+        $(".content-donativo").removeClass('caja-hidden').addClass('caja-visible');
         // Excepción para página de modificación de contraseña
         $(".content-datos-acceso").removeClass('caja-hidden').addClass('caja-visible');
         // Excepción para página de bajada del certificado
