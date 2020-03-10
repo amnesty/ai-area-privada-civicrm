@@ -12,11 +12,17 @@
 
     .content-form .text-intro span {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-        font-size: 18px;
+        font-size: 20px;
         color: #000000;
         margin-bottom: 20px;
         padding: 0px 20px;
         font-style: normal;
+    }
+
+    @media screen and (max-width: 50em) {
+      .content-form .text-intro span {
+        font-size: 16px;
+      }
     }
 
     .box-form-es{
@@ -575,7 +581,7 @@
     }
     .webform-conditional-processed .content-donativo .img-donativo {
       margin: 0;
-      max-height: 300px;
+      /*max-height: 300px;*/
       width: 100%;
     }
 

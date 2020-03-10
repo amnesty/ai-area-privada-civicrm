@@ -546,7 +546,7 @@ jQuery(function($) {
       if( $(".fecha_actual").length > 0 ){
           var fecha_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_68]']").val();
           var estado_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_67]']").val();
-
+          var est_act = '';
           switch(estado_actual){
             case 'NORMAL':
               est_act = 'al corriente';

@@ -54,13 +54,12 @@
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
     <div id="pixel"></div>
-    <div style="background-image: url('<?php print $images_path.$img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
+    <!--div style="background-image: url('<?php print $images_path.$img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
           data-bgset="<?php print $images_path.$img_header; ?>?anchor=topcenter">
-      </div>
-      <noscript>
-          <img src="<?php print $images_path.$img_header; ?>?anchor=topcenter" class=responsive__img>
-      </noscript>
-
+    </div>
+    <noscript>
+      <img src="<?php print $images_path.$img_header; ?>?anchor=topcenter" class=responsive__img>
+    </noscript-->
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
