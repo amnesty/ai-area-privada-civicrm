@@ -545,8 +545,9 @@ jQuery(function($) {
 
       /******* Fecha de alta y estado *********/
 
-      if( $(".fecha_actual").length > 0 ){
-          var fecha_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_68]']").val();
+      var fecha_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_68]']").val();
+      if( fecha_actual ){
+          //var fecha_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_68]']").val();
           var estado_actual = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_67]']").val();
           var est_act = '';
           switch(estado_actual){
@@ -574,7 +575,7 @@ jQuery(function($) {
 
       /******** Fecha de baja **********/
       var fecha_baja = $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_69]']").val();
-      console.log(fecha_baja);
+      //console.log(fecha_baja);
       if( fecha_baja ){
         // Bloquear todos los campos
         $('.content-datos input, .content-direccion input, .content-cuenta input, .content-idioma input, .content-preferencias input,'+
@@ -595,6 +596,22 @@ jQuery(function($) {
           "<p style='font-size:20px;margin-top:-30px;'>Te diste de baja de la organización el <b>"+bajastr[2]+"-"+bajastr[1]+"-"+bajastr[0]+"</b>.</p></br>"+
           "<p style='font-size:18px;margin-top:20px;'>Si quieres volver a colaborar con Amnistía Internacional rellena el <a href='https://crm.es.amnesty.org/unete-a-amnistia' target='_blank'>siguiente formulario</a> o escríbenos a <a href='mailto:sociosysocias@es.amnesty.org'>sociosysocias@es.amnesty.org</a>. ¡Gracias!"
         )
+      }
+
+      /* Si no tiene fecha de alta ni de baja, es donante */
+      if( !fecha_baja && !fecha_actual ){
+
+        $(".content-colaborar .fila-1").each(function(){
+            $(this).css("visibility", "hidden");
+            $(this).css("height","0px");
+        });
+
+        $(".content-colaborar").append(
+          "<p style='font-size:20px;margin-top:-30px;'>Todavía no eres socio/a de Amnistía Internacional.</p></br>"+
+          "<p style='font-size:18px;margin-top:20px;'>Si quieres colaborar periódicamente con la organización, rellena el <a href='https://crm.es.amnesty.org/unete-a-amnistia' target='_blank'>siguiente formulario</a> o escríbenos a <a href='mailto:sociosysocias@es.amnesty.org'>sociosysocias@es.amnesty.org</a>.</p>"+
+          "<p style='font-size:18px;margin-top:10px;'>¡Gracias!</p>"
+        )
+
       }
 
   });
