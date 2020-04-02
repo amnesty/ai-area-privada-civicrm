@@ -93,6 +93,9 @@
     }
 
     /* textos +info */
+    .webform-conditional-processed .content-datos .margin-negativo.info-nombre {
+         margin-left: -2px;
+    }
     .webform-conditional-processed .content-datos .margin-negativo {
          margin-left: -32px;
     }
