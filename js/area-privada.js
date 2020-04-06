@@ -21,12 +21,18 @@ function donativo(){
     }
     var donativo = $("[name='submitted[caja_quiero_hacer_un_donativo][fila_2_donativo][civicrm_1_contribution_1_contribution_total_amount]']").val();
 
+    // recoger el valor de la cc
+    var cc = $(".ncuenta").val();
+
     /* comprobaciones con el valor del donativo */
     if(donativo == "" || donativo == '0'){
         $("#dialog-amount").dialog("open");
     }
     else if(/^([0-9])+$/.test(donativo) == 0){
         $("#dialog-numeric").dialog("open");
+    }
+    else if(!cc){
+        $("#dialog-cc").dialog("open");
     }
     else {
         var parrafo = $("#dialog-confirm p");
@@ -137,6 +143,17 @@ jQuery(function($) {
           resizable: false,
           modal: true,
           height:180,
+          buttons: {
+            Ok: function() {
+              $( this ).dialog( "close" );
+            }
+          }
+      });
+      $( "#dialog-cc" ).dialog({
+          autoOpen: false,
+          resizable: false,
+          modal: true,
+          height:230,
           buttons: {
             Ok: function() {
               $( this ).dialog( "close" );
