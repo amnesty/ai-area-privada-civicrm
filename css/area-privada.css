@@ -311,7 +311,7 @@
         margin-right: 10px;
     }
 
-    .webform-conditional-processed .content-direccion .tipo-via{
+    .webform-conditional-processed .content-direccion .tipo-via {
         width: 115%;
         border:0;
     }
@@ -330,16 +330,16 @@
     }
 
     .webform-conditional-processed .content-direccion .postal{
-        max-width: 290px;
+        max-width: 270px;
     }
 
     .webform-conditional-processed .content-direccion .poblacion{
-        max-width: 575px;
+        max-width: 355px;
     }
 
     .webform-conditional-processed .content-direccion .capa-provincia,
     .webform-conditional-processed .content-direccion .capa-pais{
-        width: 432px;
+        width: 240px;
         overflow: hidden;
         float: left;
         border: 2px solid #000;
@@ -355,7 +355,7 @@
 
     .webform-conditional-processed .content-direccion select.provincia,
     .webform-conditional-processed .content-direccion select.pais {
-        background-position: 398px center;
+        background-position: 205px center;
     }
 
 /******** content-idioma *********************************************/
@@ -924,14 +924,14 @@
     }
     .webform-conditional-processed .content-direccion .postal {
         max-width: 100%;
-        margin-top: 0px;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
     .webform-conditional-processed .content-direccion .poblacion{
         max-width: 100%;
     }
     .webform-conditional-processed .content-direccion .capa-provincia {
-        margin-top: 0px;
+        margin-top: 20px;
         width: 100%;
     }
     .webform-conditional-processed .content-direccion .capa-pais {
@@ -945,6 +945,9 @@
     }
     .webform-conditional-processed .content-direccion select.tipo-via {
         background-position: 83% center;
+    }
+    .content-form fieldset {
+        margin-top: 0px;
     }
     /* donativo */
     .webform-conditional-processed .content-colaborar .capa-selecttime {
@@ -1046,7 +1049,7 @@
         line-height: 30px;
     }
     .content-form fieldset {
-        margin-top: 20px;
+        margin-top: 0px;
     }
     /* iconos de los bloques */
     .box-form-es h2 img {
