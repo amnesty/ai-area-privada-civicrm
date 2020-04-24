@@ -51,12 +51,13 @@
   $texto_caja_ventajas_cat = "<p>Totes les teves aportacions desgraven un 75% els primers 150€. A partir d'aquesta xifra, el 30%. Si els últims 3 anys has mantingut o augmentat l'aportació a l'organització, la desgravació puja fins un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc ni a Navarra.";
 
   $titulo_caja_formas_pago_cat = "<h3>Contacta amb Amnistia</h3>";
-  $texto_caja_formas_pago_cat = "<p>Si tens algún problema en realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913103272</b> o escriu-nos a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
+  $texto_caja_formas_pago_cat = "<p>Si tens algún problema en realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes,
+            truca'ns al <b>913103272</b> o escriu-nos a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
   $titulo_caja_formas_pago = "<h3>Contacta con Amnistía</h3>";
-  $texto_caja_formas_pago = "<p>Puedes ponerte en contacto con nosotros por <b>Whatsapp</b> añadiendo <b>+34913101277</b> a tus contactos.
-            Nuestro horario de atención es de Lunes a Jueves, de 9 a 14h y de 15 a 17h, viernes de 9 a 14h.
-            Tu número quedará registrado en nuestro sistema y nos autorizas a enviarte información de nuestro trabajo por esta vía.
-            También puedes llamarnos al <b>913103272</b> o escribirnos a <a href=\"mailto:sociosysocias@es.amnesty.org\" title=\"sociosysocias@es.amnesty.org\">sociosysocias@es.amnesty.org</a></p>";
+  $texto_caja_formas_pago = "<p>Puedes llamarnos al <b>91-3101277</b>, escribirnos a <a href=\"mailto:sociosysocias@es.amnesty.org\" title=\"sociosysocias@es.amnesty.org\">sociosysocias@es.amnesty.org</a>
+        o contactarnos a través de <b>Whatsapp</b> escribiendo al +31913101277*.
+        Nuestro horario de atención es de 9:00 a 14:00 y de 15:00 a 18:30 de lunes a viernes.</p><br/>
+        <i style='font-size: 10px; text-align:center'>*Al hacerlo nos autorizas a enviarte información de nuestro trabajo por esta vía.</i>";
 
   $titulo_caja_transparencia_cat = "<h3>Transparència, el nostre compromís</h3>";
   $titulo_caja_transparencia = "<h3>Transparencia, nuestro compromiso</h3>";
