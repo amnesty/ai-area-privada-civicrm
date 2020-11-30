@@ -55,7 +55,7 @@
             truca'ns al <b>913103272</b> o escriu-nos a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
   $titulo_caja_formas_pago = "<h3>Contacta con Amnistía</h3>";
   $texto_caja_formas_pago = "<p>Puedes llamarnos al <b>91-3101277</b>, escribirnos a <a href=\"mailto:sociosysocias@es.amnesty.org\" title=\"sociosysocias@es.amnesty.org\">sociosysocias@es.amnesty.org</a>
-        o contactarnos a través de <b>Whatsapp</b> escribiendo al +31913101277*.
+        o contactarnos a través de <b>Whatsapp</b> escribiendo al +34913101277*.
         Nuestro horario de atención es de 9:00 a 14:00 y de 15:00 a 18:30 de lunes a viernes.</p><br/>
         <i style='font-size: 10px; text-align:center'>*Al hacerlo nos autorizas a enviarte información de nuestro trabajo por esta vía.</i>";
 
