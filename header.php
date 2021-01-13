@@ -32,8 +32,8 @@
                   <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada">Mi cuenta</a></li>
                     <li role="presentation" class="divider"></li>
-                  <?php if( in_array('agf2020', $user->roles) ){ ?>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="agf2020">Asamblea General Federal</a></li>
+                  <?php if( in_array('agf2021', $user->roles) ){ ?>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="agf2021">Asamblea General Federal</a></li>
                     <li role="presentation" class="divider"></li>
                   <?php } ?>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-certificado">Descargar certificado IRPF</a></li>
