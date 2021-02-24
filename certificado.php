@@ -11,6 +11,7 @@
   $certificado = str_replace("@destinatariofiscal@",$destinatario, $certificado);
   $certificado = str_replace("@dni@",$dni,$certificado);
   $certificado = str_replace("@domiciliofiscal@", htmlentities( $domicilio, ENT_QUOTES, "UTF-8" ), $certificado);
+  $certificado = str_replace("@provinciafiscal@", htmlentities( $provincia, ENT_QUOTES, "UTF-8" ), $certificado);
   $certificado = str_replace("@codposfiscal@",$codigo_postal,$certificado);
   $certificado = str_replace("@poblacfiscal@", htmlentities( $poblacion, ENT_QUOTES, "UTF-8" ), $certificado);
   $certificado = str_replace("@provinfiscal@", htmlentities( $provincia_def, ENT_QUOTES, "UTF-8" ),$certificado);
