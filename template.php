@@ -43,7 +43,7 @@ function descargar_certificado(&$form, &$form_state){
         . $form['submitted']['caja_direccion']['fieldset_fila_1_b']['margin_medium_bloque']['civicrm_1_contact_1_address_supplemental_address_1']["#value"];
       $codigo_postal = $form['submitted']['caja_direccion']['fieldset_fila_2_b_2']['civicrm_1_contact_1_address_postal_code']["#value"];
       $poblacion = $form['submitted']['caja_direccion']['fieldset_fila_2_b_2']['civicrm_1_contact_1_address_city']["#value"];
-      $provincia = $form['submitted']['caja_direccion']['fieldset-direccion-3']['margin_medium_prov']['civicrm_1_contact_1_address_state_province_id']["#value"];
+      $provincia = $form['submitted']['caja_direccion']['fieldset_direccion_3']['margin_medium_prov']['civicrm_1_contact_1_address_state_province_id']["#value"];
       $anyo = $form['submitted']['caja_mi_certificado_fiscal']['fila_1_certificado']['ano_certificado']['#value'];
       /*switch( $anyo ){
         case '2017':
