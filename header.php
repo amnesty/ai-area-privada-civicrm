@@ -35,7 +35,7 @@
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada">Mi cuenta</a></li>
                     <li role="presentation" class="divider"></li>
                   <?php if( in_array('agf', $user->roles) ){ ?>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php $agf_anyo; ?>">Asamblea General Federal</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="<?php echo $agf_anyo; ?>">Asamblea General Federal</a></li>
                     <li role="presentation" class="divider"></li>
                   <?php } ?>
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="area-privada-certificado">Descargar certificado IRPF</a></li>
