@@ -14,17 +14,17 @@ try {
 
   // ******* Recogemos los datos de $_POST *********
   $contact_id = $_GET['contact_id'];
-  $checksum= $_GET['token'];
-  $bEnableChecksum = 1;
+  $checksum= $_GET['checksum'];
 
-  
   $result = civicrm_api3('Contact', 'validatechecksum', [
     'id' => $contact_id,
     'checksum' => $checksum,
   ]);
 
+  $validarChecksum = $result["values"];
+
   //Validamos que el Checksum no ha cadudado para poder mostrar el certificado IRPF
-  if ($result["values"] == 'true' || $bEnableChecksum){
+  if ($validarChecksum == 1){
 
     $result = civicrm_api3('Contact', 'get', [
       'sequential' => 1,
