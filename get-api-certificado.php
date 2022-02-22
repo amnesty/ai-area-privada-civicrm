@@ -14,7 +14,7 @@ try {
 
   // ******* Recogemos los datos de $_POST *********
   $contact_id = $_GET['contact_id'];
-  $checksum= $_GET['checksum'];
+  $checksum= $_GET['cs'];
 
   $result = civicrm_api3('Contact', 'validatechecksum', [
     'id' => $contact_id,
