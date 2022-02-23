@@ -64,7 +64,7 @@ try {
   "\nimporte: " . print_r($importe,1) .
   "\nprovincia_def: " . print_r($provincia_def,1);
 
-  print_r( 'Success: sent contact with id '.$contact_id );
+  #print_r( 'Success: sent contact with id '.$contact_id );
   return 'OK';
 
 
