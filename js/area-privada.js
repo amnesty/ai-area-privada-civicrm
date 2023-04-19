@@ -587,6 +587,7 @@ jQuery(function($) {
           var alta = fecha_actual.split(" ");
           var fecha = alta[0].split("-");
           $(".fecha_actual").val(fecha[2]+"-"+fecha[1]+"-"+fecha[0]);
+          $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_68]']").val(fecha[0]+"-"+fecha[1]+"-"+fecha[2]);
           $(".estado_actual").val(est_act);
       }
 
@@ -630,6 +631,13 @@ jQuery(function($) {
         )
 
       }
+
+
+    console.log("ocultando");
+
+    $('.caja-content').removeClass('caja-hidden');
+
+
 
   });
 
