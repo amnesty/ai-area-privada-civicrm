@@ -54,7 +54,7 @@ function descargar_certificado(&$form, &$form_state){
       }*/
 
       $importe = $form['submitted']['civicrm_1_contact_1_cg15_custom_111']['#value'];
-      if ($anyo == '2020'){
+      if ($anyo == date('Y')-2){
 	$importe = $form['submitted']['civicrm_1_contact_1_cg15_custom_172']['#value'];
       }
       $provincia = $form['submitted']['caja_direccion']['fieldset_direccion_3']['margin_medium_prov']['civicrm_1_contact_1_address_state_province_id']["#value"];

@@ -1,4 +1,4 @@
-// URL Vars
+// URL Varsssssss
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -48,8 +48,15 @@ function donativo(){
         $("#dialog-confirm").dialog("open");
     }
 
+
+
+
   });
 }
+
+
+
+
 
 function cuota(){
 
@@ -633,9 +640,12 @@ jQuery(function($) {
       }
 
 
+
+
     console.log("ocultando");
 
     $('.caja-content').removeClass('caja-hidden');
+
 
 
 
