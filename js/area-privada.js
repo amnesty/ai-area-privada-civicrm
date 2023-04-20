@@ -663,7 +663,7 @@ jQuery(function($) {
 
         $(".content-colaborar").append(
           "<p style='font-size:20px;margin-top:-30px;'>Todav&iacute;a no eres socio/a de Amnist&iacute;a Internacional.</p></br>"+
-          "<p style='font-size:18px;margin-top:20px;'>Si quieres colaborar peri&oacute;dicamente con la organizaci&oacute;n, rellena el <a href='https://crm.es.amnesty.org/unete-a-amnistia' target='_blank' alt='formulario alta socixs' tabindex='33'>siguiente formulario</a> o escr&iacute;benos a <a href='mailto:sociosysocias@es.amnesty.og' alt='correo socios' tabindex='34'>sociosysocias@es.amnesty.org</a>.</p>"+
+          "<p style='font-size:18px;margin-top:20px;'>Si quieres colaborar peri&oacute;dicamente con la organizaci&oacute;n, rellena el <a href='https://crm.es.amnesty.org/unete-a-amnistia' target='_blank' alt='formulario alta socios y socias' tabindex='33'>siguiente formulario</a> o escr&iacute;benos a <a href='mailto:sociosysocias@es.amnesty.og' alt='correo socios y socias' tabindex='34'>sociosysocias@es.amnesty.org</a>.</p>"+
           "<p style='font-size:18px;margin-top:10px;'>¡Gracias!</p>"
         )
       }
