@@ -42,7 +42,7 @@ try {
     $domicilio = $result["values"][0]["street_address"];
     $codigo_postal = $result["values"][0]["postal_code"];
     $poblacion = $result["values"][0]["city"];
-    $anyo = '2021';
+    $anyo = date('Y')-1;
     $importe = $result["values"][0]["custom_111"];
     $provincia_def = $result["values"][0]["state_province_name"];
 
@@ -54,6 +54,7 @@ try {
   }
 
   // Logging
+  $log = "";
   $log .= "\nContact id: " . $contact_id .
   "\ndestinatario: " . print_r($destinatario,1) .
   "\ndni: " . print_r($dni,1) .
@@ -84,6 +85,12 @@ try {
   "\nimporte: " . print_r($importe,1) .
   "\nprovincia_def: " . print_r($provincia_def,1);
 
+
+  foreach($_REQUEST as $key=>$val) {
+    $log .= "\n".$key.": ".$val;
+  }
+
+
   // Mandamos mail de error
   $to      = 'postm@es.amnesty.org';
   $to      .= ',frodriguez@es.amnesty.org';
@@ -93,7 +100,7 @@ try {
   #$headers = 'From: frodriguez@es.amnesty.org' . "\r\n" .
   'X-Mailer: PHP/' . phpversion();
 
-  mail($to, $subject, $message, $headers);
+  //mail($to, $subject, $message, $headers);
 }
 
 ?>
