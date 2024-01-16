@@ -26,6 +26,7 @@
 
   $html2pdf = new HTML2PDF( 'P','A4', 'es' );
   $html2pdf->WriteHTML( $content );
+  ob_end_clean();
   $html2pdf->Output('certificado_'.$anyo.'.pdf', 'D');
 
 ?>

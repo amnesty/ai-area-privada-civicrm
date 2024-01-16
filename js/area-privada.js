@@ -1,4 +1,4 @@
-// URL Vars
+// URL Varsssssss
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -48,8 +48,15 @@ function donativo(){
         $("#dialog-confirm").dialog("open");
     }
 
+
+
+
   });
 }
+
+
+
+
 
 function cuota(){
 
@@ -74,7 +81,38 @@ function cuota(){
 jQuery(function($) {
 
     /* ***************** ORIGEN ************************ */
+    /***  modificaciones del formulario para accesibilidad ***/ 
+    $(".btn-certificado").attr("alt","Quiero el certificado");
+    $(".btn-donativo").attr("alt","Haz un donativo");
+    $("#edit-submitted-caja-datos-personales-fila-3-1-datos-personales-margin-medium-nacimiento-civicrm-1-contact-1-contact-birth-date-day").attr("alt","selector d&iacute;a");
+    $("#edit-submitted-caja-datos-personales-fila-3-1-datos-personales-margin-medium-nacimiento-civicrm-1-contact-1-contact-birth-date-month").attr("alt","selector mes");
+    $("#edit-submitted-caja-datos-personales-fila-3-1-datos-personales-margin-medium-nacimiento-civicrm-1-contact-1-contact-birth-date-year").attr("alt","selector a&ntilde;o");
+    $("#edit-submitted-caja-direccion-fieldset-fila-1-b-margin-medium-via-civicrm-1-contact-1-address-custom-45").attr("alt","tipo v&iacute;a");
+    $("#edit-submitted-caja-direccion-fieldset-fila-2-b-2-margin-medium-prov-civicrm-1-contact-1-address-state-province-id").attr("alt","Provincia");
+    $("#edit-submitted-caja-direccion-fieldset-fila-2-b-2-margin-medium-pais-civicrm-1-contact-1-address-country-id").attr("alt","Pa&iacute;s");
+    $("#edit-submitted-caja-cuenta-fila-1-cuenta-margin-medium-iban-civicrm-1-contact-1-cg2-custom-3").attr("alt","selector identificador de pa&iacute;s");
+    $("#edit-submitted-caja-datos-personales-fieldset-fila-2-margin-medium-nif-civicrm-1-contact-1-cg1-custom-1").attr("alt","selector tipo documento");
+    $("#edit-submitted-caja-idioma-margin-medium-language-civicrm-1-contact-1-contact-preferred-language").attr("alt","selector de lengua preferida");
+    $("#edit-submitted-caja-datos-personales-fila-3-1-datos-personales-margin-medium-profesion-civicrm-1-contact-1-cg3-custom-9").attr("alt","selector ocupaci&oacute;n");
+    $("#edit-submitted-caja-quiero-hacer-un-donativo-fila-2-donativo-otro-donativo").attr("tabindex",8);
+    $(".btn-donativo").attr("tabindex",9);
+    $(".email").attr("tabindex",10);
+    $(".btn-certificado").attr("tabindex",11);
+    var i = 2;
+    $(":input").each(function () { 
+       if (i === 11) i = 12;
+       //console.log($(this).attr("id") + " " +  i);
+       $(this).attr('tabindex', i++); 
+    });
 
+    $(".webform-component--caja-botones--comodo-secure").css("text-align","center");
+    $(".webform-component--caja-botones--comodo-secure").prepend($(".webform-submit"));
+    $(".webform-submit").attr("alt","Guardar datos");
+    $(".webform-submit").css("border-radius","12px");
+    $(".footer").css("padding-bottom","40px");
+    $(".form-actions").css("position","relative");
+    $(".form-actions").css("display","none");
+    /*** fin accesibilidad ***/
     // Recogemos variable GET
     var urlVars = getUrlVars();
     var get_source = urlVars["origen"];
@@ -587,6 +625,7 @@ jQuery(function($) {
           var alta = fecha_actual.split(" ");
           var fecha = alta[0].split("-");
           $(".fecha_actual").val(fecha[2]+"-"+fecha[1]+"-"+fecha[0]);
+          $("[name='submitted[caja_cuota][civicrm_1_contact_1_cg15_fieldset][civicrm_1_contact_1_cg15_custom_68]']").val(fecha[0]+"-"+fecha[1]+"-"+fecha[2]);
           $(".estado_actual").val(est_act);
       }
 
@@ -611,8 +650,7 @@ jQuery(function($) {
         });
         $(".content-colaborar").append(
           "<p style='font-size:20px;margin-top:-30px;'>Te diste de baja de la organización el <b>"+bajastr[2]+"-"+bajastr[1]+"-"+bajastr[0]+"</b>.</p></br>"+
-          "<p style='font-size:18px;margin-top:20px;'>Si quieres volver a colaborar con Amnistía Internacional rellena el <a href='https://crm.es.amnesty.org/unete-a-amnistia' target='_blank'>siguiente formulario</a> o escríbenos a <a href='mailto:sociosysocias@es.amnesty.org'>sociosysocias@es.amnesty.org</a>. ¡Gracias!"
-        )
+          "<p style='font-size:18px;margin-top:20px;'>Si quieres volver a colaborar con Amnistía Internacional rellena el <a href='https://crm.es.amnesty.org/unete-a-amnistia' target='_blank' alt='formulario alta socixs' tabindex='33'>siguiente formulario</a> o escríbenos a <a href='mailto:sociosysocias@es.amnesty.org' alt='correo socio' tabindex='34'>sociosysocias@es.amnesty.org</a>. ¡Gracias!")
       }
 
       /* Si no tiene fecha de alta ni de baja, es donante */
@@ -624,12 +662,21 @@ jQuery(function($) {
         });
 
         $(".content-colaborar").append(
-          "<p style='font-size:20px;margin-top:-30px;'>Todavía no eres socio/a de Amnistía Internacional.</p></br>"+
-          "<p style='font-size:18px;margin-top:20px;'>Si quieres colaborar periódicamente con la organización, rellena el <a href='https://crm.es.amnesty.org/unete-a-amnistia' target='_blank'>siguiente formulario</a> o escríbenos a <a href='mailto:sociosysocias@es.amnesty.org'>sociosysocias@es.amnesty.org</a>.</p>"+
+          "<p style='font-size:20px;margin-top:-30px;'>Todav&iacute;a no eres socio/a de Amnist&iacute;a Internacional.</p></br>"+
+          "<p style='font-size:18px;margin-top:20px;'>Si quieres colaborar peri&oacute;dicamente con la organizaci&oacute;n, rellena el <a href='https://crm.es.amnesty.org/unete-a-amnistia' target='_blank' alt='formulario alta socios y socias' tabindex='33'>siguiente formulario</a> o escr&iacute;benos a <a href='mailto:sociosysocias@es.amnesty.og' alt='correo socios y socias' tabindex='34'>sociosysocias@es.amnesty.org</a>.</p>"+
           "<p style='font-size:18px;margin-top:10px;'>¡Gracias!</p>"
         )
-
       }
+
+
+
+
+    console.log("ocultando");
+
+    $('.caja-content').removeClass('caja-hidden');
+
+
+
 
   });
 

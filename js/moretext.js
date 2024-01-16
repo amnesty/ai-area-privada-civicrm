@@ -16,7 +16,7 @@ jQuery(function($) {
               var h = content.substr(showChar, content.length - showChar);
               var html = c +
                   /*'<span class="moreellipses">' + ellipsestext + '</span>*/'<span class="morecontent"><span>'
-                  + h + '</span><a href="" class="morelink">'
+                  + h + '</span><a href="" class="morelink" tabindex="1">'
                   + moretext + '</a></span>';
               $(this).html(html);
           }
