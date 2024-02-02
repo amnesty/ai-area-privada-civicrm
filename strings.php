@@ -36,7 +36,7 @@
 
   $anyo = date('Y');
   $titulo_caja_agf = '<h3>Asamblea General</h3>';
-  $texto_caja_agf = '<p>Ya queda muy poco para la Asamblea que celebraremos en Santander... Toda la documentación y la información necesaria para quienes os habéis inscrito está disponible '.
+  $texto_caja_agf = '<p>Ya queda muy poco para la Asamblea que celebraremos en Barcelona... Toda la documentación y la información necesaria para quienes os habéis inscrito está disponible '.
                     '<a href="https://crm.es.amnesty.org/agf'.$anyo.'"><b>AQUÍ</b></a>.</p>';
 
   $titulo_caja_buenas_noticias = '<h3>¡Buenas Noticias!</h3>';
