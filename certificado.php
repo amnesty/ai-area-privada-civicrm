@@ -10,7 +10,7 @@
   $certificado = file_get_contents($base_url . "/sites/all/themes/ai-area-privada-civicrm/plantilla_certificado.html");
   $certificado = str_replace("@destinatariofiscal@",$destinatario, $certificado);
   $certificado = str_replace("@dni@",$dni,$certificado);
-  $certificado = str_replace("@domiciliofiscal@", htmlentities( $domicilio, ENT_QUOTES, "UTF-8" ), $certificado);
+  $certificado = str_replace("@domiciliofiscal@", htmlentities( trim($domicilio), ENT_QUOTES, "UTF-8" ), $certificado);
   $certificado = str_replace("@provinciafiscal@", htmlentities( $provincia, ENT_QUOTES, "UTF-8" ), $certificado);
   $certificado = str_replace("@codposfiscal@",$codigo_postal,$certificado);
   $certificado = str_replace("@poblacfiscal@", htmlentities( $poblacion, ENT_QUOTES, "UTF-8" ), $certificado);
